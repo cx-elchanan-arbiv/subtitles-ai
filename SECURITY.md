@@ -11,12 +11,12 @@
 Instead, please report security issues privately:
 
 1. **Via GitHub Security Advisories** (Preferred):
-   - Go to the [Security tab](https://github.com/cx-elchanan-arbiv/SubsTranslator/security/advisories)
+   - Go to the [Security tab](https://github.com/cx-elchanan-arbiv/subtitles-ai/security/advisories)
    - Click "Report a vulnerability"
    - Fill in the details
 
 2. **Via Email**:
-   - Send an email to: **security@substranslator.io**
+   - Send an email to: **security@subtitles-ai.io**
    - Include detailed information about the vulnerability
    - Include steps to reproduce if possible
 

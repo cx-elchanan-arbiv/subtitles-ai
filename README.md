@@ -1,8 +1,8 @@
-# SubsTranslator 🎬
+# subtitles-ai 🎬
 
 > AI-powered video subtitle generation, translation, and burn-in tool with professional RTL support
 
-SubsTranslator is an advanced AI-powered video subtitle generation and translation system. Built with `faster-whisper` for lightning-fast transcription and OpenAI GPT-4 for accurate multilingual translation, it features a sophisticated React frontend and robust Flask backend with async processing.
+**subtitles-ai** is an advanced AI-powered video subtitle generation and translation system. Built with `faster-whisper` for lightning-fast transcription and OpenAI GPT-4 for accurate multilingual translation, it features a sophisticated React frontend and robust Flask backend with async processing.
 
 The entire application is containerized using Docker with professional-grade Hebrew/RTL text support and intelligent model selection.
 
@@ -76,8 +76,8 @@ The entire application is containerized using Docker with professional-grade Heb
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/cx-elchanan-arbiv/SubsTranslator.git
-    cd SubsTranslator
+    git clone https://github.com/cx-elchanan-arbiv/subtitles-ai.git
+    cd subtitles-ai
     ```
 
 2.  **Configure environment variables:**
@@ -143,7 +143,7 @@ docker-compose logs worker
 
 ## 📚 Documentation
 
-- **📖 [Project Overview](docs/PROJECT_OVERVIEW.md)** - What SubsTranslator is and how it works
+- **📖 [Project Overview](docs/PROJECT_OVERVIEW.md)** - What subtitles-ai is and how it works
 - **🏗️ [Architecture Guide](docs/ARCHITECTURE.md)** - Technical architecture and system design  
 - **⚙️ [Development Guide](docs/DEV_GUIDE.md)** - Setup, workflow, and contribution guidelines
 - **🧪 [Testing Guide](TESTING.md)** - Complete testing documentation and structure
@@ -210,7 +210,7 @@ curl http://localhost:8081/languages
 ## 📁 Project Architecture
 
 ```
-SubsTranslator/
+subtitles-ai/
 ├── 🐳 Docker Configuration
 │   ├── docker-compose.yml       # Multi-service orchestration
 │   ├── backend.Dockerfile       # Python Flask + Celery container
@@ -325,12 +325,12 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ## 💬 Support & Contact
 
 **Found a bug or have a feature request?**
-- 🐛 [Open an issue](https://github.com/cx-elchanan-arbiv/SubsTranslator/issues)
-- 💡 [Feature requests](https://github.com/cx-elchanan-arbiv/SubsTranslator/issues/new?labels=enhancement)
+- 🐛 [Open an issue](https://github.com/cx-elchanan-arbiv/subtitles-ai/issues)
+- 💡 [Feature requests](https://github.com/cx-elchanan-arbiv/subtitles-ai/issues/new?labels=enhancement)
 
 **Need help?**
 - 📖 Check the [Documentation](docs/)
-- 💬 Start a [Discussion](https://github.com/cx-elchanan-arbiv/SubsTranslator/discussions)
+- 💬 Start a [Discussion](https://github.com/cx-elchanan-arbiv/subtitles-ai/discussions)
 
 **Security Issues:**
 - 🔒 Please report security vulnerabilities privately
