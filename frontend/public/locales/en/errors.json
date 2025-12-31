@@ -1,0 +1,90 @@
+{
+  "generic": {
+    "title": "Processing Error",
+    "message": "An unexpected error occurred. Please try again or contact support.",
+    "retry": "Try Again"
+  },
+  "network": {
+    "title": "Network Error",
+    "message": "Check your internet connection and try again. There might be a temporary network issue.",
+    "offline": "No internet connection"
+  },
+  "http": {
+    "400": {
+      "title": "Invalid URL",
+      "message": "Valid examples: https://www.youtube.com/watch?v=… | https://youtu.be/… | https://vimeo.com/…"
+    },
+    "401": {
+      "title": "Authentication Required",
+      "message": "Sign in to continue processing the video. Your session may have expired."
+    },
+    "403": {
+      "title": "Access Denied",
+      "message": "You don't have permission to perform this action. The video might be private or geographically restricted."
+    },
+    "404": {
+      "title": "Video Not Found",
+      "message": "Check that the URL is correct and the video is still available for viewing. The video might have been removed or set to private."
+    },
+    "410": {
+      "title": "Video Removed",
+      "message": "The content has been permanently removed or is no longer available. Try with another video."
+    },
+    "422": {
+      "title": "Cannot Process",
+      "message": "The video doesn't contain suitable audio for transcription, is too short, or is in an unsupported format."
+    },
+    "429": {
+      "title": "Too Many Requests",
+      "message": "You've reached the request limit. Please wait a few minutes and try again."
+    },
+    "500": {
+      "title": "Server Error",
+      "message": "Something went wrong on our end. Our team is handling the issue. Please try again in a few minutes."
+    },
+    "503": {
+      "title": "Service Under Maintenance",
+      "message": "The service is temporarily unavailable due to scheduled maintenance. Please try again later."
+    }
+  },
+  "upload": {
+    "fileTooBig": "File is too large. Maximum size is 500MB.",
+    "unsupportedFormat": "Unsupported file format. Please use MP4, AVI, MOV, or other supported formats.",
+    "uploadFailed": "File upload failed. Please try again.",
+    "noFile": "Please select a file to upload."
+  },
+  "processing": {
+    "timeout": "Processing took longer than expected. Please try again.",
+    "modelLoadFailed": "Failed to load AI model.",
+    "transcriptionFailed": "Transcription failed. The audio might not be clear enough.",
+    "translationFailed": "Translation failed. Please try again.",
+    "videoCreationFailed": "Video creation failed. Please try again."
+  },
+  "validation": {
+    "invalidUrl": "Invalid URL",
+    "requiredField": "Required field",
+    "invalidEmail": "Invalid email address",
+    "passwordTooShort": "Password too short (minimum 8 characters)",
+    "passwordsNotMatch": "Passwords don't match"
+  },
+  "tips": {
+    "title": "Troubleshooting Tips",
+    "urlTips": [
+      "Make sure the URL is copied completely",
+      "Check that the video is available for public viewing",
+      "Try opening the URL in your browser first"
+    ],
+    "rateLimitTips": [
+      "Please wait",
+      "The service will be available again in a few minutes"
+    ],
+    "uploadTips": [
+      "Make sure the file is not corrupted",
+      "Try converting the file to MP4 format",
+      "Check your internet connection"
+    ]
+  }
+}
+
+
+

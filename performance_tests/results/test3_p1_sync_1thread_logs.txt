@@ -1,0 +1,52 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.9.6, pytest-8.4.1, pluggy-1.6.0 -- /Users/elchananarbiv/Projects/SubsTranslator/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/elchananarbiv/Projects/SubsTranslator/backend
+configfile: pyproject.toml
+plugins: xdist-3.8.0, timeout-2.4.0, anyio-4.10.0, mock-3.14.1
+collecting ... collected 6 items / 5 deselected / 1 selected
+
+backend/tests/e2e/test_online_video_workflows.py::TestOnlineVideoWorkflows::test_youtube_processing_with_model_and_service[large-openai-https://www.youtube.com/watch?v=0EQ6J52YGog] 
+🎯 Testing YouTube processing: large model + openai translation
+📺 Using test video: https://www.youtube.com/watch?v=0EQ6J52YGog
+📋 Task submitted: 59898e0b-7f3e-4a34-976f-b89365197c5d
+Task 59898e0b-7f3e-4a34-976f-b89365197c5d: PROGRESS (0.0s elapsed)
+Task 59898e0b-7f3e-4a34-976f-b89365197c5d: PROGRESS (3.0s elapsed)
+Task 59898e0b-7f3e-4a34-976f-b89365197c5d: PROGRESS (6.1s elapsed)
+Task 59898e0b-7f3e-4a34-976f-b89365197c5d: PROGRESS (9.1s elapsed)
+Task 59898e0b-7f3e-4a34-976f-b89365197c5d: SUCCESS (12.1s elapsed)
+📋 Download completed, now waiting for processing task: 9fa8b22d-7da8-4671-8473-72df48dba7e3
+Task 9fa8b22d-7da8-4671-8473-72df48dba7e3: PROGRESS (0.0s elapsed)
+Task 9fa8b22d-7da8-4671-8473-72df48dba7e3: PROGRESS (3.0s elapsed)
+Task 9fa8b22d-7da8-4671-8473-72df48dba7e3: PROGRESS (6.0s elapsed)
+Task 9fa8b22d-7da8-4671-8473-72df48dba7e3: PROGRESS (9.0s elapsed)
+Task 9fa8b22d-7da8-4671-8473-72df48dba7e3: PROGRESS (12.0s elapsed)
+Task 9fa8b22d-7da8-4671-8473-72df48dba7e3: PROGRESS (15.1s elapsed)
+Task 9fa8b22d-7da8-4671-8473-72df48dba7e3: PROGRESS (18.1s elapsed)
+Task 9fa8b22d-7da8-4671-8473-72df48dba7e3: PROGRESS (21.1s elapsed)
+Task 9fa8b22d-7da8-4671-8473-72df48dba7e3: PROGRESS (24.1s elapsed)
+Task 9fa8b22d-7da8-4671-8473-72df48dba7e3: PROGRESS (27.1s elapsed)
+Task 9fa8b22d-7da8-4671-8473-72df48dba7e3: PROGRESS (30.2s elapsed)
+Task 9fa8b22d-7da8-4671-8473-72df48dba7e3: PROGRESS (33.2s elapsed)
+Task 9fa8b22d-7da8-4671-8473-72df48dba7e3: SUCCESS (36.2s elapsed)
+✅ Comprehensive metadata validation passed:
+   Title: 'Court rules Trump illegally used emergency powers to impose tariffs'
+   Uploader: Associated Press
+   Duration: 41s
+   Views: 7,738
+   Upload Date: 20250830
+   Thumbnail: https://i.ytimg.com/vi/0EQ6J52YGog/maxresdefault.j...
+   Resolution: 640x360@30fps
+✅ Found model large in logs: Loading large model
+✅ Found openai service in logs: Using OpenAI.*translation
+✅ Task completed successfully without critical errors
+✅ Test passed: large + openai
+PASSED
+
+=============================== warnings summary ===============================
+.venv/lib/python3.9/site-packages/urllib3/__init__.py:35
+  /Users/elchananarbiv/Projects/SubsTranslator/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================= 1 passed, 5 deselected, 1 warning in 48.42s ==================

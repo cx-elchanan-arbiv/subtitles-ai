@@ -1,0 +1,111 @@
+name: E2E
+
+# Run E2E tests only manually (they're slow, resource intensive, and depend on external services)
+on:
+  workflow_dispatch: # Allow manual trigger only
+    inputs:
+      test_type:
+        description: 'Type of E2E tests to run'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+        - all
+        - online_video
+        - file_upload
+
+jobs:
+  e2e-tests:
+    name: 🌐 End-to-End Tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 30  # E2E tests can take time
+    
+    steps:
+    - name: 📥 Checkout Code
+      uses: actions/checkout@v4
+      
+    - name: 🐍 Setup Python 3.12
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+        
+    - name: 🐳 Setup Docker
+      uses: docker/setup-buildx-action@v3
+      
+    - name: 📦 Install System Dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y ffmpeg curl jq
+        
+    - name: 📦 Install Python Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r backend/requirements.txt
+        pip install -r requirements-test.txt
+        pip install -e backend/
+        
+    - name: 🐳 Start Services
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      run: |
+        # Create .env file for docker compose
+        echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" > .env
+        echo "FLASK_ENV=production" >> .env
+        echo "DEBUG=false" >> .env
+        
+        # Start all services
+        docker compose up -d --build
+        
+        # Wait for services to be ready
+        echo "⏳ Waiting for services to start..."
+        sleep 30
+        
+        # Verify services are healthy
+        curl --retry 10 --retry-delay 5 http://localhost:8081/health
+        curl --retry 5 --retry-delay 3 http://localhost
+        
+    - name: 🧪 Run E2E Tests
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      run: |
+        # Activate virtual environment
+        source venv/bin/activate || python -m venv venv && source venv/bin/activate
+        
+        if [ "${{ github.event.inputs.test_type }}" = "online_video" ]; then
+          echo "🎯 Running Online Video E2E tests only..."
+          python test_online_video.py --verbose
+        elif [ "${{ github.event.inputs.test_type }}" = "file_upload" ]; then
+          echo "📁 Running File Upload E2E tests only..."
+          pytest backend/tests/e2e/ -k "file_upload" -v --tb=short
+        else
+          echo "🌐 Running all E2E tests..."
+          pytest backend/tests/e2e/ -v --tb=short -m e2e
+        fi
+        
+    - name: 📋 Collect Test Artifacts
+      if: always()
+      run: |
+        # Create artifacts directory
+        mkdir -p test-artifacts
+        
+        # Copy any generated files
+        if [ -d "backend/downloads" ]; then
+          cp -r backend/downloads test-artifacts/downloads || true
+        fi
+        
+        # Get recent logs
+        docker compose logs --tail=100 > test-artifacts/docker-logs.txt || true
+        
+    - name: 📦 Upload Test Artifacts
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: e2e-test-artifacts
+        path: test-artifacts/
+        retention-days: 7
+        
+    - name: 🧹 Cleanup
+      if: always()
+      run: |
+        docker compose down -v
+        docker system prune -f

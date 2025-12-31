@@ -1,0 +1,127 @@
+{
+  "home": {
+    "title": "SubsTranslator - Advanced Subtitle Translation",
+    "description": "Advanced subtitle translation platform with AI. Support for 50+ languages, fast processing, and professional quality.",
+    "keywords": "subtitle translation, artificial intelligence, video, transcription, YouTube"
+  },
+  "dashboard": {
+    "title": "My Dashboard",
+    "description": "Manage your videos and subtitles",
+    "welcome": "Welcome, {{name}}",
+    "recentVideos": "Recent Videos",
+    "statistics": "Statistics",
+    "quickActions": "Quick Actions",
+    "noVideos": "You haven't processed any videos yet",
+    "getStarted": "Get Started",
+    "totalVideos": "Total Videos",
+    "totalMinutes": "Total Minutes",
+    "languagesUsed": "Languages Used",
+    "thisMonth": "This Month"
+  },
+  "upload": {
+    "title": "Upload Video",
+    "description": "Upload a video or audio file for transcription and translation",
+    "stepTitle": "Step {{step}} of {{total}}",
+    "steps": {
+      "upload": "Upload",
+      "configure": "Configure",
+      "process": "Process"
+    }
+  },
+  "youtube": {
+    "title": "Process from YouTube",
+    "description": "Enter a link to a video from YouTube, Vimeo, TikTok and more",
+    "quickDownload": "Quick Download",
+    "fullProcess": "Full Process with Subtitles"
+  },
+  "results": {
+    "title": "Processing Results",
+    "description": "Your video is ready! Download the subtitles or processed video",
+    "videoInfo": "Video Information",
+    "downloads": "Downloads",
+    "share": "Share",
+    "edit": "Edit"
+  },
+  "profile": {
+    "title": "My Profile",
+    "description": "Manage your profile and account preferences",
+    "personalInfo": "Personal Information",
+    "preferences": "Preferences",
+    "subscription": "Subscription",
+    "billing": "Billing",
+    "security": "Security",
+    "notifications": "Notifications",
+    "language": "Language",
+    "theme": "Theme",
+    "timezone": "Timezone"
+  },
+  "settings": {
+    "title": "Settings",
+    "description": "Customize your experience",
+    "general": "General",
+    "account": "Account",
+    "privacy": "Privacy",
+    "notifications": "Notifications",
+    "advanced": "Advanced",
+    "about": "About"
+  },
+  "help": {
+    "title": "Help Center",
+    "description": "Find answers to frequently asked questions and tutorials",
+    "faq": "FAQ",
+    "tutorials": "Tutorials",
+    "contact": "Contact",
+    "support": "Support",
+    "documentation": "Documentation",
+    "community": "Community"
+  },
+  "about": {
+    "title": "About SubsTranslator",
+    "description": "Learn more about our platform and mission",
+    "mission": "Our Mission",
+    "team": "Team",
+    "technology": "Technology",
+    "contact": "Contact"
+  },
+  "pricing": {
+    "title": "Pricing",
+    "description": "Choose the plan that's right for you",
+    "free": "Free",
+    "pro": "Pro",
+    "enterprise": "Enterprise",
+    "features": "Features",
+    "billing": "Billing",
+    "faq": "FAQ"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "How we protect your privacy"
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "description": "Terms and conditions for using our service"
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "description": "How we use cookies"
+    }
+  },
+  "errors": {
+    "404": {
+      "title": "Page Not Found",
+      "description": "The page you're looking for doesn't exist or has been moved",
+      "goHome": "Go to Homepage"
+    },
+    "500": {
+      "title": "Server Error",
+      "description": "A server error occurred. Please try again later",
+      "retry": "Try Again"
+    },
+    "offline": {
+      "title": "No Internet Connection",
+      "description": "Check your internet connection and try again",
+      "refresh": "Refresh Page"
+    }
+  }
+}

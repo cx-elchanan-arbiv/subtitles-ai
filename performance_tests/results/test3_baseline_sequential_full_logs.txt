@@ -1,0 +1,500 @@
+worker-1  | [2025-11-05 13:35:30,613: WARNING/ForkPoolWorker-1] WARNING: [youtube] wpHvBrIIJnA: android client https formats require a GVS PO Token which was not provided. They will be skipped as they may yield HTTP Error 403. You can manually pass a GVS PO Token for this client with --extractor-args "youtube:po_token=android.gvs+XXX". For more information, refer to  https://github.com/yt-dlp/yt-dlp/wiki/PO-Token-Guide
+worker-1  | [2025-11-05 13:35:30,630: WARNING/ForkPoolWorker-1] WARNING: [youtube] wpHvBrIIJnA: Some web client https formats have been skipped as they are missing a url. YouTube is forcing SABR streaming for this client. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
+worker-1  | [2025-11-05 13:35:30,674: WARNING/ForkPoolWorker-1] [info] wpHvBrIIJnA: Downloading 1 format(s): 18
+worker-1  | [2025-11-05 13:35:30,677: WARNING/ForkPoolWorker-1] [download] Sleeping 6.00 seconds as required by the site...
+worker-1  | [2025-11-05 13:35:36,992: WARNING/ForkPoolWorker-1] [download] Destination: /app/fast_work/FAST CARS - Hollywood English Movie ｜ Scott Eastwood In Superhit English Full Action Movie.mp4
+worker-1  | [2025-11-05 13:35:36,992: WARNING/ForkPoolWorker-1] [download]   0.0% of  203.04MiB at  579.40KiB/s ETA 06:01
+worker-1  | [2025-11-05 13:35:36,992: INFO/ForkPoolWorker-1] 📥 Download: 0.0% of 203.0MB
+worker-1  | [2025-11-05 13:35:36,995: WARNING/ForkPoolWorker-1] [download]   0.0% of  203.04MiB at  708.02KiB/s ETA 04:54
+worker-1  | [2025-11-05 13:35:36,996: WARNING/ForkPoolWorker-1] [download]   0.0% of  203.04MiB at    1.13MiB/s ETA 02:59
+worker-1  | [2025-11-05 13:35:36,998: WARNING/ForkPoolWorker-1] [download]   0.0% of  203.04MiB at    1.93MiB/s ETA 01:45
+worker-1  | [2025-11-05 13:35:36,999: WARNING/ForkPoolWorker-1] [download]   0.0% of  203.04MiB at    3.35MiB/s ETA 01:00
+worker-1  | [2025-11-05 13:35:37,002: WARNING/ForkPoolWorker-1] [download]   0.0% of  203.04MiB at    5.46MiB/s ETA 00:37
+worker-1  | [2025-11-05 13:35:37,029: WARNING/ForkPoolWorker-1] [download]   0.1% of  203.04MiB at    3.20MiB/s ETA 01:03
+worker-1  | [2025-11-05 13:35:37,061: WARNING/ForkPoolWorker-1] [download]   0.1% of  203.04MiB at    3.57MiB/s ETA 00:56
+worker-1  | [2025-11-05 13:35:37,146: WARNING/ForkPoolWorker-1] [download]   0.2% of  203.04MiB at    3.21MiB/s ETA 01:03
+worker-1  | [2025-11-05 13:35:37,250: WARNING/ForkPoolWorker-1] [download]   0.5% of  203.04MiB at    3.85MiB/s ETA 00:52
+worker-1  | [2025-11-05 13:35:37,415: WARNING/ForkPoolWorker-1] [download]   1.0% of  203.04MiB at    4.72MiB/s ETA 00:42
+worker-1  | [2025-11-05 13:35:37,794: WARNING/ForkPoolWorker-1] [download]   2.0% of  203.04MiB at    4.98MiB/s ETA 00:39
+worker-1  | [2025-11-05 13:35:38,960: WARNING/ForkPoolWorker-1] [download]   3.9% of  203.04MiB at    4.06MiB/s ETA 00:48
+worker-1  | [2025-11-05 13:35:39,199: WARNING/ForkPoolWorker-1] [download]   4.8% of  203.04MiB at    4.43MiB/s ETA 00:43
+worker-1  | [2025-11-05 13:35:39,200: INFO/ForkPoolWorker-1] 📥 Download: 4.8% of 203.0MB at 4.4MB/s ETA 44s
+worker-1  | [2025-11-05 13:35:39,405: WARNING/ForkPoolWorker-1] [download]   4.8% of  203.04MiB at   98.16KiB/s ETA 33:39
+worker-1  | [2025-11-05 13:35:39,407: WARNING/ForkPoolWorker-1] [download]   4.8% of  203.04MiB at  240.15KiB/s ETA 13:44
+worker-1  | [2025-11-05 13:35:39,410: WARNING/ForkPoolWorker-1] [download]   4.8% of  203.04MiB at  475.24KiB/s ETA 06:56
+worker-1  | [2025-11-05 13:35:39,413: WARNING/ForkPoolWorker-1] [download]   4.8% of  203.04MiB at  812.00KiB/s ETA 04:03
+worker-1  | [2025-11-05 13:35:39,415: WARNING/ForkPoolWorker-1] [download]   4.8% of  203.04MiB at    1.49MiB/s ETA 02:09
+worker-1  | [2025-11-05 13:35:39,426: WARNING/ForkPoolWorker-1] [download]   4.8% of  203.04MiB at    1.96MiB/s ETA 01:38
+worker-1  | [2025-11-05 13:35:39,454: WARNING/ForkPoolWorker-1] [download]   4.9% of  203.04MiB at    2.10MiB/s ETA 01:31
+worker-1  | [2025-11-05 13:35:39,485: WARNING/ForkPoolWorker-1] [download]   4.9% of  203.04MiB at    2.77MiB/s ETA 01:09
+worker-1  | [2025-11-05 13:35:39,555: WARNING/ForkPoolWorker-1] [download]   5.1% of  203.04MiB at    3.13MiB/s ETA 01:01
+worker-1  | [2025-11-05 13:35:39,678: WARNING/ForkPoolWorker-1] [download]   5.3% of  203.04MiB at    3.54MiB/s ETA 00:54
+worker-1  | [2025-11-05 13:35:39,785: WARNING/ForkPoolWorker-1] [download]   5.8% of  203.04MiB at    5.12MiB/s ETA 00:37
+worker-1  | [2025-11-05 13:35:40,124: WARNING/ForkPoolWorker-1] [download]   6.8% of  203.04MiB at    5.49MiB/s ETA 00:34
+worker-1  | [2025-11-05 13:35:40,954: WARNING/ForkPoolWorker-1] [download]   8.8% of  203.04MiB at    5.13MiB/s ETA 00:36
+worker-1  | [2025-11-05 13:35:41,058: WARNING/ForkPoolWorker-1] [download]   9.6% of  203.04MiB at    5.88MiB/s ETA 00:31
+worker-1  | [2025-11-05 13:35:41,256: WARNING/ForkPoolWorker-1] [download]   9.6% of  203.04MiB at  Unknown B/s ETA Unknown
+worker-1  | [2025-11-05 13:35:41,256: INFO/ForkPoolWorker-1] 📥 Download: 9.6% of 203.0MB at 4.5MB/s ETA 41s
+worker-1  | [2025-11-05 13:35:41,258: WARNING/ForkPoolWorker-1] [download]   9.6% of  203.04MiB at    1.41MiB/s ETA 02:12  
+worker-1  | [2025-11-05 13:35:41,259: WARNING/ForkPoolWorker-1] [download]   9.6% of  203.04MiB at    2.02MiB/s ETA 01:31
+worker-1  | [2025-11-05 13:35:41,265: WARNING/ForkPoolWorker-1] [download]   9.6% of  203.04MiB at    1.70MiB/s ETA 01:48
+worker-1  | [2025-11-05 13:35:41,266: WARNING/ForkPoolWorker-1] [download]   9.6% of  203.04MiB at    2.76MiB/s ETA 01:06
+worker-1  | [2025-11-05 13:35:41,267: WARNING/ForkPoolWorker-1] [download]   9.7% of  203.04MiB at    5.21MiB/s ETA 00:35
+worker-1  | [2025-11-05 13:35:41,299: WARNING/ForkPoolWorker-1] [download]   9.7% of  203.04MiB at    2.90MiB/s ETA 01:03
+worker-1  | [2025-11-05 13:35:41,332: WARNING/ForkPoolWorker-1] [download]   9.8% of  203.04MiB at    3.25MiB/s ETA 00:56
+worker-1  | [2025-11-05 13:35:41,415: WARNING/ForkPoolWorker-1] [download]   9.9% of  203.04MiB at    3.17MiB/s ETA 00:57
+worker-1  | [2025-11-05 13:35:41,476: WARNING/ForkPoolWorker-1] [download]  10.1% of  203.04MiB at    4.54MiB/s ETA 00:40
+worker-1  | [2025-11-05 13:35:41,617: WARNING/ForkPoolWorker-1] [download]  10.6% of  203.04MiB at    5.55MiB/s ETA 00:32
+worker-1  | [2025-11-05 13:35:41,875: WARNING/ForkPoolWorker-1] [download]  11.6% of  203.04MiB at    6.46MiB/s ETA 00:27
+worker-1  | [2025-11-05 13:35:42,447: WARNING/ForkPoolWorker-1] [download]  13.6% of  203.04MiB at    6.71MiB/s ETA 00:26
+worker-1  | [2025-11-05 13:35:42,626: WARNING/ForkPoolWorker-1] [download]  14.4% of  203.04MiB at    7.12MiB/s ETA 00:24
+worker-1  | [2025-11-05 13:35:42,785: WARNING/ForkPoolWorker-1] [download]  14.4% of  203.04MiB at  Unknown B/s ETA Unknown
+worker-1  | [2025-11-05 13:35:42,789: WARNING/ForkPoolWorker-1] [download]  14.4% of  203.04MiB at  673.35KiB/s ETA 04:24  
+worker-1  | [2025-11-05 13:35:42,793: WARNING/ForkPoolWorker-1] [download]  14.4% of  203.04MiB at  866.80KiB/s ETA 03:25
+worker-1  | [2025-11-05 13:35:42,795: WARNING/ForkPoolWorker-1] [download]  14.4% of  203.04MiB at    1.40MiB/s ETA 02:04
+worker-1  | [2025-11-05 13:35:42,798: WARNING/ForkPoolWorker-1] [download]  14.4% of  203.04MiB at    2.36MiB/s ETA 01:13
+worker-1  | [2025-11-05 13:35:42,800: WARNING/ForkPoolWorker-1] [download]  14.5% of  203.04MiB at    4.06MiB/s ETA 00:42
+worker-1  | [2025-11-05 13:35:42,821: WARNING/ForkPoolWorker-1] [download]  14.5% of  203.04MiB at    3.40MiB/s ETA 00:51
+worker-1  | [2025-11-05 13:35:42,862: WARNING/ForkPoolWorker-1] [download]  14.6% of  203.04MiB at    3.25MiB/s ETA 00:53
+worker-1  | [2025-11-05 13:35:42,915: WARNING/ForkPoolWorker-1] [download]  14.7% of  203.04MiB at    3.85MiB/s ETA 00:45
+worker-1  | [2025-11-05 13:35:42,983: WARNING/ForkPoolWorker-1] [download]  14.9% of  203.04MiB at    5.05MiB/s ETA 00:34
+worker-1  | [2025-11-05 13:35:43,135: WARNING/ForkPoolWorker-1] [download]  15.4% of  203.04MiB at    5.72MiB/s ETA 00:30
+worker-1  | [2025-11-05 13:35:43,455: WARNING/ForkPoolWorker-1] [download]  16.4% of  203.04MiB at    5.97MiB/s ETA 00:28
+worker-1  | [2025-11-05 13:35:43,455: INFO/ForkPoolWorker-1] 📥 Download: 16.4% of 203.0MB at 5.0MB/s ETA 34s
+worker-1  | [2025-11-05 13:35:43,997: WARNING/ForkPoolWorker-1] [download]  18.4% of  203.04MiB at    6.60MiB/s ETA 00:25
+worker-1  | [2025-11-05 13:35:44,195: WARNING/ForkPoolWorker-1] [download]  19.2% of  203.04MiB at    6.93MiB/s ETA 00:23
+worker-1  | [2025-11-05 13:35:44,410: WARNING/ForkPoolWorker-1] [download]  19.2% of  203.04MiB at   22.66KiB/s ETA 02:03:38
+worker-1  | [2025-11-05 13:35:44,416: WARNING/ForkPoolWorker-1] [download]  19.3% of  203.04MiB at   59.84KiB/s ETA 46:46   
+worker-1  | [2025-11-05 13:35:44,418: WARNING/ForkPoolWorker-1] [download]  19.3% of  203.04MiB at  133.21KiB/s ETA 21:00
+worker-1  | [2025-11-05 13:35:44,420: WARNING/ForkPoolWorker-1] [download]  19.3% of  203.04MiB at  276.11KiB/s ETA 10:08
+worker-1  | [2025-11-05 13:35:44,422: WARNING/ForkPoolWorker-1] [download]  19.3% of  203.04MiB at  549.87KiB/s ETA 05:05
+worker-1  | [2025-11-05 13:35:44,424: WARNING/ForkPoolWorker-1] [download]  19.3% of  203.04MiB at    1.05MiB/s ETA 02:35
+worker-1  | [2025-11-05 13:35:44,428: WARNING/ForkPoolWorker-1] [download]  19.3% of  203.04MiB at    1.96MiB/s ETA 01:23
+worker-1  | [2025-11-05 13:35:44,501: WARNING/ForkPoolWorker-1] [download]  19.4% of  203.04MiB at    1.85MiB/s ETA 01:28
+worker-1  | [2025-11-05 13:35:44,543: WARNING/ForkPoolWorker-1] [download]  19.5% of  203.04MiB at    2.83MiB/s ETA 00:57
+worker-1  | [2025-11-05 13:35:44,619: WARNING/ForkPoolWorker-1] [download]  19.7% of  203.04MiB at    3.94MiB/s ETA 00:41
+worker-1  | [2025-11-05 13:35:45,371: WARNING/ForkPoolWorker-1] [download]  20.2% of  203.04MiB at    1.99MiB/s ETA 01:21
+worker-1  | [2025-11-05 13:35:45,636: WARNING/ForkPoolWorker-1] [download]  20.9% of  203.04MiB at    2.62MiB/s ETA 01:01
+worker-1  | [2025-11-05 13:35:45,636: INFO/ForkPoolWorker-1] 📥 Download: 20.9% of 203.0MB at 4.8MB/s ETA 34s
+worker-1  | [2025-11-05 13:35:45,940: WARNING/ForkPoolWorker-1] [download]  22.2% of  203.04MiB at    3.80MiB/s ETA 00:41
+worker-1  | [2025-11-05 13:35:46,361: WARNING/ForkPoolWorker-1] [download]  24.0% of  203.04MiB at    4.83MiB/s ETA 00:31
+worker-1  | [2025-11-05 13:35:46,625: WARNING/ForkPoolWorker-1] [download]  24.0% of  203.04MiB at  Unknown B/s ETA Unknown
+worker-1  | [2025-11-05 13:35:46,627: WARNING/ForkPoolWorker-1] [download]  24.0% of  203.04MiB at    1.18MiB/s ETA 02:11  
+worker-1  | [2025-11-05 13:35:46,630: WARNING/ForkPoolWorker-1] [download]  24.0% of  203.04MiB at    1.47MiB/s ETA 01:45
+worker-1  | [2025-11-05 13:35:46,631: WARNING/ForkPoolWorker-1] [download]  24.0% of  203.04MiB at    2.17MiB/s ETA 01:11
+worker-1  | [2025-11-05 13:35:46,632: WARNING/ForkPoolWorker-1] [download]  24.0% of  203.04MiB at    4.03MiB/s ETA 00:38
+worker-1  | [2025-11-05 13:35:46,636: WARNING/ForkPoolWorker-1] [download]  24.0% of  203.04MiB at    5.46MiB/s ETA 00:28
+worker-1  | [2025-11-05 13:35:46,671: WARNING/ForkPoolWorker-1] [download]  24.1% of  203.04MiB at    2.68MiB/s ETA 00:57
+worker-1  | [2025-11-05 13:35:46,707: WARNING/ForkPoolWorker-1] [download]  24.1% of  203.04MiB at    3.04MiB/s ETA 00:50
+worker-1  | [2025-11-05 13:35:46,782: WARNING/ForkPoolWorker-1] [download]  24.2% of  203.04MiB at    3.18MiB/s ETA 00:48
+worker-1  | [2025-11-05 13:35:46,889: WARNING/ForkPoolWorker-1] [download]  24.5% of  203.04MiB at    3.78MiB/s ETA 00:40
+worker-1  | [2025-11-05 13:35:47,099: WARNING/ForkPoolWorker-1] [download]  25.0% of  203.04MiB at    4.22MiB/s ETA 00:36
+worker-1  | [2025-11-05 13:35:47,338: WARNING/ForkPoolWorker-1] [download]  26.0% of  203.04MiB at    5.61MiB/s ETA 00:26
+worker-1  | [2025-11-05 13:35:47,850: WARNING/ForkPoolWorker-1] [download]  27.9% of  203.04MiB at    6.53MiB/s ETA 00:22
+worker-1  | [2025-11-05 13:35:47,850: INFO/ForkPoolWorker-1] 📥 Download: 27.9% of 203.0MB at 5.3MB/s ETA 28s
+worker-1  | [2025-11-05 13:35:48,111: WARNING/ForkPoolWorker-1] [download]  28.8% of  203.04MiB at    6.52MiB/s ETA 00:22
+worker-1  | [2025-11-05 13:35:48,302: WARNING/ForkPoolWorker-1] [download]  28.8% of  203.04MiB at  Unknown B/s ETA Unknown
+worker-1  | [2025-11-05 13:35:48,305: WARNING/ForkPoolWorker-1] [download]  28.8% of  203.04MiB at    1.04MiB/s ETA 02:20  
+worker-1  | [2025-11-05 13:35:48,306: WARNING/ForkPoolWorker-1] [download]  28.8% of  203.04MiB at    1.58MiB/s ETA 01:31
+worker-1  | [2025-11-05 13:35:48,308: WARNING/ForkPoolWorker-1] [download]  28.8% of  203.04MiB at    2.25MiB/s ETA 01:04
+worker-1  | [2025-11-05 13:35:48,309: WARNING/ForkPoolWorker-1] [download]  28.8% of  203.04MiB at    4.04MiB/s ETA 00:35
+worker-1  | [2025-11-05 13:35:48,325: WARNING/ForkPoolWorker-1] [download]  28.8% of  203.04MiB at    2.67MiB/s ETA 00:54
+worker-1  | [2025-11-05 13:35:48,339: WARNING/ForkPoolWorker-1] [download]  28.8% of  203.04MiB at    3.36MiB/s ETA 00:43
+worker-1  | [2025-11-05 13:35:48,382: WARNING/ForkPoolWorker-1] [download]  28.9% of  203.04MiB at    3.13MiB/s ETA 00:46
+worker-1  | [2025-11-05 13:35:48,452: WARNING/ForkPoolWorker-1] [download]  29.0% of  203.04MiB at    3.32MiB/s ETA 00:43
+worker-1  | [2025-11-05 13:35:48,558: WARNING/ForkPoolWorker-1] [download]  29.3% of  203.04MiB at    3.90MiB/s ETA 00:36
+worker-1  | [2025-11-05 13:35:48,742: WARNING/ForkPoolWorker-1] [download]  29.8% of  203.04MiB at    4.55MiB/s ETA 00:31
+worker-1  | [2025-11-05 13:35:49,127: WARNING/ForkPoolWorker-1] [download]  30.7% of  203.04MiB at    4.85MiB/s ETA 00:29
+worker-1  | [2025-11-05 13:35:49,702: WARNING/ForkPoolWorker-1] [download]  32.7% of  203.04MiB at    5.71MiB/s ETA 00:23
+worker-1  | [2025-11-05 13:35:49,917: WARNING/ForkPoolWorker-1] [download]  33.6% of  203.04MiB at    6.11MiB/s ETA 00:22
+worker-1  | [2025-11-05 13:35:49,918: INFO/ForkPoolWorker-1] 📥 Download: 33.6% of 203.0MB at 5.4MB/s ETA 25s
+worker-1  | [2025-11-05 13:35:50,238: WARNING/ForkPoolWorker-1] [download]  33.6% of  203.04MiB at  113.78KiB/s ETA 20:15
+worker-1  | [2025-11-05 13:35:50,241: WARNING/ForkPoolWorker-1] [download]  33.6% of  203.04MiB at  217.35KiB/s ETA 10:35
+worker-1  | [2025-11-05 13:35:50,244: WARNING/ForkPoolWorker-1] [download]  33.6% of  203.04MiB at  424.71KiB/s ETA 05:25
+worker-1  | [2025-11-05 13:35:50,247: WARNING/ForkPoolWorker-1] [download]  33.6% of  203.04MiB at  775.37KiB/s ETA 02:58
+worker-1  | [2025-11-05 13:35:50,249: WARNING/ForkPoolWorker-1] [download]  33.6% of  203.04MiB at    1.41MiB/s ETA 01:35
+worker-1  | [2025-11-05 13:35:50,251: WARNING/ForkPoolWorker-1] [download]  33.7% of  203.04MiB at    2.65MiB/s ETA 00:50
+worker-1  | [2025-11-05 13:35:50,290: WARNING/ForkPoolWorker-1] [download]  33.7% of  203.04MiB at    1.98MiB/s ETA 01:07
+worker-1  | [2025-11-05 13:35:50,328: WARNING/ForkPoolWorker-1] [download]  33.8% of  203.04MiB at    2.50MiB/s ETA 00:53
+worker-1  | [2025-11-05 13:35:50,381: WARNING/ForkPoolWorker-1] [download]  33.9% of  203.04MiB at    3.27MiB/s ETA 00:41
+worker-1  | [2025-11-05 13:35:50,657: WARNING/ForkPoolWorker-1] [download]  34.1% of  203.04MiB at    2.33MiB/s ETA 00:57
+worker-1  | [2025-11-05 13:35:51,367: WARNING/ForkPoolWorker-1] [download]  34.6% of  203.04MiB at    1.75MiB/s ETA 01:15
+worker-1  | [2025-11-05 13:35:51,793: WARNING/ForkPoolWorker-1] [download]  35.3% of  203.04MiB at    2.18MiB/s ETA 01:00
+worker-1  | [2025-11-05 13:35:52,667: WARNING/ForkPoolWorker-1] [download]  36.7% of  203.04MiB at    2.55MiB/s ETA 00:50
+worker-1  | [2025-11-05 13:35:52,667: INFO/ForkPoolWorker-1] 📥 Download: 36.7% of 203.0MB at 4.4MB/s ETA 29s
+worker-1  | [2025-11-05 13:35:53,379: WARNING/ForkPoolWorker-1] [download]  38.3% of  203.04MiB at    3.00MiB/s ETA 00:41
+worker-1  | [2025-11-05 13:35:53,486: WARNING/ForkPoolWorker-1] [download]  38.5% of  203.04MiB at    3.05MiB/s ETA 00:40
+worker-1  | [2025-11-05 13:35:53,638: WARNING/ForkPoolWorker-1] [download]  38.5% of  203.04MiB at  Unknown B/s ETA Unknown
+worker-1  | [2025-11-05 13:35:53,640: WARNING/ForkPoolWorker-1] [download]  38.5% of  203.04MiB at    1.00MiB/s ETA 02:05  
+worker-1  | [2025-11-05 13:35:53,643: WARNING/ForkPoolWorker-1] [download]  38.5% of  203.04MiB at    1.16MiB/s ETA 01:48
+worker-1  | [2025-11-05 13:35:53,646: WARNING/ForkPoolWorker-1] [download]  38.5% of  203.04MiB at    1.61MiB/s ETA 01:17
+worker-1  | [2025-11-05 13:35:53,647: WARNING/ForkPoolWorker-1] [download]  38.5% of  203.04MiB at    2.91MiB/s ETA 00:42
+worker-1  | [2025-11-05 13:35:53,651: WARNING/ForkPoolWorker-1] [download]  38.6% of  203.04MiB at    4.26MiB/s ETA 00:29
+worker-1  | [2025-11-05 13:35:53,681: WARNING/ForkPoolWorker-1] [download]  38.6% of  203.04MiB at    2.85MiB/s ETA 00:43
+worker-1  | [2025-11-05 13:35:53,709: WARNING/ForkPoolWorker-1] [download]  38.6% of  203.04MiB at    3.44MiB/s ETA 00:36
+worker-1  | [2025-11-05 13:35:53,793: WARNING/ForkPoolWorker-1] [download]  38.8% of  203.04MiB at    3.20MiB/s ETA 00:38
+worker-1  | [2025-11-05 13:35:53,860: WARNING/ForkPoolWorker-1] [download]  39.0% of  203.04MiB at    4.49MiB/s ETA 00:27
+worker-1  | [2025-11-05 13:35:53,980: WARNING/ForkPoolWorker-1] [download]  39.5% of  203.04MiB at    5.84MiB/s ETA 00:21
+worker-1  | [2025-11-05 13:35:54,250: WARNING/ForkPoolWorker-1] [download]  40.5% of  203.04MiB at    6.53MiB/s ETA 00:18
+worker-1  | [2025-11-05 13:35:54,857: WARNING/ForkPoolWorker-1] [download]  42.5% of  203.04MiB at    6.56MiB/s ETA 00:17
+worker-1  | [2025-11-05 13:35:54,857: INFO/ForkPoolWorker-1] 📥 Download: 42.5% of 203.0MB at 4.7MB/s ETA 25s
+worker-1  | [2025-11-05 13:35:55,209: WARNING/ForkPoolWorker-1] [download]  43.4% of  203.04MiB at    6.28MiB/s ETA 00:18
+worker-1  | [2025-11-05 13:35:55,387: WARNING/ForkPoolWorker-1] [download]  43.4% of  203.04MiB at  Unknown B/s ETA Unknown
+worker-1  | [2025-11-05 13:35:55,389: WARNING/ForkPoolWorker-1] [download]  43.4% of  203.04MiB at    1.00MiB/s ETA 01:55  
+worker-1  | [2025-11-05 13:35:55,392: WARNING/ForkPoolWorker-1] [download]  43.4% of  203.04MiB at    1.17MiB/s ETA 01:38
+worker-1  | [2025-11-05 13:35:55,394: WARNING/ForkPoolWorker-1] [download]  43.4% of  203.04MiB at    1.85MiB/s ETA 01:02
+worker-1  | [2025-11-05 13:35:55,395: WARNING/ForkPoolWorker-1] [download]  43.4% of  203.04MiB at    3.31MiB/s ETA 00:34
+worker-1  | [2025-11-05 13:35:55,397: WARNING/ForkPoolWorker-1] [download]  43.4% of  203.04MiB at    5.46MiB/s ETA 00:21
+worker-1  | [2025-11-05 13:35:55,420: WARNING/ForkPoolWorker-1] [download]  43.4% of  203.04MiB at    3.69MiB/s ETA 00:31
+worker-1  | [2025-11-05 13:35:55,456: WARNING/ForkPoolWorker-1] [download]  43.5% of  203.04MiB at    3.58MiB/s ETA 00:32
+worker-1  | [2025-11-05 13:35:55,523: WARNING/ForkPoolWorker-1] [download]  43.6% of  203.04MiB at    3.67MiB/s ETA 00:31
+worker-1  | [2025-11-05 13:35:55,601: WARNING/ForkPoolWorker-1] [download]  43.9% of  203.04MiB at    4.66MiB/s ETA 00:24
+worker-1  | [2025-11-05 13:35:55,717: WARNING/ForkPoolWorker-1] [download]  44.4% of  203.04MiB at    6.04MiB/s ETA 00:18
+worker-1  | [2025-11-05 13:35:56,082: WARNING/ForkPoolWorker-1] [download]  45.4% of  203.04MiB at    5.74MiB/s ETA 00:19
+worker-1  | [2025-11-05 13:35:56,626: WARNING/ForkPoolWorker-1] [download]  47.3% of  203.04MiB at    6.45MiB/s ETA 00:16
+worker-1  | [2025-11-05 13:35:56,852: WARNING/ForkPoolWorker-1] [download]  48.2% of  203.04MiB at    6.60MiB/s ETA 00:15
+worker-1  | [2025-11-05 13:35:57,029: WARNING/ForkPoolWorker-1] [download]  48.2% of  203.04MiB at  Unknown B/s ETA Unknown
+worker-1  | [2025-11-05 13:35:57,029: INFO/ForkPoolWorker-1] 📥 Download: 48.2% of 203.0MB at 4.9MB/s ETA 21s
+worker-1  | [2025-11-05 13:35:57,032: WARNING/ForkPoolWorker-1] [download]  48.2% of  203.04MiB at  751.17KiB/s ETA 02:23  
+worker-1  | [2025-11-05 13:35:57,034: WARNING/ForkPoolWorker-1] [download]  48.2% of  203.04MiB at    1.13MiB/s ETA 01:33
+worker-1  | [2025-11-05 13:35:57,036: WARNING/ForkPoolWorker-1] [download]  48.2% of  203.04MiB at    1.68MiB/s ETA 01:02
+worker-1  | [2025-11-05 13:35:57,044: WARNING/ForkPoolWorker-1] [download]  48.2% of  203.04MiB at    1.87MiB/s ETA 00:56
+worker-1  | [2025-11-05 13:35:57,048: WARNING/ForkPoolWorker-1] [download]  48.2% of  203.04MiB at    3.01MiB/s ETA 00:34
+worker-1  | [2025-11-05 13:35:57,069: WARNING/ForkPoolWorker-1] [download]  48.2% of  203.04MiB at    2.97MiB/s ETA 00:35
+worker-1  | [2025-11-05 13:35:57,137: WARNING/ForkPoolWorker-1] [download]  48.3% of  203.04MiB at    2.31MiB/s ETA 00:45
+worker-1  | [2025-11-05 13:35:57,226: WARNING/ForkPoolWorker-1] [download]  48.4% of  203.04MiB at    2.52MiB/s ETA 00:41
+worker-1  | [2025-11-05 13:35:57,309: WARNING/ForkPoolWorker-1] [download]  48.6% of  203.04MiB at    3.56MiB/s ETA 00:29
+worker-1  | [2025-11-05 13:35:57,442: WARNING/ForkPoolWorker-1] [download]  49.1% of  203.04MiB at    4.83MiB/s ETA 00:21
+worker-1  | [2025-11-05 13:35:57,758: WARNING/ForkPoolWorker-1] [download]  50.1% of  203.04MiB at    5.47MiB/s ETA 00:18
+worker-1  | [2025-11-05 13:35:58,292: WARNING/ForkPoolWorker-1] [download]  52.1% of  203.04MiB at    6.33MiB/s ETA 00:15
+worker-1  | [2025-11-05 13:35:58,526: WARNING/ForkPoolWorker-1] [download]  53.0% of  203.04MiB at    6.57MiB/s ETA 00:14
+worker-1  | [2025-11-05 13:35:58,690: WARNING/ForkPoolWorker-1] [download]  53.0% of  203.04MiB at  Unknown B/s ETA Unknown
+worker-1  | [2025-11-05 13:35:58,693: WARNING/ForkPoolWorker-1] [download]  53.0% of  203.04MiB at  962.66KiB/s ETA 01:41  
+worker-1  | [2025-11-05 13:35:58,695: WARNING/ForkPoolWorker-1] [download]  53.0% of  203.04MiB at    1.32MiB/s ETA 01:12
+worker-1  | [2025-11-05 13:35:58,698: WARNING/ForkPoolWorker-1] [download]  53.0% of  203.04MiB at    1.95MiB/s ETA 00:48
+worker-1  | [2025-11-05 13:35:58,700: WARNING/ForkPoolWorker-1] [download]  53.0% of  203.04MiB at    2.89MiB/s ETA 00:32
+worker-1  | [2025-11-05 13:35:58,715: WARNING/ForkPoolWorker-1] [download]  53.0% of  203.04MiB at    2.44MiB/s ETA 00:39
+worker-1  | [2025-11-05 13:35:58,720: WARNING/ForkPoolWorker-1] [download]  53.1% of  203.04MiB at    4.08MiB/s ETA 00:23
+worker-1  | [2025-11-05 13:35:58,773: WARNING/ForkPoolWorker-1] [download]  53.1% of  203.04MiB at    3.01MiB/s ETA 00:31
+worker-1  | [2025-11-05 13:35:58,850: WARNING/ForkPoolWorker-1] [download]  53.2% of  203.04MiB at    3.12MiB/s ETA 00:30
+worker-1  | [2025-11-05 13:35:58,954: WARNING/ForkPoolWorker-1] [download]  53.5% of  203.04MiB at    3.78MiB/s ETA 00:24
+worker-1  | [2025-11-05 13:35:59,123: WARNING/ForkPoolWorker-1] [download]  54.0% of  203.04MiB at    4.62MiB/s ETA 00:20
+worker-1  | [2025-11-05 13:35:59,124: INFO/ForkPoolWorker-1] 📥 Download: 54.0% of 203.0MB at 5.1MB/s ETA 18s
+worker-1  | [2025-11-05 13:35:59,574: WARNING/ForkPoolWorker-1] [download]  55.0% of  203.04MiB at    4.52MiB/s ETA 00:20
+worker-1  | [2025-11-05 13:36:00,666: WARNING/ForkPoolWorker-1] [download]  56.9% of  203.04MiB at    4.05MiB/s ETA 00:21
+worker-1  | [2025-11-05 13:36:00,994: WARNING/ForkPoolWorker-1] [download]  57.8% of  203.04MiB at    4.26MiB/s ETA 00:20
+worker-1  | [2025-11-05 13:36:01,155: WARNING/ForkPoolWorker-1] [download]  57.8% of  203.04MiB at  Unknown B/s ETA Unknown
+worker-1  | [2025-11-05 13:36:01,156: INFO/ForkPoolWorker-1] 📥 Download: 57.8% of 203.0MB at 4.7MB/s ETA 18s
+worker-1  | [2025-11-05 13:36:01,158: WARNING/ForkPoolWorker-1] [download]  57.8% of  203.04MiB at  804.33KiB/s ETA 01:49  
+worker-1  | [2025-11-05 13:36:01,160: WARNING/ForkPoolWorker-1] [download]  57.8% of  203.04MiB at    1.35MiB/s ETA 01:03
+worker-1  | [2025-11-05 13:36:01,168: WARNING/ForkPoolWorker-1] [download]  57.8% of  203.04MiB at    1.07MiB/s ETA 01:20
+worker-1  | [2025-11-05 13:36:01,177: WARNING/ForkPoolWorker-1] [download]  57.9% of  203.04MiB at    1.38MiB/s ETA 01:02
+worker-1  | [2025-11-05 13:36:01,185: WARNING/ForkPoolWorker-1] [download]  57.9% of  203.04MiB at    2.06MiB/s ETA 00:41
+worker-1  | [2025-11-05 13:36:01,235: WARNING/ForkPoolWorker-1] [download]  57.9% of  203.04MiB at    1.54MiB/s ETA 00:55
+worker-1  | [2025-11-05 13:36:01,306: WARNING/ForkPoolWorker-1] [download]  58.0% of  203.04MiB at    1.65MiB/s ETA 00:51
+worker-1  | [2025-11-05 13:36:01,354: WARNING/ForkPoolWorker-1] [download]  58.1% of  203.04MiB at    2.51MiB/s ETA 00:33
+worker-1  | [2025-11-05 13:36:01,454: WARNING/ForkPoolWorker-1] [download]  58.3% of  203.04MiB at    3.33MiB/s ETA 00:25
+worker-1  | [2025-11-05 13:36:01,749: WARNING/ForkPoolWorker-1] [download]  58.8% of  203.04MiB at    3.37MiB/s ETA 00:24
+worker-1  | [2025-11-05 13:36:02,596: WARNING/ForkPoolWorker-1] [download]  59.8% of  203.04MiB at    2.77MiB/s ETA 00:29
+worker-1  | [2025-11-05 13:36:03,258: WARNING/ForkPoolWorker-1] [download]  61.0% of  203.04MiB at    3.02MiB/s ETA 00:26
+worker-1  | [2025-11-05 13:36:03,258: INFO/ForkPoolWorker-1] 📥 Download: 61.0% of 203.0MB at 4.2MB/s ETA 19s
+worker-1  | [2025-11-05 13:36:04,089: WARNING/ForkPoolWorker-1] [download]  62.7% of  203.04MiB at    3.37MiB/s ETA 00:22
+worker-1  | [2025-11-05 13:36:04,244: WARNING/ForkPoolWorker-1] [download]  62.7% of  203.04MiB at  Unknown B/s ETA Unknown
+worker-1  | [2025-11-05 13:36:04,247: WARNING/ForkPoolWorker-1] [download]  62.7% of  203.04MiB at  855.22KiB/s ETA 01:30  
+worker-1  | [2025-11-05 13:36:04,249: WARNING/ForkPoolWorker-1] [download]  62.7% of  203.04MiB at    1.17MiB/s ETA 01:05
+worker-1  | [2025-11-05 13:36:04,252: WARNING/ForkPoolWorker-1] [download]  62.7% of  203.04MiB at    1.67MiB/s ETA 00:45
+worker-1  | [2025-11-05 13:36:04,253: WARNING/ForkPoolWorker-1] [download]  62.7% of  203.04MiB at    2.95MiB/s ETA 00:25
+worker-1  | [2025-11-05 13:36:04,264: WARNING/ForkPoolWorker-1] [download]  62.7% of  203.04MiB at    2.99MiB/s ETA 00:25
+worker-1  | [2025-11-05 13:36:04,279: WARNING/ForkPoolWorker-1] [download]  62.8% of  203.04MiB at    3.48MiB/s ETA 00:21
+worker-1  | [2025-11-05 13:36:04,364: WARNING/ForkPoolWorker-1] [download]  62.8% of  203.04MiB at    2.07MiB/s ETA 00:36
+worker-1  | [2025-11-05 13:36:04,398: WARNING/ForkPoolWorker-1] [download]  63.0% of  203.04MiB at    3.23MiB/s ETA 00:23
+worker-1  | [2025-11-05 13:36:04,511: WARNING/ForkPoolWorker-1] [download]  63.2% of  203.04MiB at    3.74MiB/s ETA 00:19
+worker-1  | [2025-11-05 13:36:04,659: WARNING/ForkPoolWorker-1] [download]  63.7% of  203.04MiB at    4.81MiB/s ETA 00:15
+worker-1  | [2025-11-05 13:36:04,944: WARNING/ForkPoolWorker-1] [download]  64.7% of  203.04MiB at    5.71MiB/s ETA 00:12
+worker-1  | [2025-11-05 13:36:05,933: WARNING/ForkPoolWorker-1] [download]  66.7% of  203.04MiB at    4.73MiB/s ETA 00:14
+worker-1  | [2025-11-05 13:36:05,934: INFO/ForkPoolWorker-1] 📥 Download: 66.7% of 203.0MB at 4.3MB/s ETA 16s
+worker-1  | [2025-11-05 13:36:06,247: WARNING/ForkPoolWorker-1] [download]  67.4% of  203.04MiB at    4.77MiB/s ETA 00:13
+worker-1  | [2025-11-05 13:36:06,422: WARNING/ForkPoolWorker-1] [download]  67.4% of  203.04MiB at  Unknown B/s ETA Unknown
+worker-1  | [2025-11-05 13:36:06,424: WARNING/ForkPoolWorker-1] [download]  67.4% of  203.04MiB at 1002.54KiB/s ETA 01:07  
+worker-1  | [2025-11-05 13:36:06,426: WARNING/ForkPoolWorker-1] [download]  67.4% of  203.04MiB at    1.35MiB/s ETA 00:49
+worker-1  | [2025-11-05 13:36:06,428: WARNING/ForkPoolWorker-1] [download]  67.4% of  203.04MiB at    2.24MiB/s ETA 00:29
+worker-1  | [2025-11-05 13:36:06,429: WARNING/ForkPoolWorker-1] [download]  67.4% of  203.04MiB at    3.75MiB/s ETA 00:17
+worker-1  | [2025-11-05 13:36:06,466: WARNING/ForkPoolWorker-1] [download]  67.5% of  203.04MiB at    1.38MiB/s ETA 00:47
+worker-1  | [2025-11-05 13:36:06,493: WARNING/ForkPoolWorker-1] [download]  67.5% of  203.04MiB at    1.74MiB/s ETA 00:37
+worker-1  | [2025-11-05 13:36:06,535: WARNING/ForkPoolWorker-1] [download]  67.5% of  203.04MiB at    2.19MiB/s ETA 00:30
+worker-1  | [2025-11-05 13:36:06,648: WARNING/ForkPoolWorker-1] [download]  67.7% of  203.04MiB at    2.21MiB/s ETA 00:29
+worker-1  | [2025-11-05 13:36:06,752: WARNING/ForkPoolWorker-1] [download]  67.9% of  203.04MiB at    3.03MiB/s ETA 00:21
+worker-1  | [2025-11-05 13:36:07,014: WARNING/ForkPoolWorker-1] [download]  68.4% of  203.04MiB at    3.37MiB/s ETA 00:19
+worker-1  | [2025-11-05 13:36:07,470: WARNING/ForkPoolWorker-1] [download]  69.4% of  203.04MiB at    3.81MiB/s ETA 00:16
+worker-1  | [2025-11-05 13:36:08,310: WARNING/ForkPoolWorker-1] [download]  71.4% of  203.04MiB at    4.24MiB/s ETA 00:13
+worker-1  | [2025-11-05 13:36:08,310: INFO/ForkPoolWorker-1] 📥 Download: 71.4% of 203.0MB at 4.2MB/s ETA 14s
+worker-1  | [2025-11-05 13:36:08,671: WARNING/ForkPoolWorker-1] [download]  72.3% of  203.04MiB at    4.37MiB/s ETA 00:12
+worker-1  | [2025-11-05 13:36:08,836: WARNING/ForkPoolWorker-1] [download]  72.3% of  203.04MiB at  Unknown B/s ETA Unknown
+worker-1  | [2025-11-05 13:36:08,839: WARNING/ForkPoolWorker-1] [download]  72.3% of  203.04MiB at  843.02KiB/s ETA 01:08  
+worker-1  | [2025-11-05 13:36:08,842: WARNING/ForkPoolWorker-1] [download]  72.3% of  203.04MiB at    1.12MiB/s ETA 00:50
+worker-1  | [2025-11-05 13:36:08,844: WARNING/ForkPoolWorker-1] [download]  72.3% of  203.04MiB at    1.77MiB/s ETA 00:31
+worker-1  | [2025-11-05 13:36:08,845: WARNING/ForkPoolWorker-1] [download]  72.3% of  203.04MiB at    2.96MiB/s ETA 00:19
+worker-1  | [2025-11-05 13:36:08,863: WARNING/ForkPoolWorker-1] [download]  72.3% of  203.04MiB at    2.20MiB/s ETA 00:25
+worker-1  | [2025-11-05 13:36:08,875: WARNING/ForkPoolWorker-1] [download]  72.3% of  203.04MiB at    3.10MiB/s ETA 00:18
+worker-1  | [2025-11-05 13:36:08,934: WARNING/ForkPoolWorker-1] [download]  72.4% of  203.04MiB at    2.56MiB/s ETA 00:21
+worker-1  | [2025-11-05 13:36:09,030: WARNING/ForkPoolWorker-1] [download]  72.5% of  203.04MiB at    2.57MiB/s ETA 00:21
+worker-1  | [2025-11-05 13:36:09,125: WARNING/ForkPoolWorker-1] [download]  72.8% of  203.04MiB at    3.46MiB/s ETA 00:15
+worker-1  | [2025-11-05 13:36:09,357: WARNING/ForkPoolWorker-1] [download]  73.2% of  203.04MiB at    3.84MiB/s ETA 00:14
+worker-1  | [2025-11-05 13:36:09,894: WARNING/ForkPoolWorker-1] [download]  74.2% of  203.04MiB at    3.78MiB/s ETA 00:13
+worker-1  | [2025-11-05 13:36:11,153: WARNING/ForkPoolWorker-1] [download]  76.1% of  203.04MiB at    3.33MiB/s ETA 00:14
+worker-1  | [2025-11-05 13:36:11,153: INFO/ForkPoolWorker-1] 📥 Download: 76.1% of 203.0MB at 3.9MB/s ETA 12s
+worker-1  | [2025-11-05 13:36:11,922: WARNING/ForkPoolWorker-1] [download]  77.2% of  203.04MiB at    3.24MiB/s ETA 00:14
+worker-1  | [2025-11-05 13:36:12,096: WARNING/ForkPoolWorker-1] [download]  77.2% of  203.04MiB at  Unknown B/s ETA Unknown
+worker-1  | [2025-11-05 13:36:12,099: WARNING/ForkPoolWorker-1] [download]  77.2% of  203.04MiB at  773.14KiB/s ETA 01:01  
+worker-1  | [2025-11-05 13:36:12,102: WARNING/ForkPoolWorker-1] [download]  77.2% of  203.04MiB at    1.01MiB/s ETA 00:45
+worker-1  | [2025-11-05 13:36:12,104: WARNING/ForkPoolWorker-1] [download]  77.2% of  203.04MiB at    1.69MiB/s ETA 00:27
+worker-1  | [2025-11-05 13:36:12,109: WARNING/ForkPoolWorker-1] [download]  77.2% of  203.04MiB at    2.16MiB/s ETA 00:21
+worker-1  | [2025-11-05 13:36:12,111: WARNING/ForkPoolWorker-1] [download]  77.2% of  203.04MiB at    3.99MiB/s ETA 00:11
+worker-1  | [2025-11-05 13:36:12,202: WARNING/ForkPoolWorker-1] [download]  77.2% of  203.04MiB at    1.16MiB/s ETA 00:39
+worker-1  | [2025-11-05 13:36:12,269: WARNING/ForkPoolWorker-1] [download]  77.3% of  203.04MiB at    1.44MiB/s ETA 00:32
+worker-1  | [2025-11-05 13:36:12,326: WARNING/ForkPoolWorker-1] [download]  77.4% of  203.04MiB at    2.17MiB/s ETA 00:21
+worker-1  | [2025-11-05 13:36:12,428: WARNING/ForkPoolWorker-1] [download]  77.7% of  203.04MiB at    3.01MiB/s ETA 00:15
+worker-1  | [2025-11-05 13:36:12,585: WARNING/ForkPoolWorker-1] [download]  78.2% of  203.04MiB at    4.09MiB/s ETA 00:10
+worker-1  | [2025-11-05 13:36:12,962: WARNING/ForkPoolWorker-1] [download]  79.2% of  203.04MiB at    4.62MiB/s ETA 00:09
+worker-1  | [2025-11-05 13:36:13,805: WARNING/ForkPoolWorker-1] [download]  81.1% of  203.04MiB at    4.68MiB/s ETA 00:08
+worker-1  | [2025-11-05 13:36:13,805: INFO/ForkPoolWorker-1] 📥 Download: 81.1% of 203.0MB at 3.9MB/s ETA 10s
+worker-1  | [2025-11-05 13:36:14,181: WARNING/ForkPoolWorker-1] [download]  82.0% of  203.04MiB at    4.73MiB/s ETA 00:07
+worker-1  | [2025-11-05 13:36:14,415: WARNING/ForkPoolWorker-1] [download]  82.0% of  203.04MiB at  156.09KiB/s ETA 04:00
+worker-1  | [2025-11-05 13:36:14,419: WARNING/ForkPoolWorker-1] [download]  82.0% of  203.04MiB at  266.93KiB/s ETA 02:20
+worker-1  | [2025-11-05 13:36:14,422: WARNING/ForkPoolWorker-1] [download]  82.0% of  203.04MiB at  510.74KiB/s ETA 01:13
+worker-1  | [2025-11-05 13:36:14,424: WARNING/ForkPoolWorker-1] [download]  82.0% of  203.04MiB at  921.78KiB/s ETA 00:40
+worker-1  | [2025-11-05 13:36:14,426: WARNING/ForkPoolWorker-1] [download]  82.1% of  203.04MiB at    1.69MiB/s ETA 00:21
+worker-1  | [2025-11-05 13:36:14,427: WARNING/ForkPoolWorker-1] [download]  82.1% of  203.04MiB at    3.18MiB/s ETA 00:11
+worker-1  | [2025-11-05 13:36:14,459: WARNING/ForkPoolWorker-1] [download]  82.1% of  203.04MiB at    2.41MiB/s ETA 00:15
+worker-1  | [2025-11-05 13:36:14,537: WARNING/ForkPoolWorker-1] [download]  82.2% of  203.04MiB at    1.94MiB/s ETA 00:18
+worker-1  | [2025-11-05 13:36:14,578: WARNING/ForkPoolWorker-1] [download]  82.3% of  203.04MiB at    2.95MiB/s ETA 00:12
+worker-1  | [2025-11-05 13:36:14,663: WARNING/ForkPoolWorker-1] [download]  82.5% of  203.04MiB at    3.94MiB/s ETA 00:09
+worker-1  | [2025-11-05 13:36:14,808: WARNING/ForkPoolWorker-1] [download]  83.0% of  203.04MiB at    5.00MiB/s ETA 00:06
+worker-1  | [2025-11-05 13:36:15,478: WARNING/ForkPoolWorker-1] [download]  84.0% of  203.04MiB at    3.74MiB/s ETA 00:08
+worker-1  | [2025-11-05 13:36:16,136: WARNING/ForkPoolWorker-1] [download]  85.5% of  203.04MiB at    4.04MiB/s ETA 00:07
+worker-1  | [2025-11-05 13:36:16,137: INFO/ForkPoolWorker-1] 📥 Download: 85.5% of 203.0MB at 3.9MB/s ETA 8s
+worker-1  | [2025-11-05 13:36:16,648: WARNING/ForkPoolWorker-1] [download]  86.9% of  203.04MiB at    4.37MiB/s ETA 00:06
+worker-1  | [2025-11-05 13:36:16,839: WARNING/ForkPoolWorker-1] [download]  86.9% of  203.04MiB at  Unknown B/s ETA Unknown
+worker-1  | [2025-11-05 13:36:16,842: WARNING/ForkPoolWorker-1] [download]  86.9% of  203.04MiB at  649.21KiB/s ETA 00:42  
+worker-1  | [2025-11-05 13:36:16,844: WARNING/ForkPoolWorker-1] [download]  86.9% of  203.04MiB at 1019.56KiB/s ETA 00:26
+worker-1  | [2025-11-05 13:36:16,847: WARNING/ForkPoolWorker-1] [download]  86.9% of  203.04MiB at    1.55MiB/s ETA 00:17
+worker-1  | [2025-11-05 13:36:16,849: WARNING/ForkPoolWorker-1] [download]  86.9% of  203.04MiB at    2.66MiB/s ETA 00:10
+worker-1  | [2025-11-05 13:36:16,857: WARNING/ForkPoolWorker-1] [download]  86.9% of  203.04MiB at    3.15MiB/s ETA 00:08
+worker-1  | [2025-11-05 13:36:16,896: WARNING/ForkPoolWorker-1] [download]  86.9% of  203.04MiB at    2.13MiB/s ETA 00:12
+worker-1  | [2025-11-05 13:36:16,979: WARNING/ForkPoolWorker-1] [download]  87.0% of  203.04MiB at    1.77MiB/s ETA 00:14
+worker-1  | [2025-11-05 13:36:17,051: WARNING/ForkPoolWorker-1] [download]  87.1% of  203.04MiB at    2.34MiB/s ETA 00:11
+worker-1  | [2025-11-05 13:36:17,265: WARNING/ForkPoolWorker-1] [download]  87.3% of  203.04MiB at    2.34MiB/s ETA 00:10
+worker-1  | [2025-11-05 13:36:17,628: WARNING/ForkPoolWorker-1] [download]  87.8% of  203.04MiB at    2.53MiB/s ETA 00:09
+worker-1  | [2025-11-05 13:36:18,297: WARNING/ForkPoolWorker-1] [download]  88.8% of  203.04MiB at    2.74MiB/s ETA 00:08
+worker-1  | [2025-11-05 13:36:18,297: INFO/ForkPoolWorker-1] 📥 Download: 88.8% of 203.0MB at 3.7MB/s ETA 6s
+worker-1  | [2025-11-05 13:36:19,249: WARNING/ForkPoolWorker-1] [download]  90.3% of  203.04MiB at    2.90MiB/s ETA 00:06
+worker-1  | [2025-11-05 13:36:20,149: WARNING/ForkPoolWorker-1] [download]  91.8% of  203.04MiB at    3.02MiB/s ETA 00:05
+worker-1  | [2025-11-05 13:36:20,306: WARNING/ForkPoolWorker-1] [download]  91.8% of  203.04MiB at  Unknown B/s ETA Unknown
+worker-1  | [2025-11-05 13:36:20,307: INFO/ForkPoolWorker-1] 📥 Download: 91.8% of 203.0MB at 3.5MB/s ETA 5s
+worker-1  | [2025-11-05 13:36:20,310: WARNING/ForkPoolWorker-1] [download]  91.8% of  203.04MiB at  668.77KiB/s ETA 00:25  
+worker-1  | [2025-11-05 13:36:20,317: WARNING/ForkPoolWorker-1] [download]  91.8% of  203.04MiB at  625.14KiB/s ETA 00:27
+worker-1  | [2025-11-05 13:36:20,319: WARNING/ForkPoolWorker-1] [download]  91.8% of  203.04MiB at    1.12MiB/s ETA 00:14
+worker-1  | [2025-11-05 13:36:20,320: WARNING/ForkPoolWorker-1] [download]  91.8% of  203.04MiB at    2.10MiB/s ETA 00:07
+worker-1  | [2025-11-05 13:36:20,329: WARNING/ForkPoolWorker-1] [download]  91.8% of  203.04MiB at    2.65MiB/s ETA 00:06
+worker-1  | [2025-11-05 13:36:20,376: WARNING/ForkPoolWorker-1] [download]  91.8% of  203.04MiB at    1.77MiB/s ETA 00:09
+worker-1  | [2025-11-05 13:36:20,464: WARNING/ForkPoolWorker-1] [download]  91.9% of  203.04MiB at    1.57MiB/s ETA 00:10
+worker-1  | [2025-11-05 13:36:20,556: WARNING/ForkPoolWorker-1] [download]  92.0% of  203.04MiB at    1.99MiB/s ETA 00:08
+worker-1  | [2025-11-05 13:36:20,679: WARNING/ForkPoolWorker-1] [download]  92.3% of  203.04MiB at    2.68MiB/s ETA 00:05
+worker-1  | [2025-11-05 13:36:20,835: WARNING/ForkPoolWorker-1] [download]  92.8% of  203.04MiB at    3.78MiB/s ETA 00:03
+worker-1  | [2025-11-05 13:36:21,107: WARNING/ForkPoolWorker-1] [download]  93.8% of  203.04MiB at    4.99MiB/s ETA 00:02
+worker-1  | [2025-11-05 13:36:21,593: WARNING/ForkPoolWorker-1] [download]  95.7% of  203.04MiB at    6.22MiB/s ETA 00:01
+worker-1  | [2025-11-05 13:36:21,805: WARNING/ForkPoolWorker-1] [download]  96.6% of  203.04MiB at    6.49MiB/s ETA 00:01
+worker-1  | [2025-11-05 13:36:21,995: WARNING/ForkPoolWorker-1] [download]  96.6% of  203.04MiB at  620.83KiB/s ETA 00:11
+worker-1  | [2025-11-05 13:36:21,998: WARNING/ForkPoolWorker-1] [download]  96.6% of  203.04MiB at  678.58KiB/s ETA 00:10
+worker-1  | [2025-11-05 13:36:22,000: WARNING/ForkPoolWorker-1] [download]  96.6% of  203.04MiB at 1000.00KiB/s ETA 00:07
+worker-1  | [2025-11-05 13:36:22,009: WARNING/ForkPoolWorker-1] [download]  96.6% of  203.04MiB at  937.07KiB/s ETA 00:07
+worker-1  | [2025-11-05 13:36:22,015: WARNING/ForkPoolWorker-1] [download]  96.6% of  203.04MiB at    1.37MiB/s ETA 00:05
+worker-1  | [2025-11-05 13:36:22,019: WARNING/ForkPoolWorker-1] [download]  96.6% of  203.04MiB at    2.32MiB/s ETA 00:02
+worker-1  | [2025-11-05 13:36:22,046: WARNING/ForkPoolWorker-1] [download]  96.6% of  203.04MiB at    2.38MiB/s ETA 00:02
+worker-1  | [2025-11-05 13:36:22,088: WARNING/ForkPoolWorker-1] [download]  96.7% of  203.04MiB at    2.64MiB/s ETA 00:02
+worker-1  | [2025-11-05 13:36:22,155: WARNING/ForkPoolWorker-1] [download]  96.8% of  203.04MiB at    3.10MiB/s ETA 00:02
+worker-1  | [2025-11-05 13:36:22,263: WARNING/ForkPoolWorker-1] [download]  97.1% of  203.04MiB at    3.70MiB/s ETA 00:01
+worker-1  | [2025-11-05 13:36:22,529: WARNING/ForkPoolWorker-1] [download]  97.6% of  203.04MiB at    3.73MiB/s ETA 00:01
+worker-1  | [2025-11-05 13:36:22,530: INFO/ForkPoolWorker-1] 📥 Download: 97.6% of 203.0MB at 4.0MB/s ETA 1s
+worker-1  | [2025-11-05 13:36:22,892: WARNING/ForkPoolWorker-1] [download]  98.5% of  203.04MiB at    4.45MiB/s ETA 00:00
+worker-1  | [2025-11-05 13:36:23,421: WARNING/ForkPoolWorker-1] [download] 100.0% of  203.04MiB at    4.87MiB/s ETA 00:00
+worker-1  | [2025-11-05 13:36:23,424: WARNING/ForkPoolWorker-1] [download] 100% of  203.04MiB in 00:00:46 at 4.34MiB/s   
+worker-1  | [2025-11-05 13:36:23,424: INFO/ForkPoolWorker-1] 📥 Download complete: 203.0MB in 54.3s avg 3.7MB/s
+worker-1  | [2025-11-05 13:36:23,431: WARNING/ForkPoolWorker-1] 2025-11-05 13:36:23 [info     ] 🔧 Renamed file: FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie.mp4
+worker-1  | [2025-11-05 13:36:23,596: INFO/ForkPoolWorker-1] 📊 Download: 3.7MB/s avg (size: 203.0MB)
+worker-1  | [2025-11-05 13:36:23,596: WARNING/ForkPoolWorker-1] 2025-11-05 13:36:23 [info     ] ✅ Phase A download completed: FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie.mp4
+worker-1  | [2025-11-05 13:36:23,596: WARNING/ForkPoolWorker-1] 2025-11-05 13:36:23 [info     ] ✅ Downloaded: FAST CARS - Hollywood English Movie | Scott Eastwood In Superhit English Full Action Movie (1:25:50, 5,853,176 views)
+worker-1  | [2025-11-05 13:36:24,614: INFO/ForkPoolWorker-1] Task download_and_process_youtube_task[46fb9c86-f230-44d9-a9cd-dfbc997587e6] succeeded in 57.25214927599882s: {'task_id': '1c33dc11-a618-456a-bed8-5d649afd605a', 'status': 'PROCESSING', 'video_metadata': {'title': 'FAST CARS - Hollywood English Movie | Scott Eastwood In Superhit English Full Action Movie', 'duration': 5150, 'duration_string': '1:25:50', 'view_count': 5853176, 'upload_date': '20230727', 'uploader': 'Blockbuster English Movies', 'thumbnail': 'https://i.ytimg.com/vi_webp/wpHvBrIIJnA/maxresdefault.webp', 'description': 'Presenting Hollywood Movie In English (English Movies, Hollywood Movies, Action Movies In English,  Adventure Movies In English, Scott Eastwood Movies In English) "FAST CARS" Exclusively on @blockbust...', 'width': 640, 'height': 268, 'fps': 24, 'filesize': None, 'url': 'https://www.youtube.com/watch?v=wpHvBrIIJnA'}, 'user_choices': {'source_lang': 'en', 'target_lang': 'he', 'auto_create_video': True, 'whisper_model': 'medium', 'url': 'https://www.youtube.com/watch?v=wpHvBrIIJnA', 'translation_service': 'openai'}}
+worker-1  | [2025-11-05 13:36:24,618: INFO/MainProcess] Task tasks.process_video_task[1c33dc11-a618-456a-bed8-5d649afd605a] received
+worker-1  | [2025-11-05 13:36:24,786: WARNING/ForkPoolWorker-2] 2025-11-05 13:36:24 [info     ] Task started                   source_lang=en target_lang=he task_id=1c33dc11-a618-456a-bed8-5d649afd605a task_name=process_video translation_service=openai video_path=/app/downloads/FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie.mp4 whisper_model=medium
+worker-1  | [2025-11-05 13:36:25,796: WARNING/ForkPoolWorker-2] 2025-11-05 13:36:25 [info     ] 📝 Using standard transcription (no translation needed)
+worker-1  | [2025-11-05 13:36:25,881: WARNING/ForkPoolWorker-2] 2025-11-05 13:36:25 [info     ] Audio format is aac @ 44100Hz, 2ch. Re-encoding to 16kHz mono pcm_s16le.
+worker-1  | [2025-11-05 13:36:29,026: INFO/ForkPoolWorker-2] 🎯 === SMART MODEL SELECTION ===
+worker-1  | [2025-11-05 13:36:29,026: INFO/ForkPoolWorker-2] 🎵 Audio: from in-memory buffer
+worker-1  | [2025-11-05 13:36:29,026: INFO/ForkPoolWorker-2] 🌍 Language: en
+worker-1  | [2025-11-05 13:36:29,026: INFO/ForkPoolWorker-2] ⏱️ Duration: 5149.74s
+worker-1  | [2025-11-05 13:36:29,026: INFO/ForkPoolWorker-2] 🎛️ Quality preference: balanced
+worker-1  | [2025-11-05 13:36:29,026: INFO/ForkPoolWorker-2] 🔧 Model preference: medium
+worker-1  | [2025-11-05 13:36:29,026: INFO/ForkPoolWorker-2] 🎯 Using forced model: medium
+worker-1  | [2025-11-05 13:36:29,026: INFO/ForkPoolWorker-2] 🚀 === LOADING FASTER-WHISPER MODEL: MEDIUM ===
+worker-1  | [2025-11-05 13:36:29,026: INFO/ForkPoolWorker-2] 🌐 Loading medium model with faster-whisper...
+worker-1  | [2025-11-05 13:36:29,026: INFO/ForkPoolWorker-2] ⚡ This is MUCH faster than regular whisper!
+worker-1  | [2025-11-05 13:36:29,026: INFO/ForkPoolWorker-2] 💾 Using CPU-optimized compute_type: int8
+worker-1  | [2025-11-05 13:36:29,749: INFO/ForkPoolWorker-2] HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-medium/revision/main "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 13:36:31,061: INFO/ForkPoolWorker-2] ✅ Model medium loaded with faster-whisper successfully
+worker-1  | [2025-11-05 13:36:31,061: INFO/ForkPoolWorker-2] 💾 Memory-optimized settings: beam_size=2, chunk_length=30s
+worker-1  | [2025-11-05 13:36:31,061: INFO/ForkPoolWorker-2] Starting transcription with medium model
+worker-1  | [2025-11-05 13:36:31,061: INFO/ForkPoolWorker-2] 💾 Memory available before transcription: 15.7GB
+worker-1  | [2025-11-05 13:36:31,061: INFO/ForkPoolWorker-2] 📊 Transcription progress: Expected ~171 chunks of 30s each
+worker-1  | [2025-11-05 13:36:31,061: INFO/ForkPoolWorker-2] 🎙️ Starting transcription: 0s/5150s (0.0%)
+worker-1  | [2025-11-05 13:36:31,061: INFO/ForkPoolWorker-2] Processing audio with duration 01:25:49.745
+worker-1  | [2025-11-05 13:36:39,851: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 39s/5150s (0.8%)
+worker-1  | [2025-11-05 13:36:43,260: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 61s/5150s (1.2%)
+worker-1  | [2025-11-05 13:36:47,520: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 101s/5150s (2.0%)
+worker-1  | [2025-11-05 13:36:53,097: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 127s/5150s (2.5%)
+worker-1  | [2025-11-05 13:36:56,220: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 148s/5150s (2.9%)
+worker-1  | [2025-11-05 13:37:03,669: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 259s/5150s (5.0%)
+worker-1  | [2025-11-05 13:37:15,425: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 351s/5150s (6.8%)
+worker-1  | [2025-11-05 13:37:19,323: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 408s/5150s (7.9%)
+worker-1  | [2025-11-05 13:37:23,780: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 428s/5150s (8.3%)
+worker-1  | [2025-11-05 13:37:27,673: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 461s/5150s (9.0%)
+worker-1  | [2025-11-05 13:37:32,501: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 484s/5150s (9.4%)
+worker-1  | [2025-11-05 13:37:36,442: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 507s/5150s (9.9%)
+worker-1  | [2025-11-05 13:37:43,749: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 559s/5150s (10.9%)
+worker-1  | [2025-11-05 13:37:47,081: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 583s/5150s (11.3%)
+worker-1  | [2025-11-05 13:37:53,063: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 658s/5150s (12.8%)
+worker-1  | [2025-11-05 13:37:56,811: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 691s/5150s (13.4%)
+worker-1  | [2025-11-05 13:38:01,168: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 715s/5150s (13.9%)
+worker-1  | [2025-11-05 13:38:05,410: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 740s/5150s (14.4%)
+worker-1  | [2025-11-05 13:38:08,707: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 764s/5150s (14.8%)
+worker-1  | [2025-11-05 13:38:15,714: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 820s/5150s (15.9%)
+worker-1  | [2025-11-05 13:38:19,445: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 843s/5150s (16.4%)
+worker-1  | [2025-11-05 13:38:34,417: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 866s/5150s (16.8%)
+worker-1  | [2025-11-05 13:38:34,419: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 883s/5150s (17.1%)
+worker-1  | [2025-11-05 13:38:39,149: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 900s/5150s (17.5%)
+worker-1  | [2025-11-05 13:38:43,116: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 932s/5150s (18.1%)
+worker-1  | [2025-11-05 13:38:46,236: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 970s/5150s (18.8%)
+worker-1  | [2025-11-05 13:38:53,765: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1005s/5150s (19.5%)
+worker-1  | [2025-11-05 13:38:53,768: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1028s/5150s (20.0%)
+worker-1  | [2025-11-05 13:39:00,744: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1063s/5150s (20.6%)
+worker-1  | [2025-11-05 13:39:05,001: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1100s/5150s (21.4%)
+worker-1  | [2025-11-05 13:39:09,522: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1119s/5150s (21.7%)
+worker-1  | [2025-11-05 13:39:13,640: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1144s/5150s (22.2%)
+worker-1  | [2025-11-05 13:39:16,826: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1182s/5150s (22.9%)
+worker-1  | [2025-11-05 13:39:21,358: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1204s/5150s (23.4%)
+worker-1  | [2025-11-05 13:39:26,466: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1227s/5150s (23.8%)
+worker-1  | [2025-11-05 13:39:26,469: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1249s/5150s (24.2%)
+worker-1  | [2025-11-05 13:39:34,428: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1283s/5150s (24.9%)
+worker-1  | [2025-11-05 13:39:34,431: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1308s/5150s (25.4%)
+worker-1  | [2025-11-05 13:39:42,072: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1341s/5150s (26.0%)
+worker-1  | [2025-11-05 13:39:42,075: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1362s/5150s (26.4%)
+worker-1  | [2025-11-05 13:39:48,416: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1410s/5150s (27.4%)
+worker-1  | [2025-11-05 13:39:52,336: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1452s/5150s (28.2%)
+worker-1  | [2025-11-05 13:39:56,852: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1481s/5150s (28.8%)
+worker-1  | [2025-11-05 13:40:04,792: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1517s/5150s (29.5%)
+worker-1  | [2025-11-05 13:40:04,795: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1538s/5150s (29.9%)
+worker-1  | [2025-11-05 13:40:12,357: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1580s/5150s (30.7%)
+worker-1  | [2025-11-05 13:40:17,660: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1600s/5150s (31.1%)
+worker-1  | [2025-11-05 13:40:17,663: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1620s/5150s (31.5%)
+worker-1  | [2025-11-05 13:40:23,864: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1678s/5150s (32.6%)
+worker-1  | [2025-11-05 13:40:28,356: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1700s/5150s (33.0%)
+worker-1  | [2025-11-05 13:40:32,199: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1731s/5150s (33.6%)
+worker-1  | [2025-11-05 13:40:38,832: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1768s/5150s (34.3%)
+worker-1  | [2025-11-05 13:40:43,571: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1803s/5150s (35.0%)
+worker-1  | [2025-11-05 13:40:47,319: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1823s/5150s (35.4%)
+worker-1  | [2025-11-05 13:40:51,483: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1858s/5150s (36.1%)
+worker-1  | [2025-11-05 13:40:56,050: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1881s/5150s (36.5%)
+worker-1  | [2025-11-05 13:40:56,052: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1900s/5150s (36.9%)
+worker-1  | [2025-11-05 13:41:01,447: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1951s/5150s (37.9%)
+worker-1  | [2025-11-05 13:41:05,403: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 1985s/5150s (38.5%)
+worker-1  | [2025-11-05 13:41:08,981: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 2014s/5150s (39.1%)
+worker-1  | [2025-11-05 13:41:23,842: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 2182s/5150s (42.4%)
+worker-1  | [2025-11-05 13:41:32,222: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 2264s/5150s (44.0%)
+worker-1  | [2025-11-05 13:41:36,471: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 2289s/5150s (44.5%)
+worker-1  | [2025-11-05 13:41:36,474: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 2308s/5150s (44.8%)
+worker-1  | [2025-11-05 13:41:39,868: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 2334s/5150s (45.3%)
+worker-1  | [2025-11-05 13:41:44,054: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 2364s/5150s (45.9%)
+worker-1  | [2025-11-05 13:41:51,367: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 2406s/5150s (46.7%)
+worker-1  | [2025-11-05 13:41:55,453: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 2428s/5150s (47.2%)
+worker-1  | [2025-11-05 13:41:58,095: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 2454s/5150s (47.7%)
+worker-1  | [2025-11-05 13:42:21,092: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 2515s/5150s (48.8%)
+worker-1  | [2025-11-05 13:42:27,926: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 2568s/5150s (49.9%)
+worker-1  | [2025-11-05 13:42:35,078: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 2622s/5150s (50.9%)
+worker-1  | [2025-11-05 13:42:41,889: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 2692s/5150s (52.3%)
+worker-1  | [2025-11-05 13:42:52,500: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 2759s/5150s (53.6%)
+worker-1  | [2025-11-05 13:43:03,340: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 2868s/5150s (55.7%)
+worker-1  | [2025-11-05 13:43:17,401: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 3055s/5150s (59.3%)
+worker-1  | [2025-11-05 13:43:24,647: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 3115s/5150s (60.5%)
+worker-1  | [2025-11-05 13:43:33,048: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 3186s/5150s (61.9%)
+worker-1  | [2025-11-05 13:43:44,798: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 3277s/5150s (63.6%)
+worker-1  | [2025-11-05 13:43:55,312: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 3381s/5150s (65.7%)
+worker-1  | [2025-11-05 13:44:08,180: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 3504s/5150s (68.0%)
+worker-1  | [2025-11-05 13:44:14,320: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 3577s/5150s (69.5%)
+worker-1  | [2025-11-05 13:44:25,283: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 3701s/5150s (71.9%)
+worker-1  | [2025-11-05 13:44:39,553: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 3831s/5150s (74.4%)
+worker-1  | [2025-11-05 13:44:53,742: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 3952s/5150s (76.8%)
+worker-1  | [2025-11-05 13:45:03,076: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 4024s/5150s (78.1%)
+worker-1  | [2025-11-05 13:45:11,232: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 4086s/5150s (79.3%)
+worker-1  | [2025-11-05 13:45:19,579: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 4175s/5150s (81.1%)
+worker-1  | [2025-11-05 13:45:24,873: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 4250s/5150s (82.5%)
+worker-1  | [2025-11-05 13:45:30,963: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 4308s/5150s (83.7%)
+worker-1  | [2025-11-05 13:45:56,076: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 4548s/5150s (88.3%)
+worker-1  | [2025-11-05 13:46:06,964: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 4658s/5150s (90.5%)
+worker-1  | [2025-11-05 13:46:30,503: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 4750s/5150s (92.2%)
+worker-1  | [2025-11-05 13:46:43,924: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 4921s/5150s (95.6%)
+worker-1  | [2025-11-05 13:46:43,925: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 4927s/5150s (95.7%)
+worker-1  | [2025-11-05 13:46:43,925: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 4932s/5150s (95.8%)
+worker-1  | [2025-11-05 13:46:46,522: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 4938s/5150s (95.9%)
+worker-1  | [2025-11-05 13:46:46,522: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 4939s/5150s (95.9%)
+worker-1  | [2025-11-05 13:46:46,523: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 4961s/5150s (96.3%)
+worker-1  | [2025-11-05 13:46:46,523: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 4962s/5150s (96.3%)
+worker-1  | [2025-11-05 13:46:49,216: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 4972s/5150s (96.5%)
+worker-1  | [2025-11-05 13:46:49,216: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 4973s/5150s (96.6%)
+worker-1  | [2025-11-05 13:46:49,217: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 4975s/5150s (96.6%)
+worker-1  | [2025-11-05 13:46:52,001: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5005s/5150s (97.2%)
+worker-1  | [2025-11-05 13:46:52,002: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5009s/5150s (97.3%)
+worker-1  | [2025-11-05 13:46:52,003: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5012s/5150s (97.3%)
+worker-1  | [2025-11-05 13:46:55,781: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5028s/5150s (97.6%)
+worker-1  | [2025-11-05 13:46:55,781: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5030s/5150s (97.7%)
+worker-1  | [2025-11-05 13:46:55,781: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5032s/5150s (97.7%)
+worker-1  | [2025-11-05 13:46:55,782: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5035s/5150s (97.8%)
+worker-1  | [2025-11-05 13:46:55,782: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5036s/5150s (97.8%)
+worker-1  | [2025-11-05 13:46:55,783: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5040s/5150s (97.9%)
+worker-1  | [2025-11-05 13:46:55,783: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5044s/5150s (97.9%)
+worker-1  | [2025-11-05 13:46:58,970: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5065s/5150s (98.4%)
+worker-1  | [2025-11-05 13:46:58,971: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5067s/5150s (98.4%)
+worker-1  | [2025-11-05 13:46:58,971: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5073s/5150s (98.5%)
+worker-1  | [2025-11-05 13:46:58,972: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5074s/5150s (98.5%)
+worker-1  | [2025-11-05 13:46:58,972: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5076s/5150s (98.6%)
+worker-1  | [2025-11-05 13:46:58,972: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5079s/5150s (98.6%)
+worker-1  | [2025-11-05 13:47:02,869: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5091s/5150s (98.9%)
+worker-1  | [2025-11-05 13:47:02,869: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5100s/5150s (99.0%)
+worker-1  | [2025-11-05 13:47:02,869: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5103s/5150s (99.1%)
+worker-1  | [2025-11-05 13:47:02,870: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5105s/5150s (99.1%)
+worker-1  | [2025-11-05 13:47:02,870: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5111s/5150s (99.2%)
+worker-1  | [2025-11-05 13:47:06,338: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5115s/5150s (99.3%)
+worker-1  | [2025-11-05 13:47:06,339: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5115s/5150s (99.3%)
+worker-1  | [2025-11-05 13:47:06,339: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5118s/5150s (99.4%)
+worker-1  | [2025-11-05 13:47:06,339: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5121s/5150s (99.4%)
+worker-1  | [2025-11-05 13:47:06,339: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5123s/5150s (99.5%)
+worker-1  | [2025-11-05 13:47:06,340: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5126s/5150s (99.5%)
+worker-1  | [2025-11-05 13:47:06,340: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5128s/5150s (99.6%)
+worker-1  | [2025-11-05 13:47:06,341: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5130s/5150s (99.6%)
+worker-1  | [2025-11-05 13:47:09,504: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5142s/5150s (99.9%)
+worker-1  | [2025-11-05 13:47:09,504: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5145s/5150s (99.9%)
+worker-1  | [2025-11-05 13:47:09,505: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5148s/5150s (100.0%)
+worker-1  | [2025-11-05 13:47:09,505: INFO/ForkPoolWorker-2] 🎙️ Transcription progress: 5149s/5150s (100.0%)
+worker-1  | [2025-11-05 13:47:09,507: INFO/ForkPoolWorker-2] Transcription completed with medium model. Detected language: en
+worker-1  | [2025-11-05 13:47:09,507: INFO/ForkPoolWorker-2] 🧠 Transcription: 8.0× speed (model: medium, segments: 0)
+worker-1  | [2025-11-05 13:47:09,545: WARNING/ForkPoolWorker-2] 2025-11-05 13:47:09 [info     ] ✅ Transcription completed: 979 segments | 643.7s | en detected
+worker-1  | [2025-11-05 13:47:09,546: WARNING/ForkPoolWorker-2] 2025-11-05 13:47:09 [info     ] Creating SRT file              language=en output_path=/app/downloads/FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie_original.srt segments_count=979 use_translation=False
+worker-1  | [2025-11-05 13:47:09,548: WARNING/ForkPoolWorker-2] 2025-11-05 13:47:09 [info     ] SRT file created successfully  output_path=/app/downloads/FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie_original.srt segments_count=979
+worker-1  | [2025-11-05 13:47:09,548: WARNING/ForkPoolWorker-2] 2025-11-05 13:47:09 [info     ] Creating SRT file              language=he output_path=/app/downloads/FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie_translated.srt segments_count=979 use_translation=True
+worker-1  | [2025-11-05 13:47:09,556: WARNING/ForkPoolWorker-2] 2025-11-05 13:47:09 [info     ] SRT file created successfully  output_path=/app/downloads/FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie_translated.srt segments_count=979
+worker-1  | [2025-11-05 13:47:09,557: WARNING/ForkPoolWorker-2] 2025-11-05 13:47:09 [info     ] Starting video subtitle embedding operation=subtitle_embedding_start srt_path=FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie_translated.srt target_language=he video_path=FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie.mp4
+worker-1  | [2025-11-05 13:47:09,559: WARNING/ForkPoolWorker-2] 2025-11-05 13:47:09 [info     ] Using enhanced RTL settings    font=Noto Sans Hebrew target_language=he
+worker-1  | [2025-11-05 13:47:09,559: WARNING/ForkPoolWorker-2] 2025-11-05 13:47:09 [debug    ] Running FFmpeg subtitle embedding command=ffmpeg -i /app/downloads/FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie.mp4 -vf subtitles='/app/downloads/FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie_translated_clean.srt':force_style='FontName=Noto Sans Hebrew,FontSize=18,Bold=1,PrimaryColour=&HFFFFFF,OutlineColour=&H000000,BackColour=&H80000000,Outline=3,Shadow=2,MarginV=40,Alignment=2':charenc=UTF-8... operation=ffmpeg_subtitle_start
+worker-1  | [2025-11-05 13:49:02,244: INFO/ForkPoolWorker-2] 🎬 subtitle_embedding: 45.7× speed
+worker-1  | [2025-11-05 13:49:02,244: WARNING/ForkPoolWorker-2] 2025-11-05 13:49:02 [info     ] Video with subtitles created successfully file_size_mb=277.05 operation=subtitle_embedding_complete output_path=FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie_with_subtitles.mp4
+worker-1  | [2025-11-05 13:49:03,426: WARNING/ForkPoolWorker-2] 2025-11-05 13:49:03 [info     ] Task completed                 detected_language=en duration_seconds=758.64 files_created=3 task_id=1c33dc11-a618-456a-bed8-5d649afd605a task_name=process_video
+worker-1  | [2025-11-05 13:49:03,428: INFO/ForkPoolWorker-2] Task tasks.process_video_task[1c33dc11-a618-456a-bed8-5d649afd605a] succeeded in 758.6248156360016s: {'status': 'SUCCESS', 'result': {'title': 'FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie', 'detected_language': 'en', 'files': {'original_srt': 'FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie_original.srt', 'translated_srt': 'FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie_translated.srt', 'video_with_subtitles': 'FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie_final.mp4'}, 'timing_summary': {'download_video': '54.5', 'transcribe_video': '643.7', 'create_video_with_subtitles': '113.7', 'add_watermark': '0.0 (skipped)'}, 'progress': [{...}, {...}, {...}, {...}, {...}, {...}, {...}], 'video_metadata': {'title': 'FAST CARS - Hollywood English Movie | Scott Eastwood In Superhit English Full Action Movie', 'duration': 5150, 'duration_string': '1:25:50', 'view_count': 5853176, 'upload_date': '20230727', 'uploader': 'Blockbuster English Movies', 'thumbn...', ...}}}

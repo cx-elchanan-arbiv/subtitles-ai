@@ -1,0 +1,343 @@
+{
+  "app": {
+    "title": "SubsTranslator",
+    "subtitle": "Traducción de Subtítulos con IA",
+    "description": "Crea subtítulos y traducciones profesionales con precisión impulsada por IA. Sube, procesa y descarga en minutos."
+  },
+  "navigation": {
+    "signIn": "Iniciar Sesión",
+    "signOut": "Cerrar Sesión",
+    "profile": "Perfil",
+    "dashboard": "Panel",
+    "settings": "Configuración",
+    "help": "Ayuda",
+    "about": "Acerca de"
+  },
+  "hero": {
+    "title": "Transforma Tus Videos",
+    "subtitle": "Plataforma Avanzada de Traducción de Subtítulos",
+    "description": "Crea subtítulos y traducciones profesionales con precisión impulsada por IA. Sube, procesa y descarga en minutos.",
+    "getStarted": "Comenzar",
+    "learnMore": "Saber Más"
+  },
+  "features": {
+    "fastProcessing": {
+      "title": "Súper Rápido",
+      "description": "Procesa videos en minutos, no horas"
+    },
+    "multiLanguage": {
+      "title": "Multi-Idioma",
+      "description": "Soporte para más de 50 idiomas con traducción precisa"
+    },
+    "aiPowered": {
+      "title": "Impulsado por IA",
+      "description": "IA avanzada para traducciones perfectas"
+    },
+    "professionalQuality": {
+      "title": "Calidad Profesional",
+      "description": "Resultados de nivel profesional con estilo personalizado"
+    }
+  },
+  "heroFeatures": {
+    "fastProcessing": {
+      "title": "Procesamiento Rápido",
+      "description": "Procesamiento rápido con IA para resultados inmediatos"
+    },
+    "multiLanguage": {
+      "title": "Multi-Idioma",
+      "description": "Soporte para múltiples idiomas y detección automática"
+    },
+    "aiPowered": {
+      "title": "Impulsado por IA",
+      "description": "Tecnología de IA avanzada para traducciones precisas"
+    }
+  },
+  "tabs": {
+    "upload": "Subir Archivo",
+    "youtube": "Video Online",
+    "dashboard": "Mis Videos"
+  },
+  "language": {
+    "source": "Idioma Origen",
+    "target": "Idioma Destino",
+    "autoDetect": "Detección Automática",
+    "selectSource": "Seleccionar idioma origen",
+    "selectTarget": "Seleccionar idioma destino"
+  },
+  "upload": {
+    "title": "Haz clic para subir archivo de video o audio",
+    "dragDrop": "Arrastra y suelta un archivo aquí",
+    "supportedFormats": "Soporta MP4, MKV, MOV, WebM, AVI, MP3, WAV y más",
+    "browseFiles": "Explorar Archivos",
+    "maxSize": "Tamaño máximo: 500MB",
+    "duration": "Duración",
+    "fileSize": "Tamaño del Archivo",
+    "resolution": "Resolución"
+  },
+  "youtube": {
+    "urlPlaceholder": "URL del Video (YouTube, Vimeo, TikTok y más)",
+    "urlDescription": "Ingresa una URL de video de YouTube para extraer y traducir subtítulos",
+    "quickDownload": "Descarga Rápida",
+    "processWithSubtitles": "Procesar con Subtítulos"
+  },
+  "options": {
+    "autoCreateVideo": "Crear video con subtítulos integrados",
+    "whisperModel": "Modelo de Transcripción",
+    "translationService": "Servicio de Traducción",
+    "watermark": "Marca de Agua"
+  },
+  "models": {
+    "tiny": "Tiny - Más Rápido (Por Defecto)",
+    "base": "Base - Buen Balance",
+    "small": "Small - Mejor Precisión",
+    "medium": "Medium - Rápido, Buena Precisión",
+    "large": "Large - Más Preciso",
+    "hint": "Large: Excelente calidad, más tiempo • Medium: Buena calidad, tiempo corto • Tiny: Más rápido, menos preciso"
+  },
+  "processing": {
+    "title": "Procesando Tu Video",
+    "description": "La IA está trabajando en tu video",
+    "overallProgress": "Progreso General",
+    "showLogs": "Mostrar Registros",
+    "hideLogs": "Ocultar Registros",
+    "estimatedTime": "Tiempo Estimado",
+    "currentStep": "Paso Actual",
+    "analyzingYoutube": "🎬 Analizando video de YouTube",
+    "processingFile": "Procesando Archivo",
+    "preparingFile": "Preparando archivo para procesar",
+    "processingVideo": "Procesando Video en Línea",
+    "downloadingVideo": "Descargando Video en Línea"
+  },
+  "steps": {
+    "uploading": "Subiendo Video",
+    "downloading": "Descargando Video",
+    "audioProcessing": "Procesando Audio",
+    "modelLoading": "Cargando Modelo IA",
+    "transcription": "Transcripción",
+    "translation": "Traducción",
+    "srtCreation": "Creando Archivos SRT",
+    "videoCreation": "Creando Video",
+    "watermarkAddition": "Agregando Marca de Agua",
+    "finalizing": "Finalizando"
+  },
+  "results": {
+    "title": "¡Procesamiento Completo!",
+    "description": "Tus subtítulos están listos. Revisa y descarga a continuación.",
+    "detectedLanguage": "Idioma Detectado",
+    "transcriptionQuality": "Calidad de Transcripción",
+    "videoDuration": "Duración",
+    "downloadOriginal": "Descargar Subtítulos Originales",
+    "downloadTranslated": "Descargar Subtítulos Traducidos",
+    "downloadVideo": "Ver la Creación Completa",
+    "videoReady": "¡Video con subtítulos preparado automáticamente!",
+    "totalTime": "Tiempo Total",
+    "processAnother": "Procesar Otro Video",
+    "downloadVideoButton": "Descargar Video",
+    "summarizeButton": "Resumir Contenido por Temas",
+    "summarizing": "Resumiendo...",
+    "summaryReady": "¡Resumen listo!",
+    "viewSummary": "Ver Resumen",
+    "startNewTask": "Iniciar Nueva Tarea"
+  },
+  "watermark": {
+    "enabled": "Agregar marca de agua al video",
+    "logo": "Elegir imagen del logo",
+    "uploadText": "Haz clic o arrastra una imagen aquí",
+    "uploadHint": "PNG, JPG, GIF hasta 5MB",
+    "change": "Cambiar imagen",
+    "remove": "Eliminar imagen",
+    "size": "Tamaño del logo",
+    "position": "Posición del logo",
+    "preview": "Vista Previa",
+    "sizes": {
+      "small": "Pequeño",
+      "medium": "Mediano",
+      "large": "Grande"
+    },
+    "positions": {
+      "topLeft": "Superior Izquierda",
+      "topRight": "Superior Derecha",
+      "bottomLeft": "Inferior Izquierda",
+      "bottomRight": "Inferior Derecha"
+    }
+  },
+  "auth": {
+    "signInRequired": "Inicio de sesión requerido",
+    "signInToUse": "Por favor inicia sesión para usar esta función",
+    "signInWithGoogle": "Iniciar sesión con Google",
+    "signInWithApple": "Iniciar sesión con Apple",
+    "user": "Usuario",
+    "welcome": "Bienvenido",
+    "profile": "Perfil"
+  },
+  "actions": {
+    "process": "Procesar",
+    "upload": "Subir",
+    "download": "Descargar",
+    "retry": "Reintentar",
+    "cancel": "Cancelar",
+    "continue": "Continuar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "save": "Guardar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "close": "Cerrar",
+    "yes": "Sí",
+    "no": "No"
+  },
+  "startProcessing": "Iniciar Procesamiento",
+  "removeFile": "Eliminar Archivo",
+  "status": {
+    "loading": "Cargando...",
+    "processing": "Procesando...",
+    "completed": "Completado",
+    "failed": "Falló",
+    "pending": "Pendiente",
+    "ready": "Listo"
+  },
+  "time": {
+    "seconds": "segundos",
+    "minutes": "minutos",
+    "hours": "horas",
+    "ago": "hace",
+    "remaining": "restante"
+  },
+  "modelDetails": {
+    "processingTime": "Tiempo de procesamiento:",
+    "accuracy": "Precisión:",
+    "bestFor": "Mejor para:",
+    "computeType": "Tipo de cómputo:",
+    "fastProcessingBasicAccuracy": "Procesamiento rápido con precisión básica",
+    "perfectBalance": "Equilibrio perfecto entre precisión y velocidad",
+    "maximumAccuracy": "Máxima precisión para traducción profesional",
+    "tinyTime": "2-3 minutos",
+    "mediumTime": "8-12 minutos",
+    "largeTime": "20-25 minutos",
+    "tinyBestFor": "borradores rápidos",
+    "mediumBestFor": "la mayoría de casos",
+    "largeBestFor": "traducción profesional",
+    "tinyAccuracy": "75-85%",
+    "mediumAccuracy": "90-94%",
+    "largeAccuracy": "95-98%",
+    "computeTypeInt8": "int8"
+  },
+  "advanced": {
+    "logoOnly": "Solo Logo",
+    "videoCutter": "Cortar Video",
+    "embedSubtitles": "Incrustar Subtítulos",
+    "videoMerger": "Fusionar Videos",
+    "comingSoon": "Próximamente",
+    "logoOnlyDescription": "Agregue su logo/marca de agua a cualquier video sin transcripción o traducción. Procesamiento rápido con FFmpeg.",
+    "videoCutterDescription": "Corte su video en segmentos de tiempo específicos. Procesamiento rápido con FFmpeg - ¡sin pérdida de calidad!",
+    "embedSubtitlesDescription": "Incruste subtítulos existentes (archivo SRT) en su video con estilo personalizado.",
+    "videoMergerDescription": "Fusione múltiples archivos de video en uno. Soporta diferentes resoluciones."
+  },
+  "logoOnly": {
+    "uploadVideo": "Subir Video",
+    "uploadLogo": "Subir Logo",
+    "dragVideo": "Arrastra video o haz clic",
+    "dragLogo": "Arrastra imagen o haz clic",
+    "videoFormats": "MP4, MOV, AVI, MKV",
+    "logoFormats": "PNG, JPG (PNG transparente recomendado)",
+    "change": "Cambiar",
+    "remove": "Eliminar",
+    "logoSettings": "Configuración del Logo",
+    "position": "Posición",
+    "size": "Tamaño",
+    "opacity": "Opacidad",
+    "recommendedFormat": "Recomendado",
+    "transparentPng": "PNG Transparente",
+    "addLogoButton": "Agregar Logo al Video",
+    "processing": "Procesando...",
+    "uploadBothFiles": "Por favor sube el video y el logo",
+    "uploadLogoFile": "Por favor sube la imagen del logo",
+    "uploadVideoFile": "Por favor sube el archivo de video",
+    "successMessage": "¡Video con logo descargado exitosamente!"
+  },
+  "videoCutter": {
+    "uploadVideo": "Subir Archivo de Video",
+    "cutTimeRange": "Rango de Tiempo para Cortar",
+    "startTime": "Tiempo de Inicio (HH:MM:SS):",
+    "endTime": "Tiempo Final (HH:MM:SS):",
+    "duration": "Duración:",
+    "quickPresets": "Ajustes Rápidos",
+    "first1min": "Primer 1 min",
+    "first3min": "Primeros 3 min",
+    "first5min": "Primeros 5 min",
+    "first10min": "Primeros 10 min",
+    "first30min": "Primeros 30 min",
+    "first1hour": "Primera 1 hora",
+    "infoTitle": "¡Corte Ultra-Preciso!",
+    "infoFormat": "Formato: HH:MM:SS (Horas:Minutos:Segundos) o MM:SS",
+    "infoExample": "Ejemplo: 00:01:30 = 1 minuto 30 segundos",
+    "infoPrecision": "Precisión: ¡Los segundos exactos que especifiques!",
+    "infoSpeed": "Velocidad: Procesamiento rápido con FFmpeg - ¡sin pérdida de calidad!",
+    "infoLimit": "Límite: Duración máxima: 4 horas por corte",
+    "cutButton": "Cortar Video",
+    "errorNoFile": "Por favor selecciona un archivo de video",
+    "errorEndTime": "El tiempo final debe ser posterior al tiempo de inicio",
+    "errorMaxDuration": "La duración máxima es de 4 horas"
+  },
+  "embedSubtitles": {
+    "uploadVideo": "Subir Archivo de Video",
+    "subtitlesInput": "Entrada de Subtítulos",
+    "uploadSRT": "Subir Archivo SRT",
+    "pasteText": "Pegar Texto",
+    "clickUploadSRT": "Haz clic para subir archivo SRT",
+    "srtFormat": "Soporta formato .srt",
+    "textareaPlaceholder": "Pega tus subtítulos aquí con marcas de tiempo:\n\nFormato de ejemplo:\n[00:00 - 00:05] Hola Mundo\n[00:05 - 00:10] Esta es una prueba",
+    "logoOptions": "Opciones de Logo (Opcional)",
+    "addLogo": "Agregar logo al video",
+    "position": "Posición:",
+    "size": "Tamaño:",
+    "opacity": "Opacidad:",
+    "infoTitle": "Info de Incrustar Subtítulos:",
+    "infoSrtFormat": "Formato SRT: Formato de archivo SubRip (.srt) estándar",
+    "infoTextFormat": "Formato de Texto: [MM:SS - MM:SS] Texto (convertido automáticamente a SRT)",
+    "infoProcessing": "Procesamiento: Los subtítulos se incrustan en el video (codificados)",
+    "infoLogo": "Logo: Opcionalmente agrega tu logo/marca de agua",
+    "infoSpeed": "Velocidad: Procesamiento rápido con FFmpeg",
+    "embedButton": "Incrustar Subtítulos",
+    "errorNoVideo": "Por favor selecciona un archivo de video",
+    "errorNoSRT": "Por favor selecciona un archivo SRT o cambia a entrada de texto",
+    "errorNoText": "Por favor ingresa el texto de los subtítulos",
+    "errorLogoNotEnabled": "Por favor habilita la configuración de marca de agua primero para agregar logo"
+  },
+  "videoMerger": {
+    "video1Title": "Video 1 (Primero en secuencia)",
+    "video2Title": "Video 2 (Segundo en secuencia)",
+    "uploadFirst": "Haz clic para subir primer video",
+    "uploadSecond": "Haz clic para subir segundo video",
+    "videoFormats": "MP4, AVI, MOV, MKV, etc.",
+    "swapOrder": "Cambiar Orden",
+    "infoTitle": "Info de Fusión de Videos:",
+    "infoOrder": "Orden: Los videos se fusionarán en el orden mostrado (Video 1 → Video 2)",
+    "infoResolution": "Resolución: Maneja automáticamente diferentes resoluciones mediante escalado",
+    "infoProcessing": "Procesamiento: Concatenación rápida usando el filtro concat de FFmpeg",
+    "infoQuality": "Calidad: Sin pérdida de calidad cuando los formatos coinciden",
+    "infoFormats": "Formatos: Soporta MP4, AVI, MOV, MKV y más",
+    "mergeButton": "Fusionar Videos",
+    "errorNoVideo1": "Por favor selecciona el primer archivo de video",
+    "errorNoVideo2": "Por favor selecciona el segundo archivo de video"
+  },
+  "errors": {
+    "processingError": "Error de Procesamiento",
+    "downloadFailed": "La descarga falló. Por favor intenta de nuevo.",
+    "processingFailed": "El procesamiento falló. Por favor intenta de nuevo.",
+    "errorOccurred": "Ocurrió un error durante el procesamiento. Por favor intenta de nuevo.",
+    "youtubeBotDetection": {
+      "title": "Descarga de YouTube Temporalmente No Disponible",
+      "message": "YouTube está bloqueando descargas desde nuestro servidor",
+      "alternativeTitle": "Solución Alternativa:",
+      "step1": "1. Descarga el video a tu computadora desde YouTube",
+      "step2": "2. Regresa aquí y haz clic en 'Subir Archivo'",
+      "step3": "3. Sube el archivo - ¡nosotros nos encargamos del resto!",
+      "switchButton": "Cambiar a Subir Archivo"
+    }
+  }
+}
+
+
+

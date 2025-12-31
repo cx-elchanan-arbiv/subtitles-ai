@@ -1,0 +1,53 @@
+{
+  "status": {
+    "success": "Success",
+    "error": "Error",
+    "processing": "Processing",
+    "completed": "Completed",
+    "failed": "Failed",
+    "pending": "Pending"
+  },
+  "messages": {
+    "upload_success": "File uploaded successfully",
+    "processing_started": "Video processing has started",
+    "processing_completed": "Video processing completed successfully",
+    "download_ready": "Download is ready",
+    "task_queued": "Task has been queued for processing"
+  },
+  "validation": {
+    "file_required": "File is required",
+    "url_required": "URL is required",
+    "invalid_file_type": "Invalid file type",
+    "file_too_large": "File is too large",
+    "invalid_url_format": "Invalid URL format"
+  },
+  "languages": {
+    "auto": "Auto Detect",
+    "autoDetect": "Auto Detect",
+    "he": "Hebrew",
+    "en": "English",
+    "es": "Spanish",
+    "ar": "Arabic",
+    "fr": "French",
+    "de": "German",
+    "it": "Italian",
+    "pt": "Portuguese",
+    "ru": "Russian",
+    "ja": "Japanese",
+    "ko": "Korean",
+    "zh": "Chinese",
+    "tr": "Turkish"
+  },
+  "translationServices": {
+    "google": {
+      "description": "Free Google translation service"
+    },
+    "openai": {
+      "description": "Advanced translation using GPT-4o",
+      "requiresKey": "OpenAI API key required"
+    }
+  }
+}
+
+
+

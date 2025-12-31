@@ -1,0 +1,500 @@
+worker-1  | [2025-11-05 12:36:07,295: WARNING/ForkPoolWorker-2] 2025-11-05 12:36:07 [info     ] 📊 Phase A+ Batch operation completed batch_id=0c7afd9d-0 duration_s=6.67 est_out_tokens=605 headers={} in_tokens=507 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1112 waited_s=0
+worker-1  | [2025-11-05 12:36:07,296: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:36:07,296: WARNING/ForkPoolWorker-2] 2025-11-05 12:36:07 [info     ] ✅ [Thread-281467649323392] Batch #4 translated successfully
+worker-1  | [2025-11-05 12:36:09,655: WARNING/ForkPoolWorker-2] 2025-11-05 12:36:09 [info     ] 📤 Submitting batch #5 to thread pool (inflight=5)
+worker-1  | [2025-11-05 12:36:09,655: WARNING/ForkPoolWorker-2] 2025-11-05 12:36:09 [info     ] 🔄 [Thread-281467649323392] Translating batch #5: 20 segments
+worker-1  | [2025-11-05 12:36:09,655: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:36:09,657: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:36:09,657: WARNING/ForkPoolWorker-2] 2025-11-05 12:36:09 [debug    ] ✅ Budget acquired: 1123 tokens, TPM: 2235/20000, RPM: 2/60
+worker-1  | [2025-11-05 12:36:14,873: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:36:14,884: INFO/ForkPoolWorker-2] ✅ Batch 50b9f9a6-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:36:14,884: WARNING/ForkPoolWorker-2] 2025-11-05 12:36:14 [info     ] 📊 Phase A+ Batch operation completed batch_id=50b9f9a6-0 duration_s=5.23 est_out_tokens=610 headers={} in_tokens=513 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1123 waited_s=0
+worker-1  | [2025-11-05 12:36:14,885: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:36:14,885: WARNING/ForkPoolWorker-2] 2025-11-05 12:36:14 [info     ] ✅ [Thread-281467649323392] Batch #5 translated successfully
+worker-1  | [2025-11-05 12:36:20,467: WARNING/ForkPoolWorker-2] 2025-11-05 12:36:20 [info     ] 📤 Submitting batch #6 to thread pool (inflight=6)
+worker-1  | [2025-11-05 12:36:20,467: WARNING/ForkPoolWorker-2] 2025-11-05 12:36:20 [info     ] 🔄 [Thread-281467649323392] Translating batch #6: 20 segments
+worker-1  | [2025-11-05 12:36:20,467: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:36:20,468: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:36:20,469: WARNING/ForkPoolWorker-2] 2025-11-05 12:36:20 [debug    ] ✅ Budget acquired: 1107 tokens, TPM: 3342/20000, RPM: 3/60
+worker-1  | [2025-11-05 12:36:26,343: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:36:26,343: INFO/ForkPoolWorker-2] ✅ Batch 7cebd2b1-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:36:26,343: WARNING/ForkPoolWorker-2] 2025-11-05 12:36:26 [info     ] 📊 Phase A+ Batch operation completed batch_id=7cebd2b1-0 duration_s=5.87 est_out_tokens=603 headers={} in_tokens=504 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1107 waited_s=0
+worker-1  | [2025-11-05 12:36:26,344: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:36:26,344: WARNING/ForkPoolWorker-2] 2025-11-05 12:36:26 [info     ] ✅ [Thread-281467649323392] Batch #6 translated successfully
+worker-1  | [2025-11-05 12:36:30,301: WARNING/ForkPoolWorker-2] 2025-11-05 12:36:30 [info     ] 📤 Submitting batch #7 to thread pool (inflight=7)
+worker-1  | [2025-11-05 12:36:30,301: WARNING/ForkPoolWorker-2] 2025-11-05 12:36:30 [info     ] 🔄 [Thread-281467649323392] Translating batch #7: 20 segments
+worker-1  | [2025-11-05 12:36:30,301: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:36:30,301: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:36:30,302: WARNING/ForkPoolWorker-2] 2025-11-05 12:36:30 [debug    ] ✅ Budget acquired: 1096 tokens, TPM: 4438/20000, RPM: 4/60
+worker-1  | [2025-11-05 12:36:34,841: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:36:34,841: INFO/ForkPoolWorker-2] ✅ Batch 6fe746b7-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:36:34,842: WARNING/ForkPoolWorker-2] 2025-11-05 12:36:34 [info     ] 📊 Phase A+ Batch operation completed batch_id=6fe746b7-0 duration_s=4.54 est_out_tokens=598 headers={} in_tokens=498 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1096 waited_s=0
+worker-1  | [2025-11-05 12:36:34,842: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:36:34,842: WARNING/ForkPoolWorker-2] 2025-11-05 12:36:34 [info     ] ✅ [Thread-281467649323392] Batch #7 translated successfully
+worker-1  | [2025-11-05 12:36:39,152: WARNING/ForkPoolWorker-2] 2025-11-05 12:36:39 [info     ] 📤 Submitting batch #8 to thread pool (inflight=8)
+worker-1  | [2025-11-05 12:36:39,152: WARNING/ForkPoolWorker-2] 2025-11-05 12:36:39 [info     ] 🔄 [Thread-281467649323392] Translating batch #8: 20 segments
+worker-1  | [2025-11-05 12:36:39,152: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:36:39,153: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:36:39,154: WARNING/ForkPoolWorker-2] 2025-11-05 12:36:39 [debug    ] ✅ Budget acquired: 1114 tokens, TPM: 5552/20000, RPM: 5/60
+worker-1  | [2025-11-05 12:36:45,091: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:36:45,092: INFO/ForkPoolWorker-2] ✅ Batch 64b20997-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:36:45,092: WARNING/ForkPoolWorker-2] 2025-11-05 12:36:45 [info     ] 📊 Phase A+ Batch operation completed batch_id=64b20997-0 duration_s=5.94 est_out_tokens=606 headers={} in_tokens=508 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1114 waited_s=0
+worker-1  | [2025-11-05 12:36:45,092: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:36:45,092: WARNING/ForkPoolWorker-2] 2025-11-05 12:36:45 [info     ] ✅ [Thread-281467649323392] Batch #8 translated successfully
+worker-1  | [2025-11-05 12:36:49,776: WARNING/ForkPoolWorker-2] 2025-11-05 12:36:49 [info     ] 📤 Submitting batch #9 to thread pool (inflight=9)
+worker-1  | [2025-11-05 12:36:49,776: WARNING/ForkPoolWorker-2] 2025-11-05 12:36:49 [info     ] 🔄 [Thread-281467649323392] Translating batch #9: 20 segments
+worker-1  | [2025-11-05 12:36:49,776: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:36:49,778: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:36:49,778: WARNING/ForkPoolWorker-2] 2025-11-05 12:36:49 [debug    ] ✅ Budget acquired: 1089 tokens, TPM: 6641/20000, RPM: 6/60
+worker-1  | [2025-11-05 12:36:56,871: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:36:56,872: INFO/ForkPoolWorker-2] ✅ Batch 6f5f8330-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:36:56,872: WARNING/ForkPoolWorker-2] 2025-11-05 12:36:56 [info     ] 📊 Phase A+ Batch operation completed batch_id=6f5f8330-0 duration_s=7.09 est_out_tokens=595 headers={} in_tokens=494 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1089 waited_s=0
+worker-1  | [2025-11-05 12:36:56,873: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:36:56,873: WARNING/ForkPoolWorker-2] 2025-11-05 12:36:56 [info     ] ✅ [Thread-281467649323392] Batch #9 translated successfully
+worker-1  | [2025-11-05 12:37:08,580: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:08 [info     ] 📤 Submitting batch #10 to thread pool (inflight=10)
+worker-1  | [2025-11-05 12:37:08,581: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:08 [info     ] 🔄 [Thread-281467649323392] Translating batch #10: 20 segments
+worker-1  | [2025-11-05 12:37:08,581: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:37:08,582: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:37:08,582: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:08 [debug    ] ✅ Budget acquired: 1056 tokens, TPM: 1056/20000, RPM: 1/60
+worker-1  | [2025-11-05 12:37:13,577: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:13 [info     ] 📤 Submitting batch #11 to thread pool (inflight=11)
+worker-1  | [2025-11-05 12:37:15,415: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:37:15,416: INFO/ForkPoolWorker-2] ✅ Batch 50962691-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:37:15,416: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:15 [info     ] 📊 Phase A+ Batch operation completed batch_id=50962691-0 duration_s=6.83 est_out_tokens=580 headers={} in_tokens=476 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1056 waited_s=0
+worker-1  | [2025-11-05 12:37:15,416: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:37:15,416: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:15 [info     ] ✅ [Thread-281467649323392] Batch #10 translated successfully
+worker-1  | [2025-11-05 12:37:15,416: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:15 [info     ] 🔄 [Thread-281467649323392] Translating batch #11: 20 segments
+worker-1  | [2025-11-05 12:37:15,416: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:37:15,417: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:37:15,417: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:15 [debug    ] ✅ Budget acquired: 1157 tokens, TPM: 2213/20000, RPM: 2/60
+worker-1  | [2025-11-05 12:37:20,809: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:20 [info     ] 📤 Submitting batch #12 to thread pool (inflight=12)
+worker-1  | [2025-11-05 12:37:21,421: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:37:21,429: INFO/ForkPoolWorker-2] ✅ Batch 32310090-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:37:21,429: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:21 [info     ] 📊 Phase A+ Batch operation completed batch_id=32310090-0 duration_s=6.01 est_out_tokens=625 headers={} in_tokens=532 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1157 waited_s=0
+worker-1  | [2025-11-05 12:37:21,429: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:37:21,430: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:21 [info     ] ✅ [Thread-281467649323392] Batch #11 translated successfully
+worker-1  | [2025-11-05 12:37:21,430: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:21 [info     ] 🔄 [Thread-281467649323392] Translating batch #12: 20 segments
+worker-1  | [2025-11-05 12:37:21,430: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:37:21,430: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:37:21,431: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:21 [debug    ] ✅ Budget acquired: 1110 tokens, TPM: 3323/20000, RPM: 3/60
+worker-1  | [2025-11-05 12:37:26,781: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:37:26,781: INFO/ForkPoolWorker-2] ✅ Batch caedff13-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:37:26,781: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:26 [info     ] 📊 Phase A+ Batch operation completed batch_id=caedff13-0 duration_s=5.35 est_out_tokens=604 headers={} in_tokens=506 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1110 waited_s=0
+worker-1  | [2025-11-05 12:37:26,782: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:37:26,782: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:26 [info     ] ✅ [Thread-281467649323392] Batch #12 translated successfully
+worker-1  | [2025-11-05 12:37:28,771: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:28 [info     ] 📤 Submitting batch #13 to thread pool (inflight=13)
+worker-1  | [2025-11-05 12:37:28,771: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:28 [info     ] 🔄 [Thread-281467649323392] Translating batch #13: 20 segments
+worker-1  | [2025-11-05 12:37:28,771: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:37:28,771: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:37:28,772: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:28 [debug    ] ✅ Budget acquired: 1080 tokens, TPM: 4403/20000, RPM: 4/60
+worker-1  | [2025-11-05 12:37:34,003: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:37:34,010: INFO/ForkPoolWorker-2] ✅ Batch a5a4f08b-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:37:34,010: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:34 [info     ] 📊 Phase A+ Batch operation completed batch_id=a5a4f08b-0 duration_s=5.24 est_out_tokens=591 headers={} in_tokens=489 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1080 waited_s=0
+worker-1  | [2025-11-05 12:37:34,010: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:37:34,010: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:34 [info     ] ✅ [Thread-281467649323392] Batch #13 translated successfully
+worker-1  | [2025-11-05 12:37:40,053: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:40 [info     ] 📤 Submitting batch #14 to thread pool (inflight=14)
+worker-1  | [2025-11-05 12:37:40,053: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:40 [info     ] 🔄 [Thread-281467649323392] Translating batch #14: 20 segments
+worker-1  | [2025-11-05 12:37:40,053: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:37:40,054: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:37:40,055: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:40 [debug    ] ✅ Budget acquired: 1069 tokens, TPM: 5472/20000, RPM: 5/60
+worker-1  | [2025-11-05 12:37:45,534: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:37:45,535: INFO/ForkPoolWorker-2] ✅ Batch 6054bd0a-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:37:45,535: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:45 [info     ] 📊 Phase A+ Batch operation completed batch_id=6054bd0a-0 duration_s=5.48 est_out_tokens=586 headers={} in_tokens=483 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1069 waited_s=0
+worker-1  | [2025-11-05 12:37:45,535: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:37:45,535: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:45 [info     ] ✅ [Thread-281467649323392] Batch #14 translated successfully
+worker-1  | [2025-11-05 12:37:48,788: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:48 [info     ] 📤 Submitting batch #15 to thread pool (inflight=15)
+worker-1  | [2025-11-05 12:37:48,788: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:48 [info     ] 🔄 [Thread-281467649323392] Translating batch #15: 20 segments
+worker-1  | [2025-11-05 12:37:48,788: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:37:48,789: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:37:48,790: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:48 [debug    ] ✅ Budget acquired: 1080 tokens, TPM: 6552/20000, RPM: 6/60
+worker-1  | [2025-11-05 12:37:52,877: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:37:52,882: INFO/ForkPoolWorker-2] ✅ Batch 644d1b64-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:37:52,882: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:52 [info     ] 📊 Phase A+ Batch operation completed batch_id=644d1b64-0 duration_s=4.09 est_out_tokens=591 headers={} in_tokens=489 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1080 waited_s=0
+worker-1  | [2025-11-05 12:37:52,883: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:37:52,883: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:52 [info     ] ✅ [Thread-281467649323392] Batch #15 translated successfully
+worker-1  | [2025-11-05 12:37:56,512: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:56 [info     ] 📤 Submitting batch #16 to thread pool (inflight=16)
+worker-1  | [2025-11-05 12:37:56,512: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:56 [info     ] 🔄 [Thread-281467649323392] Translating batch #16: 20 segments
+worker-1  | [2025-11-05 12:37:56,512: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:37:56,513: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:37:56,514: WARNING/ForkPoolWorker-2] 2025-11-05 12:37:56 [debug    ] ✅ Budget acquired: 1073 tokens, TPM: 7625/20000, RPM: 7/60
+worker-1  | [2025-11-05 12:38:00,791: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:38:00,791: INFO/ForkPoolWorker-2] ✅ Batch 48ba579c-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:38:00,791: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:00 [info     ] 📊 Phase A+ Batch operation completed batch_id=48ba579c-0 duration_s=4.28 est_out_tokens=588 headers={} in_tokens=485 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1073 waited_s=0
+worker-1  | [2025-11-05 12:38:00,791: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:38:00,792: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:00 [info     ] ✅ [Thread-281467649323392] Batch #16 translated successfully
+worker-1  | [2025-11-05 12:38:01,577: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:01 [info     ] 📤 Submitting batch #17 to thread pool (inflight=17)
+worker-1  | [2025-11-05 12:38:01,577: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:01 [info     ] 🔄 [Thread-281467649323392] Translating batch #17: 20 segments
+worker-1  | [2025-11-05 12:38:01,577: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:38:01,578: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:38:01,578: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:01 [debug    ] ✅ Budget acquired: 1143 tokens, TPM: 1143/20000, RPM: 1/60
+worker-1  | [2025-11-05 12:38:06,418: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:38:06,423: INFO/ForkPoolWorker-2] ✅ Batch f461eb66-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:38:06,424: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:06 [info     ] 📊 Phase A+ Batch operation completed batch_id=f461eb66-0 duration_s=4.85 est_out_tokens=619 headers={} in_tokens=524 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1143 waited_s=0
+worker-1  | [2025-11-05 12:38:06,424: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:38:06,424: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:06 [info     ] ✅ [Thread-281467649323392] Batch #17 translated successfully
+worker-1  | [2025-11-05 12:38:09,162: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:09 [info     ] 📤 Submitting batch #18 to thread pool (inflight=18)
+worker-1  | [2025-11-05 12:38:09,162: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:09 [info     ] 🔄 [Thread-281467649323392] Translating batch #18: 20 segments
+worker-1  | [2025-11-05 12:38:09,162: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:38:09,163: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:38:09,163: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:09 [debug    ] ✅ Budget acquired: 1087 tokens, TPM: 2230/20000, RPM: 2/60
+worker-1  | [2025-11-05 12:38:16,514: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:38:16,515: INFO/ForkPoolWorker-2] ✅ Batch 328e8a21-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:38:16,515: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:16 [info     ] 📊 Phase A+ Batch operation completed batch_id=328e8a21-0 duration_s=7.35 est_out_tokens=594 headers={} in_tokens=493 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1087 waited_s=0
+worker-1  | [2025-11-05 12:38:16,515: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:38:16,515: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:16 [info     ] ✅ [Thread-281467649323392] Batch #18 translated successfully
+worker-1  | [2025-11-05 12:38:16,709: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:16 [info     ] 📤 Submitting batch #19 to thread pool (inflight=19)
+worker-1  | [2025-11-05 12:38:16,709: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:16 [info     ] 🔄 [Thread-281467649323392] Translating batch #19: 20 segments
+worker-1  | [2025-11-05 12:38:16,709: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:38:16,710: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:38:16,710: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:16 [debug    ] ✅ Budget acquired: 1087 tokens, TPM: 3317/20000, RPM: 3/60
+worker-1  | [2025-11-05 12:38:21,430: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:38:21,430: INFO/ForkPoolWorker-2] ✅ Batch 0311087b-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:38:21,430: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:21 [info     ] 📊 Phase A+ Batch operation completed batch_id=0311087b-0 duration_s=4.72 est_out_tokens=594 headers={} in_tokens=493 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1087 waited_s=0
+worker-1  | [2025-11-05 12:38:21,431: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:38:21,431: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:21 [info     ] ✅ [Thread-281467649323392] Batch #19 translated successfully
+worker-1  | [2025-11-05 12:38:26,928: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:26 [info     ] 📤 Submitting batch #20 to thread pool (inflight=20)
+worker-1  | [2025-11-05 12:38:26,928: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:26 [info     ] 🔄 [Thread-281467649323392] Translating batch #20: 20 segments
+worker-1  | [2025-11-05 12:38:26,928: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:38:26,929: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:38:26,930: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:26 [debug    ] ✅ Budget acquired: 1074 tokens, TPM: 4391/20000, RPM: 4/60
+worker-1  | [2025-11-05 12:38:35,640: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:38:35,655: INFO/ForkPoolWorker-2] ✅ Batch 78455fc0-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:38:35,655: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:35 [info     ] 📊 Phase A+ Batch operation completed batch_id=78455fc0-0 duration_s=8.72 est_out_tokens=588 headers={} in_tokens=486 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1074 waited_s=0
+worker-1  | [2025-11-05 12:38:35,655: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:38:35,655: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:35 [info     ] ✅ [Thread-281467649323392] Batch #20 translated successfully
+worker-1  | [2025-11-05 12:38:39,874: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:39 [info     ] 📤 Submitting batch #21 to thread pool (inflight=21)
+worker-1  | [2025-11-05 12:38:39,874: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:39 [info     ] 🔄 [Thread-281467649323392] Translating batch #21: 20 segments
+worker-1  | [2025-11-05 12:38:39,874: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:38:39,875: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:38:39,876: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:39 [debug    ] ✅ Budget acquired: 1118 tokens, TPM: 5509/20000, RPM: 5/60
+worker-1  | [2025-11-05 12:38:43,609: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:38:43,610: INFO/ForkPoolWorker-2] ✅ Batch 2f13786b-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:38:43,610: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:43 [info     ] 📊 Phase A+ Batch operation completed batch_id=2f13786b-0 duration_s=3.73 est_out_tokens=608 headers={} in_tokens=510 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1118 waited_s=0
+worker-1  | [2025-11-05 12:38:43,610: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:38:43,610: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:43 [info     ] ✅ [Thread-281467649323392] Batch #21 translated successfully
+worker-1  | [2025-11-05 12:38:47,786: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:47 [info     ] 📤 Submitting batch #22 to thread pool (inflight=22)
+worker-1  | [2025-11-05 12:38:47,786: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:47 [info     ] 🔄 [Thread-281467649323392] Translating batch #22: 20 segments
+worker-1  | [2025-11-05 12:38:47,786: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:38:47,787: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:38:47,787: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:47 [debug    ] ✅ Budget acquired: 1116 tokens, TPM: 6625/20000, RPM: 6/60
+worker-1  | [2025-11-05 12:38:53,136: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:53 [info     ] 📤 Submitting batch #23 to thread pool (inflight=23)
+worker-1  | [2025-11-05 12:38:53,145: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:38:53,146: INFO/ForkPoolWorker-2] ✅ Batch cc71dd4a-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:38:53,146: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:53 [info     ] 📊 Phase A+ Batch operation completed batch_id=cc71dd4a-0 duration_s=5.36 est_out_tokens=607 headers={} in_tokens=509 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1116 waited_s=0
+worker-1  | [2025-11-05 12:38:53,146: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:38:53,146: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:53 [info     ] ✅ [Thread-281467649323392] Batch #22 translated successfully
+worker-1  | [2025-11-05 12:38:53,146: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:53 [info     ] 🔄 [Thread-281467649323392] Translating batch #23: 20 segments
+worker-1  | [2025-11-05 12:38:53,146: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:38:53,147: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:38:53,147: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:53 [debug    ] ✅ Budget acquired: 1137 tokens, TPM: 7762/20000, RPM: 7/60
+worker-1  | [2025-11-05 12:38:58,727: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:38:58,727: INFO/ForkPoolWorker-2] ✅ Batch d48892c2-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:38:58,727: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:58 [info     ] 📊 Phase A+ Batch operation completed batch_id=d48892c2-0 duration_s=5.58 est_out_tokens=616 headers={} in_tokens=521 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1137 waited_s=0
+worker-1  | [2025-11-05 12:38:58,728: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:38:58,728: WARNING/ForkPoolWorker-2] 2025-11-05 12:38:58 [info     ] ✅ [Thread-281467649323392] Batch #23 translated successfully
+worker-1  | [2025-11-05 12:39:03,699: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:03 [info     ] 📤 Submitting batch #24 to thread pool (inflight=24)
+worker-1  | [2025-11-05 12:39:03,699: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:03 [info     ] 🔄 [Thread-281467649323392] Translating batch #24: 20 segments
+worker-1  | [2025-11-05 12:39:03,699: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:39:03,700: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:39:03,701: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:03 [debug    ] ✅ Budget acquired: 1114 tokens, TPM: 1114/20000, RPM: 1/60
+worker-1  | [2025-11-05 12:39:08,775: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:39:08,776: INFO/ForkPoolWorker-2] ✅ Batch 13b755cc-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:39:08,776: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:08 [info     ] 📊 Phase A+ Batch operation completed batch_id=13b755cc-0 duration_s=5.07 est_out_tokens=606 headers={} in_tokens=508 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1114 waited_s=0
+worker-1  | [2025-11-05 12:39:08,776: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:39:08,776: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:08 [info     ] ✅ [Thread-281467649323392] Batch #24 translated successfully
+worker-1  | [2025-11-05 12:39:10,878: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:10 [info     ] 📤 Submitting batch #25 to thread pool (inflight=25)
+worker-1  | [2025-11-05 12:39:10,878: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:10 [info     ] 🔄 [Thread-281467649323392] Translating batch #25: 20 segments
+worker-1  | [2025-11-05 12:39:10,878: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:39:10,878: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:39:10,879: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:10 [debug    ] ✅ Budget acquired: 1074 tokens, TPM: 2188/20000, RPM: 2/60
+worker-1  | [2025-11-05 12:39:11,854: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+worker-1  | [2025-11-05 12:39:11,854: INFO/ForkPoolWorker-2] Retrying request to /chat/completions in 0.984648 seconds
+worker-1  | [2025-11-05 12:39:18,626: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:39:18,629: INFO/ForkPoolWorker-2] ✅ Batch bef35ffa-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:39:18,629: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:18 [info     ] 📊 Phase A+ Batch operation completed batch_id=bef35ffa-0 duration_s=7.75 est_out_tokens=588 headers={} in_tokens=486 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1074 waited_s=0
+worker-1  | [2025-11-05 12:39:18,630: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:39:18,630: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:18 [info     ] ✅ [Thread-281467649323392] Batch #25 translated successfully
+worker-1  | [2025-11-05 12:39:18,766: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:18 [info     ] 📤 Submitting batch #26 to thread pool (inflight=26)
+worker-1  | [2025-11-05 12:39:18,766: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:18 [info     ] 🔄 [Thread-281467649323392] Translating batch #26: 20 segments
+worker-1  | [2025-11-05 12:39:18,766: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:39:18,767: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:39:18,768: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:18 [debug    ] ✅ Budget acquired: 1100 tokens, TPM: 3288/20000, RPM: 3/60
+worker-1  | [2025-11-05 12:39:25,267: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:39:25,268: INFO/ForkPoolWorker-2] ✅ Batch ec07681f-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:39:25,268: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:25 [info     ] 📊 Phase A+ Batch operation completed batch_id=ec07681f-0 duration_s=6.5 est_out_tokens=600 headers={} in_tokens=500 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1100 waited_s=0
+worker-1  | [2025-11-05 12:39:25,268: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:39:25,269: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:25 [info     ] ✅ [Thread-281467649323392] Batch #26 translated successfully
+worker-1  | [2025-11-05 12:39:26,451: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:26 [info     ] 📤 Submitting batch #27 to thread pool (inflight=27)
+worker-1  | [2025-11-05 12:39:26,452: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:26 [info     ] 🔄 [Thread-281467649323392] Translating batch #27: 20 segments
+worker-1  | [2025-11-05 12:39:26,452: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:39:26,452: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:39:26,453: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:26 [debug    ] ✅ Budget acquired: 1091 tokens, TPM: 4379/20000, RPM: 4/60
+worker-1  | [2025-11-05 12:39:32,948: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:39:32,949: INFO/ForkPoolWorker-2] ✅ Batch c1d48059-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:39:32,949: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:32 [info     ] 📊 Phase A+ Batch operation completed batch_id=c1d48059-0 duration_s=6.5 est_out_tokens=596 headers={} in_tokens=495 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1091 waited_s=0
+worker-1  | [2025-11-05 12:39:32,949: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:39:32,949: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:32 [info     ] ✅ [Thread-281467649323392] Batch #27 translated successfully
+worker-1  | [2025-11-05 12:39:36,191: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:36 [info     ] 📤 Submitting batch #28 to thread pool (inflight=28)
+worker-1  | [2025-11-05 12:39:36,191: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:36 [info     ] 🔄 [Thread-281467649323392] Translating batch #28: 20 segments
+worker-1  | [2025-11-05 12:39:36,191: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:39:36,192: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:39:36,193: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:36 [debug    ] ✅ Budget acquired: 1065 tokens, TPM: 5444/20000, RPM: 5/60
+worker-1  | [2025-11-05 12:39:42,276: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:39:42,277: INFO/ForkPoolWorker-2] ✅ Batch dabf0969-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:39:42,277: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:42 [info     ] 📊 Phase A+ Batch operation completed batch_id=dabf0969-0 duration_s=6.08 est_out_tokens=584 headers={} in_tokens=481 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1065 waited_s=0
+worker-1  | [2025-11-05 12:39:42,277: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:39:42,277: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:42 [info     ] ✅ [Thread-281467649323392] Batch #28 translated successfully
+worker-1  | [2025-11-05 12:39:43,700: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:43 [info     ] 📤 Submitting batch #29 to thread pool (inflight=29)
+worker-1  | [2025-11-05 12:39:43,700: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:43 [info     ] 🔄 [Thread-281467649323392] Translating batch #29: 20 segments
+worker-1  | [2025-11-05 12:39:43,700: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:39:43,700: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:39:43,701: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:43 [debug    ] ✅ Budget acquired: 1049 tokens, TPM: 6493/20000, RPM: 6/60
+worker-1  | [2025-11-05 12:39:48,423: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:39:48,423: INFO/ForkPoolWorker-2] ✅ Batch 5002b2e7-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:39:48,423: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:48 [info     ] 📊 Phase A+ Batch operation completed batch_id=5002b2e7-0 duration_s=4.72 est_out_tokens=577 headers={} in_tokens=472 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1049 waited_s=0
+worker-1  | [2025-11-05 12:39:48,423: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:39:48,424: WARNING/ForkPoolWorker-2] 2025-11-05 12:39:48 [info     ] ✅ [Thread-281467649323392] Batch #29 translated successfully
+worker-1  | [2025-11-05 12:40:08,344: WARNING/ForkPoolWorker-2] 2025-11-05 12:40:08 [info     ] 📤 Submitting batch #30 to thread pool (inflight=30)
+worker-1  | [2025-11-05 12:40:08,345: WARNING/ForkPoolWorker-2] 2025-11-05 12:40:08 [info     ] 🔄 [Thread-281467649323392] Translating batch #30: 20 segments
+worker-1  | [2025-11-05 12:40:08,345: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:40:08,346: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:40:08,346: WARNING/ForkPoolWorker-2] 2025-11-05 12:40:08 [debug    ] ✅ Budget acquired: 1064 tokens, TPM: 1064/20000, RPM: 1/60
+worker-1  | [2025-11-05 12:40:13,091: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:40:13,094: WARNING/ForkPoolWorker-2] 2025-11-05 12:40:13 [info     ] 📤 Submitting batch #31 to thread pool (inflight=31)
+worker-1  | [2025-11-05 12:40:13,102: INFO/ForkPoolWorker-2] ✅ Batch f992a8d0-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:40:13,102: WARNING/ForkPoolWorker-2] 2025-11-05 12:40:13 [info     ] 📊 Phase A+ Batch operation completed batch_id=f992a8d0-0 duration_s=4.76 est_out_tokens=584 headers={} in_tokens=480 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1064 waited_s=0
+worker-1  | [2025-11-05 12:40:13,102: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:40:13,103: WARNING/ForkPoolWorker-2] 2025-11-05 12:40:13 [info     ] ✅ [Thread-281467649323392] Batch #30 translated successfully
+worker-1  | [2025-11-05 12:40:13,103: WARNING/ForkPoolWorker-2] 2025-11-05 12:40:13 [info     ] 🔄 [Thread-281467649323392] Translating batch #31: 20 segments
+worker-1  | [2025-11-05 12:40:13,103: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:40:13,103: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:40:13,104: WARNING/ForkPoolWorker-2] 2025-11-05 12:40:13 [debug    ] ✅ Budget acquired: 1114 tokens, TPM: 2178/20000, RPM: 2/60
+worker-1  | [2025-11-05 12:40:18,642: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:40:18,642: INFO/ForkPoolWorker-2] ✅ Batch 07ea015e-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:40:18,642: WARNING/ForkPoolWorker-2] 2025-11-05 12:40:18 [info     ] 📊 Phase A+ Batch operation completed batch_id=07ea015e-0 duration_s=5.54 est_out_tokens=606 headers={} in_tokens=508 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1114 waited_s=0
+worker-1  | [2025-11-05 12:40:18,642: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:40:18,642: WARNING/ForkPoolWorker-2] 2025-11-05 12:40:18 [info     ] ✅ [Thread-281467649323392] Batch #31 translated successfully
+worker-1  | [2025-11-05 12:40:21,792: WARNING/ForkPoolWorker-2] 2025-11-05 12:40:21 [info     ] 📤 Submitting batch #32 to thread pool (inflight=32)
+worker-1  | [2025-11-05 12:40:21,792: WARNING/ForkPoolWorker-2] 2025-11-05 12:40:21 [info     ] 🔄 [Thread-281467649323392] Translating batch #32: 20 segments
+worker-1  | [2025-11-05 12:40:21,792: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:40:21,793: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:40:21,794: WARNING/ForkPoolWorker-2] 2025-11-05 12:40:21 [debug    ] ✅ Budget acquired: 1065 tokens, TPM: 3243/20000, RPM: 3/60
+worker-1  | [2025-11-05 12:40:27,049: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:40:27,050: INFO/ForkPoolWorker-2] ✅ Batch 16a46844-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:40:27,050: WARNING/ForkPoolWorker-2] 2025-11-05 12:40:27 [info     ] 📊 Phase A+ Batch operation completed batch_id=16a46844-0 duration_s=5.26 est_out_tokens=584 headers={} in_tokens=481 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1065 waited_s=0
+worker-1  | [2025-11-05 12:40:27,050: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:40:27,050: WARNING/ForkPoolWorker-2] 2025-11-05 12:40:27 [info     ] ✅ [Thread-281467649323392] Batch #32 translated successfully
+worker-1  | [2025-11-05 12:40:34,832: WARNING/ForkPoolWorker-2] 2025-11-05 12:40:34 [info     ] 📤 Submitting batch #33 to thread pool (inflight=33)
+worker-1  | [2025-11-05 12:40:34,832: WARNING/ForkPoolWorker-2] 2025-11-05 12:40:34 [info     ] 🔄 [Thread-281467649323392] Translating batch #33: 20 segments
+worker-1  | [2025-11-05 12:40:34,832: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:40:34,833: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:40:34,834: WARNING/ForkPoolWorker-2] 2025-11-05 12:40:34 [debug    ] ✅ Budget acquired: 1080 tokens, TPM: 4323/20000, RPM: 4/60
+worker-1  | [2025-11-05 12:40:40,004: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:40:40,005: INFO/ForkPoolWorker-2] ✅ Batch 8fa53e69-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:40:40,006: WARNING/ForkPoolWorker-2] 2025-11-05 12:40:40 [info     ] 📊 Phase A+ Batch operation completed batch_id=8fa53e69-0 duration_s=5.17 est_out_tokens=591 headers={} in_tokens=489 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1080 waited_s=0
+worker-1  | [2025-11-05 12:40:40,006: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:40:40,006: WARNING/ForkPoolWorker-2] 2025-11-05 12:40:40 [info     ] ✅ [Thread-281467649323392] Batch #33 translated successfully
+worker-1  | [2025-11-05 12:40:58,437: WARNING/ForkPoolWorker-2] 2025-11-05 12:40:58 [info     ] 📤 Submitting batch #34 to thread pool (inflight=34)
+worker-1  | [2025-11-05 12:40:58,437: WARNING/ForkPoolWorker-2] 2025-11-05 12:40:58 [info     ] 🔄 [Thread-281467649323392] Translating batch #34: 20 segments
+worker-1  | [2025-11-05 12:40:58,438: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:40:58,438: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:40:58,439: WARNING/ForkPoolWorker-2] 2025-11-05 12:40:58 [debug    ] ✅ Budget acquired: 1114 tokens, TPM: 5437/20000, RPM: 5/60
+worker-1  | [2025-11-05 12:41:05,262: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:41:05,263: INFO/ForkPoolWorker-2] ✅ Batch 7ae83ee5-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:41:05,263: WARNING/ForkPoolWorker-2] 2025-11-05 12:41:05 [info     ] 📊 Phase A+ Batch operation completed batch_id=7ae83ee5-0 duration_s=6.82 est_out_tokens=606 headers={} in_tokens=508 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1114 waited_s=0
+worker-1  | [2025-11-05 12:41:05,263: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:41:05,263: WARNING/ForkPoolWorker-2] 2025-11-05 12:41:05 [info     ] ✅ [Thread-281467649323392] Batch #34 translated successfully
+worker-1  | [2025-11-05 12:41:12,464: WARNING/ForkPoolWorker-2] 2025-11-05 12:41:12 [info     ] 📤 Submitting batch #35 to thread pool (inflight=35)
+worker-1  | [2025-11-05 12:41:12,464: WARNING/ForkPoolWorker-2] 2025-11-05 12:41:12 [info     ] 🔄 [Thread-281467649323392] Translating batch #35: 20 segments
+worker-1  | [2025-11-05 12:41:12,464: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:41:12,465: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:41:12,466: WARNING/ForkPoolWorker-2] 2025-11-05 12:41:12 [debug    ] ✅ Budget acquired: 1290 tokens, TPM: 1290/20000, RPM: 1/60
+worker-1  | [2025-11-05 12:41:21,523: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:41:21,530: INFO/ForkPoolWorker-2] ✅ Batch 0c4db9ee-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:41:21,530: WARNING/ForkPoolWorker-2] 2025-11-05 12:41:21 [info     ] 📊 Phase A+ Batch operation completed batch_id=0c4db9ee-0 duration_s=9.06 est_out_tokens=684 headers={} in_tokens=606 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1290 waited_s=0
+worker-1  | [2025-11-05 12:41:21,530: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:41:21,530: WARNING/ForkPoolWorker-2] 2025-11-05 12:41:21 [info     ] ✅ [Thread-281467649323392] Batch #35 translated successfully
+worker-1  | [2025-11-05 12:41:30,283: WARNING/ForkPoolWorker-2] 2025-11-05 12:41:30 [info     ] 📤 Submitting batch #36 to thread pool (inflight=36)
+worker-1  | [2025-11-05 12:41:30,283: WARNING/ForkPoolWorker-2] 2025-11-05 12:41:30 [info     ] 🔄 [Thread-281467649323392] Translating batch #36: 20 segments
+worker-1  | [2025-11-05 12:41:30,283: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:41:30,284: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:41:30,285: WARNING/ForkPoolWorker-2] 2025-11-05 12:41:30 [debug    ] ✅ Budget acquired: 1352 tokens, TPM: 2642/20000, RPM: 2/60
+worker-1  | [2025-11-05 12:41:45,513: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:41:45,515: INFO/ForkPoolWorker-2] ✅ Batch 609a7260-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:41:45,515: WARNING/ForkPoolWorker-2] 2025-11-05 12:41:45 [info     ] 📊 Phase A+ Batch operation completed batch_id=609a7260-0 duration_s=15.23 est_out_tokens=712 headers={} in_tokens=640 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1352 waited_s=0
+worker-1  | [2025-11-05 12:41:45,515: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:41:45,515: WARNING/ForkPoolWorker-2] 2025-11-05 12:41:45 [info     ] ✅ [Thread-281467649323392] Batch #36 translated successfully
+worker-1  | [2025-11-05 12:41:54,704: WARNING/ForkPoolWorker-2] 2025-11-05 12:41:54 [info     ] 📤 Submitting batch #37 to thread pool (inflight=37)
+worker-1  | [2025-11-05 12:41:54,705: WARNING/ForkPoolWorker-2] 2025-11-05 12:41:54 [info     ] 🔄 [Thread-281467649323392] Translating batch #37: 20 segments
+worker-1  | [2025-11-05 12:41:54,705: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:41:54,705: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:41:54,706: WARNING/ForkPoolWorker-2] 2025-11-05 12:41:54 [debug    ] ✅ Budget acquired: 1139 tokens, TPM: 3781/20000, RPM: 3/60
+worker-1  | [2025-11-05 12:42:02,427: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:42:02,432: INFO/ForkPoolWorker-2] ✅ Batch a9a9440b-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:42:02,432: WARNING/ForkPoolWorker-2] 2025-11-05 12:42:02 [info     ] 📊 Phase A+ Batch operation completed batch_id=a9a9440b-0 duration_s=7.73 est_out_tokens=617 headers={} in_tokens=522 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1139 waited_s=0
+worker-1  | [2025-11-05 12:42:02,432: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:42:02,432: WARNING/ForkPoolWorker-2] 2025-11-05 12:42:02 [info     ] ✅ [Thread-281467649323392] Batch #37 translated successfully
+worker-1  | [2025-11-05 12:42:14,449: WARNING/ForkPoolWorker-2] 2025-11-05 12:42:14 [info     ] 📤 Submitting batch #38 to thread pool (inflight=38)
+worker-1  | [2025-11-05 12:42:14,449: WARNING/ForkPoolWorker-2] 2025-11-05 12:42:14 [info     ] 🔄 [Thread-281467649323392] Translating batch #38: 20 segments
+worker-1  | [2025-11-05 12:42:14,449: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:42:14,450: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:42:14,451: WARNING/ForkPoolWorker-2] 2025-11-05 12:42:14 [debug    ] ✅ Budget acquired: 1283 tokens, TPM: 1283/20000, RPM: 1/60
+worker-1  | [2025-11-05 12:42:21,448: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:42:21,449: INFO/ForkPoolWorker-2] ✅ Batch 4575d68d-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:42:21,449: WARNING/ForkPoolWorker-2] 2025-11-05 12:42:21 [info     ] 📊 Phase A+ Batch operation completed batch_id=4575d68d-0 duration_s=7.0 est_out_tokens=681 headers={} in_tokens=602 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1283 waited_s=0
+worker-1  | [2025-11-05 12:42:21,449: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:42:21,449: WARNING/ForkPoolWorker-2] 2025-11-05 12:42:21 [info     ] ✅ [Thread-281467649323392] Batch #38 translated successfully
+worker-1  | [2025-11-05 12:42:37,267: WARNING/ForkPoolWorker-2] 2025-11-05 12:42:37 [info     ] 📤 Submitting batch #39 to thread pool (inflight=39)
+worker-1  | [2025-11-05 12:42:37,267: WARNING/ForkPoolWorker-2] 2025-11-05 12:42:37 [info     ] 🔄 [Thread-281467649323392] Translating batch #39: 20 segments
+worker-1  | [2025-11-05 12:42:37,267: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:42:37,268: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:42:37,269: WARNING/ForkPoolWorker-2] 2025-11-05 12:42:37 [debug    ] ✅ Budget acquired: 1267 tokens, TPM: 2550/20000, RPM: 2/60
+worker-1  | [2025-11-05 12:42:45,843: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:42:45,844: INFO/ForkPoolWorker-2] ✅ Batch 61bfc4f9-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:42:45,844: WARNING/ForkPoolWorker-2] 2025-11-05 12:42:45 [info     ] 📊 Phase A+ Batch operation completed batch_id=61bfc4f9-0 duration_s=8.57 est_out_tokens=674 headers={} in_tokens=593 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1267 waited_s=0
+worker-1  | [2025-11-05 12:42:45,844: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:42:45,844: WARNING/ForkPoolWorker-2] 2025-11-05 12:42:45 [info     ] ✅ [Thread-281467649323392] Batch #39 translated successfully
+worker-1  | [2025-11-05 12:42:52,364: WARNING/ForkPoolWorker-2] 2025-11-05 12:42:52 [info     ] 📤 Submitting batch #40 to thread pool (inflight=40)
+worker-1  | [2025-11-05 12:42:52,364: WARNING/ForkPoolWorker-2] 2025-11-05 12:42:52 [info     ] 🔄 [Thread-281467649323392] Translating batch #40: 20 segments
+worker-1  | [2025-11-05 12:42:52,365: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:42:52,365: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:42:52,366: WARNING/ForkPoolWorker-2] 2025-11-05 12:42:52 [debug    ] ✅ Budget acquired: 1253 tokens, TPM: 3803/20000, RPM: 3/60
+worker-1  | [2025-11-05 12:43:00,258: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:43:00,259: INFO/ForkPoolWorker-2] ✅ Batch 728d2d70-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:43:00,259: WARNING/ForkPoolWorker-2] 2025-11-05 12:43:00 [info     ] 📊 Phase A+ Batch operation completed batch_id=728d2d70-0 duration_s=7.89 est_out_tokens=668 headers={} in_tokens=585 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1253 waited_s=0
+worker-1  | [2025-11-05 12:43:00,259: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:43:00,259: WARNING/ForkPoolWorker-2] 2025-11-05 12:43:00 [info     ] ✅ [Thread-281467649323392] Batch #40 translated successfully
+worker-1  | [2025-11-05 12:43:15,797: WARNING/ForkPoolWorker-2] 2025-11-05 12:43:15 [info     ] 📤 Submitting batch #41 to thread pool (inflight=41)
+worker-1  | [2025-11-05 12:43:15,797: WARNING/ForkPoolWorker-2] 2025-11-05 12:43:15 [info     ] 🔄 [Thread-281467649323392] Translating batch #41: 20 segments
+worker-1  | [2025-11-05 12:43:15,797: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:43:15,798: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:43:15,799: WARNING/ForkPoolWorker-2] 2025-11-05 12:43:15 [debug    ] ✅ Budget acquired: 1159 tokens, TPM: 1159/20000, RPM: 1/60
+worker-1  | [2025-11-05 12:43:22,808: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:43:22,809: INFO/ForkPoolWorker-2] ✅ Batch 135122bd-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:43:22,809: WARNING/ForkPoolWorker-2] 2025-11-05 12:43:22 [info     ] 📊 Phase A+ Batch operation completed batch_id=135122bd-0 duration_s=7.01 est_out_tokens=626 headers={} in_tokens=533 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1159 waited_s=0
+worker-1  | [2025-11-05 12:43:22,809: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:43:22,809: WARNING/ForkPoolWorker-2] 2025-11-05 12:43:22 [info     ] ✅ [Thread-281467649323392] Batch #41 translated successfully
+worker-1  | [2025-11-05 12:43:42,733: WARNING/ForkPoolWorker-2] 2025-11-05 12:43:42 [info     ] 📤 Submitting batch #42 to thread pool (inflight=42)
+worker-1  | [2025-11-05 12:43:42,733: WARNING/ForkPoolWorker-2] 2025-11-05 12:43:42 [info     ] 🔄 [Thread-281467649323392] Translating batch #42: 20 segments
+worker-1  | [2025-11-05 12:43:42,733: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:43:42,734: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:43:42,735: WARNING/ForkPoolWorker-2] 2025-11-05 12:43:42 [debug    ] ✅ Budget acquired: 1211 tokens, TPM: 2370/20000, RPM: 2/60
+worker-1  | [2025-11-05 12:43:49,698: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:43:49,701: INFO/ForkPoolWorker-2] ✅ Batch 4acbba92-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:43:49,701: WARNING/ForkPoolWorker-2] 2025-11-05 12:43:49 [info     ] 📊 Phase A+ Batch operation completed batch_id=4acbba92-0 duration_s=6.97 est_out_tokens=649 headers={} in_tokens=562 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1211 waited_s=0
+worker-1  | [2025-11-05 12:43:49,702: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:43:49,702: WARNING/ForkPoolWorker-2] 2025-11-05 12:43:49 [info     ] ✅ [Thread-281467649323392] Batch #42 translated successfully
+worker-1  | [2025-11-05 12:44:12,358: WARNING/ForkPoolWorker-2] 2025-11-05 12:44:12 [info     ] 📤 Submitting batch #43 to thread pool (inflight=43)
+worker-1  | [2025-11-05 12:44:12,359: WARNING/ForkPoolWorker-2] 2025-11-05 12:44:12 [info     ] 🔄 [Thread-281467649323392] Translating batch #43: 20 segments
+worker-1  | [2025-11-05 12:44:12,359: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:44:12,359: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:44:12,360: WARNING/ForkPoolWorker-2] 2025-11-05 12:44:12 [debug    ] ✅ Budget acquired: 1078 tokens, TPM: 1078/20000, RPM: 1/60
+worker-1  | [2025-11-05 12:44:18,164: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:44:18,171: INFO/ForkPoolWorker-2] ✅ Batch 0c7bdd0c-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:44:18,171: WARNING/ForkPoolWorker-2] 2025-11-05 12:44:18 [info     ] 📊 Phase A+ Batch operation completed batch_id=0c7bdd0c-0 duration_s=5.81 est_out_tokens=590 headers={} in_tokens=488 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1078 waited_s=0
+worker-1  | [2025-11-05 12:44:18,171: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:44:18,171: WARNING/ForkPoolWorker-2] 2025-11-05 12:44:18 [info     ] ✅ [Thread-281467649323392] Batch #43 translated successfully
+worker-1  | [2025-11-05 12:44:39,095: WARNING/ForkPoolWorker-2] 2025-11-05 12:44:39 [info     ] 📤 Submitting batch #44 to thread pool (inflight=44)
+worker-1  | [2025-11-05 12:44:39,095: WARNING/ForkPoolWorker-2] 2025-11-05 12:44:39 [info     ] 🔄 [Thread-281467649323392] Translating batch #44: 20 segments
+worker-1  | [2025-11-05 12:44:39,095: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:44:39,096: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:44:39,096: WARNING/ForkPoolWorker-2] 2025-11-05 12:44:39 [debug    ] ✅ Budget acquired: 972 tokens, TPM: 2050/20000, RPM: 2/60
+worker-1  | [2025-11-05 12:44:42,267: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:44:42,268: INFO/ForkPoolWorker-2] ✅ Batch 569b7a1f-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:44:42,268: WARNING/ForkPoolWorker-2] 2025-11-05 12:44:42 [info     ] 📊 Phase A+ Batch operation completed batch_id=569b7a1f-0 duration_s=3.17 est_out_tokens=543 headers={} in_tokens=429 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=972 waited_s=0
+worker-1  | [2025-11-05 12:44:42,268: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:44:42,268: WARNING/ForkPoolWorker-2] 2025-11-05 12:44:42 [info     ] ✅ [Thread-281467649323392] Batch #44 translated successfully
+worker-1  | [2025-11-05 12:45:20,918: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:20 [info     ] 📤 Submitting batch #45 to thread pool (inflight=45)
+worker-1  | [2025-11-05 12:45:20,918: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:20 [info     ] 🔄 [Thread-281467649323392] Translating batch #45: 20 segments
+worker-1  | [2025-11-05 12:45:20,918: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:45:20,919: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:45:20,919: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:20 [debug    ] ✅ Budget acquired: 1024 tokens, TPM: 1024/20000, RPM: 1/60
+worker-1  | [2025-11-05 12:45:26,032: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:45:26,037: INFO/ForkPoolWorker-2] ✅ Batch 18624884-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:45:26,038: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:26 [info     ] 📊 Phase A+ Batch operation completed batch_id=18624884-0 duration_s=5.12 est_out_tokens=566 headers={} in_tokens=458 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1024 waited_s=0
+worker-1  | [2025-11-05 12:45:26,038: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:45:26,038: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:26 [info     ] ✅ [Thread-281467649323392] Batch #45 translated successfully
+worker-1  | [2025-11-05 12:45:44,414: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:44 [info     ] 📤 Submitting batch #46 to thread pool (inflight=46)
+worker-1  | [2025-11-05 12:45:44,414: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:44 [info     ] 🔄 [Thread-281467649323392] Translating batch #46: 20 segments
+worker-1  | [2025-11-05 12:45:44,414: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 20 segments → he
+worker-1  | [2025-11-05 12:45:44,415: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 20 segments (global #1-#20)
+worker-1  | [2025-11-05 12:45:44,415: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:44 [debug    ] ✅ Budget acquired: 1125 tokens, TPM: 2149/20000, RPM: 2/60
+worker-1  | [2025-11-05 12:45:50,394: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:45:50,397: INFO/ForkPoolWorker-2] ✅ Batch 7a3f4116-0: Perfect ID mapping - 20/20 translations
+worker-1  | [2025-11-05 12:45:50,397: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:50 [info     ] 📊 Phase A+ Batch operation completed batch_id=7a3f4116-0 duration_s=5.98 est_out_tokens=611 headers={} in_tokens=514 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1125 waited_s=0
+worker-1  | [2025-11-05 12:45:50,397: INFO/ForkPoolWorker-2] ✅ Translation completed: 20/20 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:45:50,397: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:50 [info     ] ✅ [Thread-281467649323392] Batch #46 translated successfully
+worker-1  | [2025-11-05 12:45:53,957: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] 📤 Submitting final batch #47 to thread pool (inflight=47)
+worker-1  | [2025-11-05 12:45:53,957: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Transcription complete: 955 segments, 48 batches
+worker-1  | [2025-11-05 12:45:53,957: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ⏳ Waiting for 48 translation batches to complete...
+worker-1  | [2025-11-05 12:45:53,957: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #17 results
+worker-1  | [2025-11-05 12:45:53,957: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #11 results
+worker-1  | [2025-11-05 12:45:53,957: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #26 results
+worker-1  | [2025-11-05 12:45:53,957: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #39 results
+worker-1  | [2025-11-05 12:45:53,958: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] 🔄 [Thread-281467649323392] Translating batch #47: 15 segments
+worker-1  | [2025-11-05 12:45:53,958: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 15 segments → he
+worker-1  | [2025-11-05 12:45:53,958: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #42 results
+worker-1  | [2025-11-05 12:45:53,958: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #16 results
+worker-1  | [2025-11-05 12:45:53,958: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #6 results
+worker-1  | [2025-11-05 12:45:53,958: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #9 results
+worker-1  | [2025-11-05 12:45:53,958: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #31 results
+worker-1  | [2025-11-05 12:45:53,958: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #22 results
+worker-1  | [2025-11-05 12:45:53,958: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #0 results
+worker-1  | [2025-11-05 12:45:53,958: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #33 results
+worker-1  | [2025-11-05 12:45:53,958: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #8 results
+worker-1  | [2025-11-05 12:45:53,958: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #24 results
+worker-1  | [2025-11-05 12:45:53,959: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #34 results
+worker-1  | [2025-11-05 12:45:53,959: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #25 results
+worker-1  | [2025-11-05 12:45:53,959: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #13 results
+worker-1  | [2025-11-05 12:45:53,959: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #5 results
+worker-1  | [2025-11-05 12:45:53,959: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #38 results
+worker-1  | [2025-11-05 12:45:53,959: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #2 results
+worker-1  | [2025-11-05 12:45:53,959: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #1 results
+worker-1  | [2025-11-05 12:45:53,959: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #27 results
+worker-1  | [2025-11-05 12:45:53,959: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #30 results
+worker-1  | [2025-11-05 12:45:53,959: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #20 results
+worker-1  | [2025-11-05 12:45:53,959: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #14 results
+worker-1  | [2025-11-05 12:45:53,959: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #43 results
+worker-1  | [2025-11-05 12:45:53,959: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #15 results
+worker-1  | [2025-11-05 12:45:53,959: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #23 results
+worker-1  | [2025-11-05 12:45:53,959: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #32 results
+worker-1  | [2025-11-05 12:45:53,959: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #35 results
+worker-1  | [2025-11-05 12:45:53,960: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #12 results
+worker-1  | [2025-11-05 12:45:53,960: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #3 results
+worker-1  | [2025-11-05 12:45:53,960: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 15 segments (global #1-#15)
+worker-1  | [2025-11-05 12:45:53,960: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #28 results
+worker-1  | [2025-11-05 12:45:53,960: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #18 results
+worker-1  | [2025-11-05 12:45:53,960: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #19 results
+worker-1  | [2025-11-05 12:45:53,960: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #21 results
+worker-1  | [2025-11-05 12:45:53,960: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #41 results
+worker-1  | [2025-11-05 12:45:53,960: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #37 results
+worker-1  | [2025-11-05 12:45:53,961: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #36 results
+worker-1  | [2025-11-05 12:45:53,961: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #7 results
+worker-1  | [2025-11-05 12:45:53,961: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #44 results
+worker-1  | [2025-11-05 12:45:53,961: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [debug    ] ✅ Budget acquired: 1042 tokens, TPM: 3191/20000, RPM: 3/60
+worker-1  | [2025-11-05 12:45:53,962: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #10 results
+worker-1  | [2025-11-05 12:45:53,962: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #45 results
+worker-1  | [2025-11-05 12:45:53,962: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #29 results
+worker-1  | [2025-11-05 12:45:53,963: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #46 results
+worker-1  | [2025-11-05 12:45:53,963: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #40 results
+worker-1  | [2025-11-05 12:45:53,963: WARNING/ForkPoolWorker-2] 2025-11-05 12:45:53 [info     ] ✅ Collected batch #4 results
+worker-1  | [2025-11-05 12:46:00,286: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:46:00,291: INFO/ForkPoolWorker-2] ✅ Batch cc5ad7ae-0: Perfect ID mapping - 15/15 translations
+worker-1  | [2025-11-05 12:46:00,291: WARNING/ForkPoolWorker-2] 2025-11-05 12:46:00 [info     ] 📊 Phase A+ Batch operation completed batch_id=cc5ad7ae-0 duration_s=6.33 est_out_tokens=574 headers={} in_tokens=468 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=1042 waited_s=0
+worker-1  | [2025-11-05 12:46:00,293: INFO/ForkPoolWorker-2] ✅ Translation completed: 15/15 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:46:00,293: WARNING/ForkPoolWorker-2] 2025-11-05 12:46:00 [info     ] ✅ [Thread-281467649323392] Batch #47 translated successfully
+worker-1  | [2025-11-05 12:46:00,294: WARNING/ForkPoolWorker-2] 2025-11-05 12:46:00 [info     ] ✅ Collected batch #47 results
+worker-1  | [2025-11-05 12:46:00,295: WARNING/ForkPoolWorker-2] 2025-11-05 12:46:00 [info     ] ✅ All translations complete: 955 segments
+worker-1  | [2025-11-05 12:46:00,296: INFO/ForkPoolWorker-2] 🧠 Transcription: 7.8× speed (model: medium, segments: 0)
+worker-1  | [2025-11-05 12:46:00,297: WARNING/ForkPoolWorker-2] 2025-11-05 12:46:00 [info     ] 🎉 Pipeline overlap complete! Total time: 659.3s for 5149.7s audio
+worker-1  | [2025-11-05 12:46:00,349: WARNING/ForkPoolWorker-2] 2025-11-05 12:46:00 [info     ] ✅ P1 Pipeline complete: 955 segments | 664.4s total | en → he
+worker-1  | [2025-11-05 12:46:00,350: WARNING/ForkPoolWorker-2] 2025-11-05 12:46:00 [info     ] Creating SRT file              language=en output_path=/app/downloads/FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie_original.srt segments_count=955 use_translation=False
+worker-1  | [2025-11-05 12:46:00,353: WARNING/ForkPoolWorker-2] 2025-11-05 12:46:00 [info     ] SRT file created successfully  output_path=/app/downloads/FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie_original.srt segments_count=955
+worker-1  | [2025-11-05 12:46:00,353: WARNING/ForkPoolWorker-2] 2025-11-05 12:46:00 [info     ] Creating SRT file              language=he output_path=/app/downloads/FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie_translated.srt segments_count=955 use_translation=True
+worker-1  | [2025-11-05 12:46:00,367: WARNING/ForkPoolWorker-2] 2025-11-05 12:46:00 [info     ] SRT file created successfully  output_path=/app/downloads/FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie_translated.srt segments_count=955
+worker-1  | [2025-11-05 12:46:00,367: WARNING/ForkPoolWorker-2] 2025-11-05 12:46:00 [info     ] Starting video subtitle embedding operation=subtitle_embedding_start srt_path=FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie_translated.srt target_language=he video_path=FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie.mp4
+worker-1  | [2025-11-05 12:46:00,369: WARNING/ForkPoolWorker-2] 2025-11-05 12:46:00 [info     ] Using enhanced RTL settings    font=Noto Sans Hebrew target_language=he
+worker-1  | [2025-11-05 12:46:00,369: WARNING/ForkPoolWorker-2] 2025-11-05 12:46:00 [debug    ] Running FFmpeg subtitle embedding command=ffmpeg -i /app/downloads/FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie.mp4 -vf subtitles='/app/downloads/FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie_translated_clean.srt':force_style='FontName=Noto Sans Hebrew,FontSize=18,Bold=1,PrimaryColour=&HFFFFFF,OutlineColour=&H000000,BackColour=&H80000000,Outline=3,Shadow=2,MarginV=40,Alignment=2':charenc=UTF-8... operation=ffmpeg_subtitle_start
+worker-1  | [2025-11-05 12:47:52,378: INFO/ForkPoolWorker-2] 🎬 subtitle_embedding: 46.0× speed
+worker-1  | [2025-11-05 12:47:52,378: WARNING/ForkPoolWorker-2] 2025-11-05 12:47:52 [info     ] Video with subtitles created successfully file_size_mb=276.43 operation=subtitle_embedding_complete output_path=FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie_with_subtitles.mp4
+worker-1  | [2025-11-05 12:47:53,502: WARNING/ForkPoolWorker-2] 2025-11-05 12:47:53 [info     ] Task completed                 detected_language=en duration_seconds=778.608 files_created=3 task_id=708c6db8-3676-4bd5-9cfc-9f55e5ed9e4b task_name=process_video
+worker-1  | [2025-11-05 12:47:53,503: INFO/ForkPoolWorker-2] Task tasks.process_video_task[708c6db8-3676-4bd5-9cfc-9f55e5ed9e4b] succeeded in 778.6603514379967s: {'status': 'SUCCESS', 'result': {'title': 'FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie', 'detected_language': 'en', 'files': {'original_srt': 'FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie_original.srt', 'translated_srt': 'FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie_translated.srt', 'video_with_subtitles': 'FAST_CARS_-_Hollywood_English_Movie_Scott_Eastwood_In_Superhit_English_Full_Action_Movie_final.mp4'}, 'timing_summary': {'download_video': '32.9', 'transcribe_and_translate': '664.4', 'create_video_with_subtitles': '113.0', 'add_watermark': '0.0 (skipped)'}, 'progress': [{...}, {...}, {...}, {...}, {...}, {...}, {...}], 'video_metadata': {'title': 'FAST CARS - Hollywood English Movie | Scott Eastwood In Superhit English Full Action Movie', 'duration': 5150, 'duration_string': '1:25:50', 'view_count': 5852954, 'upload_date': '20230727', 'uploader': 'Blockbuster English Movies', ...}}}

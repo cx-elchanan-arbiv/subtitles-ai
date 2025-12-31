@@ -1,0 +1,42 @@
+TEST 2: P1 Sync + 4 Threads
+===========================
+
+Configuration:
+- TRANSLATION_PARALLELISM=4
+- MAX_CONCURRENT_OPENAI_REQUESTS=4
+- Pipeline Overlap: ✅ ENABLED
+- Async: ❌ DISABLED (pure sync)
+
+Results:
+--------
+✅ Pipeline overlap complete! Total time: 671.9s
+📹 Audio duration: 5149.7s (85.8 minutes)
+📊 Total processing time: 676.4s (11.27 minutes)
+🎯 Processing speed: 7.61x realtime
+📦 Segments: 1146 (191 more than Test 1!)
+🌍 Language: en → he
+
+Comparison with Test 1:
+-----------------------
+Test 1 (1 thread):  659.3s ⚡
+Test 2 (4 threads): 671.9s
+Difference: +12.6s SLOWER 🤔
+
+Threads Observed:
+-----------------
+- Thread-281467842261376
+- Thread-281467852747136
+Only 2 threads active (not 4)
+
+Notes:
+------
+⚠️ Test 2 was SLOWER than Test 1
+⚠️ Only 2 threads observed (expected 4)
+⚠️ More segments (1146 vs 955) - maybe different video?
+📝 Need to investigate why 4 threads didn't help
+
+Possible Reasons:
+-----------------
+1. ThreadPoolExecutor might not be using all 4 workers
+2. Semaphore limiting to 2 concurrent
+3. Different video content (more segments)

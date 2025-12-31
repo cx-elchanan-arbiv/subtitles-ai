@@ -1,0 +1,36 @@
+{
+  "file": {
+    "not_found": "الملف غير موجود",
+    "invalid_format": "تنسيق الملف غير صحيح",
+    "too_large": "الملف كبير جداً",
+    "upload_failed": "فشل رفع الملف",
+    "processing_failed": "فشلت معالجة الملف"
+  },
+  "video": {
+    "invalid_url": "رابط الفيديو غير صحيح",
+    "download_failed": "فشل تحميل الفيديو",
+    "unsupported_format": "تنسيق الفيديو غير مدعوم",
+    "too_long": "الفيديو طويل جداً",
+    "no_audio": "لا يحتوي الفيديو على صوت"
+  },
+  "translation": {
+    "service_unavailable": "خدمة الترجمة غير متاحة",
+    "api_key_missing": "مفتاح API مفقود",
+    "quota_exceeded": "تم تجاوز الحد المسموح",
+    "translation_failed": "فشلت الترجمة",
+    "unsupported_language": "اللغة غير مدعومة"
+  },
+  "transcription": {
+    "model_not_found": "نموذج النسخ غير موجود",
+    "transcription_failed": "فشل النسخ",
+    "audio_processing_failed": "فشلت معالجة الصوت",
+    "model_loading_failed": "فشل تحميل النموذج"
+  },
+  "system": {
+    "internal_error": "خطأ داخلي في النظام",
+    "service_unavailable": "الخدمة غير متاحة",
+    "timeout": "انتهت مهلة العملية",
+    "insufficient_resources": "موارد غير كافية",
+    "maintenance_mode": "النظام في وضع الصيانة"
+  }
+}

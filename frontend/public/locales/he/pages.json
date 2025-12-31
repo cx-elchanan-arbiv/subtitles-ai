@@ -1,0 +1,130 @@
+{
+  "home": {
+    "title": "SubsTranslator - תרגום כתוביות מתקדם",
+    "description": "פלטפורמת תרגום כתוביות מתקדמת עם בינה מלאכותית. תמיכה ב-50+ שפות, עיבוד מהיר ואיכות מקצועית.",
+    "keywords": "תרגום כתוביות, בינה מלאכותית, וידאו, תמלול, YouTube"
+  },
+  "dashboard": {
+    "title": "לוח הבקרה שלי",
+    "description": "נהלו את הסרטונים והכתוביות שלכם",
+    "welcome": "ברוכים הבאים, {{name}}",
+    "recentVideos": "סרטונים אחרונים",
+    "statistics": "סטטיסטיקות",
+    "quickActions": "פעולות מהירות",
+    "noVideos": "עדיין לא עיבדתם סרטונים",
+    "getStarted": "התחילו עכשיו",
+    "totalVideos": "סה\"כ סרטונים",
+    "totalMinutes": "סה\"כ דקות",
+    "languagesUsed": "שפות בשימוש",
+    "thisMonth": "החודש"
+  },
+  "upload": {
+    "title": "העלאת סרטון",
+    "description": "העלו קובץ וידאו או אודיו לתמלול ותרגום",
+    "stepTitle": "שלב {{step}} מתוך {{total}}",
+    "steps": {
+      "upload": "העלאה",
+      "configure": "הגדרות",
+      "process": "עיבוד"
+    }
+  },
+  "youtube": {
+    "title": "עיבוד מ-YouTube",
+    "description": "הכניסו קישור לסרטון מ-YouTube, Vimeo, TikTok ועוד",
+    "quickDownload": "הורדה מהירה",
+    "fullProcess": "עיבוד מלא עם כתוביות"
+  },
+  "results": {
+    "title": "תוצאות העיבוד",
+    "description": "הסרטון שלכם מוכן! הורידו את הכתוביות או הוידאו המעובד",
+    "videoInfo": "פרטי הסרטון",
+    "downloads": "הורדות",
+    "share": "שיתוף",
+    "edit": "עריכה"
+  },
+  "profile": {
+    "title": "הפרופיל שלי",
+    "description": "נהלו את הפרופיל והעדפות החשבון שלכם",
+    "personalInfo": "מידע אישי",
+    "preferences": "העדפות",
+    "subscription": "מנוי",
+    "billing": "חיוב",
+    "security": "אבטחה",
+    "notifications": "התראות",
+    "language": "שפה",
+    "theme": "ערכת נושא",
+    "timezone": "אזור זמן"
+  },
+  "settings": {
+    "title": "הגדרות",
+    "description": "התאימו את החוויה שלכם",
+    "general": "כללי",
+    "account": "חשבון",
+    "privacy": "פרטיות",
+    "notifications": "התראות",
+    "advanced": "מתקדם",
+    "about": "אודות"
+  },
+  "help": {
+    "title": "מרכז עזרה",
+    "description": "מצאו תשובות לשאלות נפוצות והדרכות",
+    "faq": "שאלות נפוצות",
+    "tutorials": "מדריכים",
+    "contact": "צור קשר",
+    "support": "תמיכה",
+    "documentation": "תיעוד",
+    "community": "קהילה"
+  },
+  "about": {
+    "title": "אודות SubsTranslator",
+    "description": "למדו עוד על הפלטפורמה שלנו ומשימתנו",
+    "mission": "המשימה שלנו",
+    "team": "הצוות",
+    "technology": "הטכנולוגיה",
+    "contact": "צור קשר"
+  },
+  "pricing": {
+    "title": "תמחור",
+    "description": "בחרו את התוכנית המתאימה לכם",
+    "free": "חינם",
+    "pro": "מקצועי",
+    "enterprise": "ארגוני",
+    "features": "תכונות",
+    "billing": "חיוב",
+    "faq": "שאלות נפוצות"
+  },
+  "legal": {
+    "privacy": {
+      "title": "מדיניות פרטיות",
+      "description": "איך אנחנו מגינים על הפרטיות שלכם"
+    },
+    "terms": {
+      "title": "תנאי שימוש",
+      "description": "התנאים וההגבלות לשימוש בשירות"
+    },
+    "cookies": {
+      "title": "מדיניות עוגיות",
+      "description": "איך אנחנו משתמשים בעוגיות"
+    }
+  },
+  "errors": {
+    "404": {
+      "title": "עמוד לא נמצא",
+      "description": "העמוד שחיפשתם לא קיים או הועבר",
+      "goHome": "חזרו לעמוד הבית"
+    },
+    "500": {
+      "title": "שגיאת שרת",
+      "description": "אירעה שגיאה בשרת. אנא נסו שוב מאוחר יותר",
+      "retry": "נסו שוב"
+    },
+    "offline": {
+      "title": "אין חיבור לאינטרנט",
+      "description": "בדקו את חיבור האינטרנט שלכם ונסו שוב",
+      "refresh": "רעננו את העמוד"
+    }
+  }
+}
+
+
+

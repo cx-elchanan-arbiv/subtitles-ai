@@ -1,0 +1,456 @@
+{
+  "app": {
+    "title": "SubsTranslator",
+    "subtitle": "AI-Powered Video Subtitle Translation",
+    "description": "Create professional subtitles and translations with AI-powered precision. Upload, process, and download in minutes."
+  },
+  "navigation": {
+    "signIn": "Sign In",
+    "signOut": "Sign Out",
+    "profile": "Profile",
+    "dashboard": "Dashboard",
+    "settings": "Settings",
+    "help": "Help",
+    "about": "About"
+  },
+  "hero": {
+    "title": "Transform Your Videos",
+    "subtitle": "Advanced Subtitle Translation Platform",
+    "description": "Create professional subtitles and translations with AI-powered precision. Upload, process, and download in minutes.",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More"
+  },
+  "features": {
+    "fastProcessing": {
+      "title": "Lightning Fast",
+      "description": "Process videos in minutes, not hours"
+    },
+    "multiLanguage": {
+      "title": "Multi-Language",
+      "description": "Support for 50+ languages with accurate translation"
+    },
+    "aiPowered": {
+      "title": "AI Powered",
+      "description": "Advanced AI for perfect translations"
+    },
+    "professionalQuality": {
+      "title": "Professional Quality",
+      "description": "Professional-grade results with custom styling"
+    }
+  },
+  "heroFeatures": {
+    "fastProcessing": {
+      "title": "Fast Processing",
+      "description": "Lightning-fast AI processing for quick results"
+    },
+    "multiLanguage": {
+      "title": "Multi-Language",
+      "description": "Support for multiple languages and auto-detection"
+    },
+    "aiPowered": {
+      "title": "AI Powered",
+      "description": "Advanced AI technology for accurate translations"
+    }
+  },
+  "tabs": {
+    "upload": "File Upload",
+    "youtube": "Online Video",
+    "dashboard": "My Videos"
+  },
+  "language": {
+    "source": "Source Language",
+    "target": "Target Language",
+    "autoDetect": "Auto Detect",
+    "selectSource": "Select source language",
+    "selectTarget": "Select target language"
+  },
+  "upload": {
+    "title": "Click to upload video or audio file",
+    "dragDrop": "Drag and drop a file here",
+    "supportedFormats": "Supports MP4, MKV, MOV, WebM, AVI, MP3, WAV and more",
+    "browseFiles": "Browse Files",
+    "maxSize": "Maximum size: 500MB",
+    "duration": "Duration",
+    "fileSize": "File Size",
+    "resolution": "Resolution"
+  },
+  "youtube": {
+    "urlPlaceholder": "Video URL (YouTube, Vimeo, TikTok & more)",
+    "urlDescription": "Enter a YouTube video URL to extract and translate subtitles",
+    "quickDownload": "Quick Download",
+    "processWithSubtitles": "Process with Subtitles"
+  },
+  "options": {
+    "autoCreateVideo": "Create video with burned-in subtitles",
+    "whisperModel": "Transcription Model",
+    "translationService": "Translation Service",
+    "watermark": "Watermark",
+    "transcriptionOnly": "Transcription & subtitles only (no translation)",
+    "transcriptionOnlyHint": "Subtitles will be in the video's source language"
+  },
+  "models": {
+    "tiny": "Tiny - Fastest (Default)",
+    "base": "Base - Good Balance",
+    "small": "Small - Better Accuracy",
+    "medium": "Medium - Fast, Good Accuracy",
+    "large": "Large - Most Accurate",
+    "hint": "Large: Excellent quality, longer time • Medium: Good quality, short time • Tiny: Fastest, less accurate"
+  },
+  "processing": {
+    "title": "Processing Your Video",
+    "description": "AI is working on your video",
+    "overallProgress": "Overall Progress",
+    "showLogs": "Show Logs",
+    "hideLogs": "Hide Logs",
+    "estimatedTime": "Estimated Time",
+    "currentStep": "Current Step",
+    "analyzingYoutube": "🎬 Analyzing YouTube video",
+    "requestDetails": "Request Details",
+    "actionType": "Action Type",
+    "downloadOnly": "Download Only",
+    "fullProcessing": "Full Processing",
+    "quality": "Quality",
+    "processingFile": "Processing File",
+    "preparingFile": "Preparing file for processing",
+    "processingVideo": "Processing Online Video",
+    "downloadingVideo": "Downloading Online Video",
+    "videoInfo": "Video Information",
+    "fileInfo": "File Information",
+    "duration": "Duration",
+    "views": "Views",
+    "creator": "Creator",
+    "resolution": "Resolution",
+    "yourChoices": "Your Settings",
+    "startingProcessing": "Starting processing...",
+    "outOf": "out of",
+    "stepsCompleted": "steps completed"
+  },
+  "steps": {
+    "uploading": "Uploading Video",
+    "downloading": "Downloading Video",
+    "audioProcessing": "Audio Processing",
+    "modelLoading": "Loading AI Model",
+    "transcription": "Transcription",
+    "translation": "Translation",
+    "srtCreation": "Creating SRT Files",
+    "videoCreation": "Creating Video",
+    "watermarkAddition": "Adding Watermark",
+    "finalizing": "Finalizing"
+  },
+  "results": {
+    "title": "Processing Complete!",
+    "description": "Your subtitles are ready. Review and download below.",
+    "detectedLanguage": "Detected Language",
+    "transcriptionQuality": "Transcription Quality",
+    "videoDuration": "Duration",
+    "downloadOriginal": "Download Original Subtitles",
+    "downloadTranslated": "Download Translated Subtitles",
+    "downloadVideo": "Watch the Complete Creation",
+    "videoReady": "Video ready for download!",
+    "totalTime": "Total Time",
+    "processAnother": "Process Another Video",
+    "downloadVideoButton": "Download Video",
+    "summarizeButton": "Summarize Content by Topics",
+    "summarizing": "Summarizing...",
+    "summaryReady": "Summary ready!",
+    "viewSummary": "View Summary",
+    "startNewTask": "Start New Task",
+    "aiSummaryTitle": "AI Summary Generation",
+    "aiSummaryDescription": "Edit the instructions below to customize the summary, or use the default:",
+    "customPromptLabel": "Instructions:",
+    "characters": "Characters",
+    "resetPrompt": "Reset",
+    "generateSummary": "Generate Summary",
+    "promptTooLong": "Prompt is too long. Please shorten to 1500 characters or less."
+  },
+  "watermark": {
+    "enabled": "Add watermark to video",
+    "logo": "Choose logo image",
+    "uploadText": "Click or drag image here",
+    "uploadHint": "PNG, JPG, GIF up to 5MB",
+    "change": "Change image",
+    "remove": "Remove image",
+    "expand": "Expand watermark settings",
+    "collapse": "Collapse watermark settings",
+    "size": "Logo size",
+    "position": "Logo position",
+    "opacity": "Logo opacity",
+    "opacityTransparent": "Transparent",
+    "opacityOpaque": "Opaque",
+    "preview": "Preview",
+    "sizes": {
+      "small": "Small",
+      "medium": "Medium",
+      "large": "Large"
+    },
+    "positions": {
+      "topLeft": "Top Left",
+      "topRight": "Top Right",
+      "bottomLeft": "Bottom Left",
+      "bottomRight": "Bottom Right"
+    },
+    "videoPreview": "Video Preview"
+  },
+  "auth": {
+    "signInRequired": "Sign in required",
+    "signInToUse": "Please sign in to use this feature",
+    "signInWithGoogle": "Sign in with Google",
+    "signInWithApple": "Sign in with Apple",
+    "user": "User",
+    "welcome": "Welcome",
+    "profile": "Profile"
+  },
+  "actions": {
+    "process": "Process",
+    "upload": "Upload",
+    "download": "Download",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "continue": "Continue",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "close": "Close",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "startProcessing": "Start Processing",
+  "removeFile": "Remove file",
+  "status": {
+    "loading": "Loading...",
+    "processing": "Processing...",
+    "completed": "Completed",
+    "failed": "Failed",
+    "pending": "Pending",
+    "ready": "Ready"
+  },
+  "time": {
+    "seconds": "seconds",
+    "minutes": "minutes",
+    "hours": "hours",
+    "ago": "ago",
+    "remaining": "remaining"
+  },
+  "languages": {
+    "auto": "Auto Detect",
+    "he": "Hebrew",
+    "en": "English", 
+    "es": "Spanish",
+    "ar": "Arabic",
+    "fr": "French",
+    "de": "German",
+    "it": "Italian",
+    "pt": "Portuguese",
+    "ru": "Russian",
+    "ja": "Japanese",
+    "ko": "Korean",
+    "zh": "Chinese",
+    "tr": "Turkish"
+  },
+  "whisperModels": {
+    "tiny": "Fast",
+    "base": "Standard",
+    "small": "Better Accuracy",
+    "medium": "Excellent",
+    "large": "Professional",
+    "pro": "PRO"
+  },
+  "modelDetails": {
+    "processingTime": "Processing time:",
+    "accuracy": "Accuracy:",
+    "bestFor": "Best for:",
+    "computeType": "Compute Type:",
+    "fastProcessingBasicAccuracy": "Fast processing with basic accuracy",
+    "goodBalance": "Good quality with excellent speed",
+    "perfectBalance": "Excellent quality with good speed",
+    "maximumAccuracy": "Maximum accuracy - requires PRO plan",
+    "tinyTime": "2-3 minutes",
+    "baseTime": "4-5 minutes",
+    "mediumTime": "8-12 minutes",
+    "largeTime": "20-25 minutes",
+    "tinyBestFor": "quick drafts",
+    "baseBestFor": "daily use",
+    "mediumBestFor": "quality content",
+    "largeBestFor": "research and professional projects",
+    "tinyAccuracy": "75-85%",
+    "baseAccuracy": "85-90%",
+    "mediumAccuracy": "90-94%",
+    "largeAccuracy": "95-98%",
+    "computeTypeInt8": "int8"
+  },
+  "processingSteps": {
+    "downloadingVideo": "Downloading Video",
+    "audioProcessing": "Audio Processing", 
+    "modelLoading": "Loading AI Model",
+    "transcription": "AI Transcription",
+    "translation": "Translating Subtitles",
+    "srtCreation": "Creating Subtitle Files",
+    "videoCreation": "Creating Video with Subtitles",
+    "finalizing": "Finalizing"
+  },
+  "errors": {
+    "processingError": "Processing Error",
+    "downloadFailed": "Download failed. Please try again.",
+    "processingFailed": "Processing failed. Please try again.",
+    "errorOccurred": "An error occurred during processing. Please try again.",
+    "youtubeBotDetection": {
+      "title": "YouTube Download Temporarily Unavailable",
+      "message": "YouTube is blocking downloads from our server",
+      "alternativeTitle": "Alternative Solution:",
+      "step1": "1. Download the video to your computer from YouTube",
+      "step2": "2. Come back here and click 'File Upload'",
+      "step3": "3. Upload the file - we'll handle the rest!",
+      "switchButton": "Switch to File Upload"
+    }
+  },
+  "validation": {
+    "enterVideoUrl": "Please enter a video URL",
+    "invalidYouTubeUrl": "Invalid YouTube URL. Examples: https://www.youtube.com/watch?v=... | https://youtu.be/...",
+    "invalidUrl": "Invalid URL. Examples: https://www.youtube.com/watch?v=... | https://youtu.be/..."
+  },
+  "buttons": {
+    "processing": "Processing...",
+    "downloadOnly": "Download Only",
+    "processButton": "Process with Subtitles",
+    "retryButton": "Try Again"
+  },
+  "tabs": {
+    "uploadTab": "File Upload",
+    "youtubeTab": "Online Video"
+  },
+  "help": {
+    "tips": "Tips"
+  },
+  "status": {
+    "unavailable": "unavailable"
+  },
+  "videoInfo": {
+    "title": "Video Information",
+    "videoTitle": "Title:",
+    "duration": "Duration:",
+    "views": "Views:",
+    "creator": "Creator:",
+    "resolution": "Resolution:",
+    "fps": "FPS:",
+    "fileSize": "File size:",
+    "description": "Description:",
+    "yourChoices": "Your Settings",
+    "sourceLanguage": "Source language:",
+    "targetLanguage": "Target language:",
+    "transcriptionModel": "Transcription model:",
+    "videoCreation": "Video creation:"
+  },
+  "fileInfo": {
+    "fileSizeLabel": "File size:",
+    "downloadHint": "The file will be saved to your downloads folder",
+    "megabytes": "MB"
+  },
+  "loading": {
+    "dataLoading": "Loading data"
+  },
+  "advanced": {
+    "logoOnly": "Logo Only",
+    "videoCutter": "Video Cutter",
+    "embedSubtitles": "Embed Subtitles",
+    "videoMerger": "Video Merger",
+    "comingSoon": "Coming Soon",
+    "logoOnlyDescription": "Add your logo/watermark to any video without transcription or translation. Fast processing with FFmpeg.",
+    "videoCutterDescription": "Cut your video to specific time segments. Fast processing with FFmpeg - no quality loss!",
+    "embedSubtitlesDescription": "Embed existing subtitles (SRT file) into your video with custom styling.",
+    "videoMergerDescription": "Merge multiple video files into one. Supports different resolutions."
+  },
+  "logoOnly": {
+    "uploadVideo": "Upload Video",
+    "uploadLogo": "Upload Logo",
+    "dragVideo": "Drag video or click",
+    "dragLogo": "Drag image or click",
+    "videoFormats": "MP4, MOV, AVI, MKV",
+    "logoFormats": "PNG, JPG (transparent PNG recommended)",
+    "change": "Change",
+    "remove": "Remove",
+    "logoSettings": "Logo Settings",
+    "position": "Position",
+    "size": "Size",
+    "opacity": "Opacity",
+    "recommendedFormat": "Recommended",
+    "transparentPng": "Transparent PNG",
+    "addLogoButton": "Add Logo to Video",
+    "processing": "Processing...",
+    "uploadBothFiles": "Please upload both video and logo",
+    "uploadLogoFile": "Please upload logo image",
+    "uploadVideoFile": "Please upload video file",
+    "successMessage": "Video with logo downloaded successfully!"
+  },
+  "videoCutter": {
+    "uploadVideo": "Upload Video File",
+    "cutTimeRange": "Cut Time Range",
+    "startTime": "Start Time (HH:MM:SS):",
+    "endTime": "End Time (HH:MM:SS):",
+    "duration": "Duration:",
+    "quickPresets": "Quick Presets",
+    "first1min": "First 1 min",
+    "first3min": "First 3 min",
+    "first5min": "First 5 min",
+    "first10min": "First 10 min",
+    "first30min": "First 30 min",
+    "first1hour": "First 1 hour",
+    "infoTitle": "Ultra-Precise Cutting!",
+    "infoFormat": "Format: HH:MM:SS (Hours:Minutes:Seconds) or MM:SS",
+    "infoExample": "Example: 00:01:30 = 1 minute 30 seconds",
+    "infoPrecision": "Precision: Exact seconds you specify!",
+    "infoSpeed": "Speed: Fast processing with FFmpeg - no quality loss!",
+    "infoLimit": "Limit: Maximum duration: 4 hours per cut",
+    "cutButton": "Cut Video",
+    "errorNoFile": "Please select a video file",
+    "errorEndTime": "End time must be after start time",
+    "errorMaxDuration": "Maximum duration is 4 hours"
+  },
+  "embedSubtitles": {
+    "uploadVideo": "Upload Video File",
+    "subtitlesInput": "Subtitles Input",
+    "uploadSRT": "Upload SRT File",
+    "pasteText": "Paste Text",
+    "clickUploadSRT": "Click to upload SRT file",
+    "srtFormat": "Supports .srt format",
+    "textareaPlaceholder": "Paste your subtitles here with timestamps:\n\nExample format:\n[00:00 - 00:05] Hello World\n[00:05 - 00:10] This is a test",
+    "logoOptions": "Logo Options (Optional)",
+    "addLogo": "Add logo to video",
+    "position": "Position:",
+    "size": "Size:",
+    "opacity": "Opacity:",
+    "infoTitle": "Embed Subtitles Info:",
+    "infoSrtFormat": "SRT Format: Standard SubRip (.srt) file format",
+    "infoTextFormat": "Text Format: [MM:SS - MM:SS] Text (automatically converted to SRT)",
+    "infoProcessing": "Processing: Subtitles are burned into the video (hard-coded)",
+    "infoLogo": "Logo: Optionally add your logo/watermark",
+    "infoSpeed": "Speed: Fast processing with FFmpeg",
+    "embedButton": "Embed Subtitles",
+    "errorNoVideo": "Please select a video file",
+    "errorNoSRT": "Please select an SRT file or switch to text input",
+    "errorNoText": "Please enter subtitles text",
+    "errorLogoNotEnabled": "Please enable watermark settings first to add logo"
+  },
+  "videoMerger": {
+    "video1Title": "Video 1 (First in sequence)",
+    "video2Title": "Video 2 (Second in sequence)",
+    "uploadFirst": "Click to upload first video",
+    "uploadSecond": "Click to upload second video",
+    "videoFormats": "MP4, AVI, MOV, MKV, etc.",
+    "swapOrder": "Swap Order",
+    "infoTitle": "Video Merger Info:",
+    "infoOrder": "Order: Videos will be merged in the order shown (Video 1 → Video 2)",
+    "infoResolution": "Resolution: Automatically handles different resolutions by scaling",
+    "infoProcessing": "Processing: Fast concatenation using FFmpeg concat filter",
+    "infoQuality": "Quality: No quality loss when formats match",
+    "infoFormats": "Formats: Supports MP4, AVI, MOV, MKV, and more",
+    "mergeButton": "Merge Videos",
+    "errorNoVideo1": "Please select the first video file",
+    "errorNoVideo2": "Please select the second video file"
+  }
+}
+
+
+

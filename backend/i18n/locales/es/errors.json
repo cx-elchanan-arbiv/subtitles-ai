@@ -1,0 +1,36 @@
+{
+  "file": {
+    "not_found": "Archivo no encontrado",
+    "invalid_format": "Formato de archivo inválido",
+    "too_large": "Archivo demasiado grande",
+    "upload_failed": "Falló la subida del archivo",
+    "processing_failed": "Falló el procesamiento del archivo"
+  },
+  "video": {
+    "invalid_url": "URL de video inválida",
+    "download_failed": "Falló la descarga del video",
+    "unsupported_format": "Formato de video no soportado",
+    "too_long": "Video demasiado largo",
+    "no_audio": "El video no contiene audio"
+  },
+  "translation": {
+    "service_unavailable": "Servicio de traducción no disponible",
+    "api_key_missing": "Clave API faltante",
+    "quota_exceeded": "Cuota excedida",
+    "translation_failed": "Falló la traducción",
+    "unsupported_language": "Idioma no soportado"
+  },
+  "transcription": {
+    "model_not_found": "Modelo de transcripción no encontrado",
+    "transcription_failed": "Falló la transcripción",
+    "audio_processing_failed": "Falló el procesamiento de audio",
+    "model_loading_failed": "Falló la carga del modelo"
+  },
+  "system": {
+    "internal_error": "Error interno del sistema",
+    "service_unavailable": "Servicio no disponible",
+    "timeout": "Tiempo de espera agotado",
+    "insufficient_resources": "Recursos insuficientes",
+    "maintenance_mode": "Sistema en modo de mantenimiento"
+  }
+}

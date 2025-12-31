@@ -1,0 +1,40 @@
+TEST 3: Baseline (Sequential - NO Pipeline Overlap)
+====================================================
+
+Configuration Changes:
+---------------------
+❌ Pipeline Overlap: DISABLED
+   - Changed: if target_lang... → if False
+   - Will use SEQUENTIAL flow: Transcription → Translation
+
+✅ TRANSLATION_PARALLELISM=1
+✅ MAX_CONCURRENT_OPENAI_REQUESTS=1
+✅ Sync (no asyncio) - same as Test 1 & 2
+
+This is the "BEFORE P1" baseline!
+----------------------------------
+
+What's Different from Test 1:
+------------------------------
+Test 1: ✅ Pipeline overlap (transcribe + translate simultaneously)
+Test 3: ❌ NO pipeline overlap (transcribe, THEN translate)
+
+Expected Result:
+----------------
+Test 3 should be SLOWER than Test 1
+- Expected: ~720-750s (60-90s slower than Test 1's 659s)
+- Why? Because translation waits for transcription to finish completely
+- No parallel processing between transcription and translation
+
+What to Look For:
+-----------------
+1. Logs should show: "Sequential flow" or "Standard transcription"
+2. Translation starts AFTER transcription finishes
+3. Two distinct phases:
+   - Phase 1: Transcription only
+   - Phase 2: Translation only (after transcription done)
+
+Ready to test!
+==============
+
+Run the same video: https://www.youtube.com/watch?v=wpHvBrIIJnA

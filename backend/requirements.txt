@@ -1,0 +1,23 @@
+Flask==3.1.2
+Flask-CORS==6.0.0
+Flask-Limiter==3.8.0
+faster-whisper==1.2.0
+deep-translator==1.11.4
+yt-dlp==2025.10.14
+requests==2.32.4
+python-dotenv==1.1.1
+celery==5.4.0
+redis==5.2.1
+gunicorn==23.0.0
+openai==1.35.13
+google-genai>=1.47.0  # New Google Gemini SDK (replaces deprecated google-generativeai)
+
+Werkzeug==3.1.3
+google-api-python-client==2.154.0
+ffmpeg-python==0.2.0
+kombu==5.4.2
+billiard==4.2.1
+structlog==24.4.0
+tiktoken==0.8.0  # Phase A+: Precise token counting for OpenAI
+browser-cookie3==0.20.1  # Fix YouTube 403 errors
+# Phase A: psutil optional for system monitoring (will work without it)

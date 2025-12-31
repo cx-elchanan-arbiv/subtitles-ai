@@ -1,0 +1,141 @@
+#!/bin/bash
+
+# SubsTranslator - Smart Launcher
+# This script helps you choose the right mode for your needs
+
+# Colors
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+RED='\033[0;31m'
+YELLOW='\033[1;33m'
+PURPLE='\033[0;35m'
+CYAN='\033[0;36m'
+NC='\033[0m' # No Color
+
+echo -e "${CYAN}🎬 SubsTranslator - Smart Launcher${NC}"
+echo -e "${CYAN}===================================${NC}"
+echo ""
+
+# Check current directory
+if [ ! -f "docker-compose.yml" ]; then
+    echo -e "${RED}❌ Please run this script from the SubsTranslator root directory${NC}"
+    exit 1
+fi
+
+echo -e "${BLUE}Choose your mode:${NC}"
+echo ""
+echo -e "${GREEN}1)${NC} ${YELLOW}Restart Production${NC} (Stop + Start Docker)"
+echo -e "   🔄 Stop all services + Start production Docker"
+echo -e "   ✅ Fresh production environment"
+echo ""
+echo -e "${GREEN}2)${NC} ${YELLOW}Development - UI Only${NC} (Fast, for UI work)"
+echo -e "   ✅ Frontend + Backend API"
+echo -e "   ❌ Video processing won't work"
+echo ""
+echo -e "${GREEN}3)${NC} ${YELLOW}Development - Full Stack${NC} (Complete, all features)"
+echo -e "   ✅ Frontend + Backend + Celery + Redis"
+echo -e "   ✅ Video processing will work"
+echo ""
+echo -e "${GREEN}4)${NC} ${YELLOW}Production - Docker${NC} (Final testing)"
+echo -e "   ✅ Isolated Docker containers"
+echo -e "   ✅ Production environment"
+echo ""
+echo -e "${GREEN}5)${NC} ${YELLOW}Stop All Services${NC} (Cleanup)"
+echo -e "   🛑 Stop all running services"
+echo ""
+echo -e "${GREEN}6)${NC} ${YELLOW}Help & Documentation${NC} (Guide)"
+echo -e "   📖 Detailed documentation"
+echo ""
+echo -e "${GREEN}7)${NC} ${YELLOW}Download Statistics${NC} (JSONL file)"
+echo -e "   📊 Download video processing stats"
+echo -e "   📁 Get raw data for analysis"
+echo ""
+
+read -p "$(echo -e ${BLUE}Select option [1-7]: ${NC})" choice
+
+case $choice in
+    1)
+        echo -e "${BLUE}🔄 Restarting Production (Stop + Start Docker)...${NC}"
+        echo -e "${BLUE}🛑 First stopping all services...${NC}"
+        ./scripts/stop.sh
+        echo -e "${BLUE}🚀 Now starting production Docker...${NC}"
+        ./scripts/prod.sh
+        ;;
+    2)
+        echo -e "${BLUE}🚀 Starting Development Mode - UI Only...${NC}"
+        ./scripts/dev.sh
+        ;;
+    3)
+        echo -e "${BLUE}🚀 Starting Development Mode - Full Stack...${NC}"
+        ./scripts/dev-full.sh
+        ;;
+    4)
+        echo -e "${BLUE}🚀 Starting Production Mode - Docker...${NC}"
+        ./scripts/prod.sh
+        ;;
+    5)
+        echo -e "${BLUE}🛑 Stopping All Services...${NC}"
+        ./scripts/stop.sh
+        ;;
+    6)
+        echo -e "${BLUE}📖 Opening Documentation...${NC}"
+        if command -v code >/dev/null 2>&1; then
+            code scripts/README.md
+        elif command -v open >/dev/null 2>&1; then
+            open scripts/README.md
+        else
+            cat scripts/README.md
+        fi
+        ;;
+    7)
+        echo -e "${BLUE}📊 Download Statistics File...${NC}"
+        echo ""
+
+        # Check if backend is running
+        if ! curl -s http://localhost:8081/healthz > /dev/null 2>&1; then
+            echo -e "${RED}❌ Backend not running! Please start it first (option 1, 3, or 4)${NC}"
+            exit 1
+        fi
+
+        # Download stats file
+        echo -e "${CYAN}📥 Downloading stats from server...${NC}"
+        if curl -s http://localhost:8081/api/stats/download -o video_stats.jsonl; then
+            echo -e "${GREEN}✅ Stats downloaded successfully!${NC}"
+            echo ""
+
+            # Check if file has content
+            if [ -s video_stats.jsonl ]; then
+                LINE_COUNT=$(wc -l < video_stats.jsonl)
+                FILE_SIZE=$(ls -lh video_stats.jsonl | awk '{print $5}')
+                echo -e "${CYAN}📊 Stats Summary:${NC}"
+                echo -e "   📝 Entries: ${LINE_COUNT} videos"
+                echo -e "   📁 File size: ${FILE_SIZE}"
+                echo -e "   📂 Location: $(pwd)/video_stats.jsonl"
+                echo ""
+                echo -e "${GREEN}✅ Done!${NC}"
+                echo ""
+                echo -e "${BLUE}💡 Download links:${NC}"
+                echo -e "${CYAN}   Local:${NC}"
+                echo -e "${YELLOW}   http://localhost:8081/api/stats/download${NC}"
+                echo ""
+                echo -e "${CYAN}   Production:${NC}"
+                echo -e "${YELLOW}   https://api.subs.sayai.io/api/stats/download${NC}"
+                echo ""
+                echo -e "${BLUE}📈 To analyze the data:${NC}"
+                echo -e "   • Click on a link to download stats"
+                echo -e "   • Open video_stats.jsonl in any text editor"
+                echo -e "   • Copy content and paste into ChatGPT for analysis"
+            else
+                echo -e "${YELLOW}⚠️  Stats file is empty - no videos processed yet${NC}"
+                echo -e "${BLUE}ℹ️  Process some videos first, then download stats again${NC}"
+            fi
+        else
+            echo -e "${RED}❌ Failed to download stats. Is the backend running?${NC}"
+            exit 1
+        fi
+        ;;
+    *)
+        echo -e "${RED}❌ Invalid choice. Please select 1-7.${NC}"
+        exit 1
+        ;;
+esac

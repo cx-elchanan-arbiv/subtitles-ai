@@ -1,0 +1,53 @@
+{
+  "status": {
+    "success": "הצלחה",
+    "error": "שגיאה",
+    "processing": "מעבד",
+    "completed": "הושלם",
+    "failed": "נכשל",
+    "pending": "ממתין"
+  },
+  "messages": {
+    "upload_success": "הקובץ הועלה בהצלחה",
+    "processing_started": "עיבוד הווידאו החל",
+    "processing_completed": "עיבוד הווידאו הושלם בהצלחה",
+    "download_ready": "ההורדה מוכנה",
+    "task_queued": "המשימה נוספה לתור לעיבוד"
+  },
+  "validation": {
+    "file_required": "נדרש קובץ",
+    "url_required": "נדרשת כתובת URL",
+    "invalid_file_type": "סוג קובץ לא תקין",
+    "file_too_large": "הקובץ גדול מדי",
+    "invalid_url_format": "פורמט URL לא תקין"
+  },
+  "languages": {
+    "auto": "זיהוי אוטומטי",
+    "autoDetect": "זיהוי אוטומטי",
+    "he": "עברית",
+    "en": "אנגלית",
+    "es": "ספרדית",
+    "ar": "ערבית",
+    "fr": "צרפתית",
+    "de": "גרמנית",
+    "it": "איטלקית",
+    "pt": "פורטוגזית",
+    "ru": "רוסית",
+    "ja": "יפנית",
+    "ko": "קוריאנית",
+    "zh": "סינית",
+    "tr": "טורקית"
+  },
+  "translationServices": {
+    "google": {
+      "description": "שירות תרגום חינמי של Google"
+    },
+    "openai": {
+      "description": "תרגום מתקדם באמצעות GPT-4o",
+      "requiresKey": "דרוש מפתח API של OpenAI"
+    }
+  }
+}
+
+
+

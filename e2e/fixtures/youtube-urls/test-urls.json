@@ -1,0 +1,45 @@
+{
+  "short_public": {
+    "url": "https://www.youtube.com/watch?v=jNQXAC9IVRw",
+    "description": "Me at the zoo - First YouTube video ever (19 seconds)",
+    "duration": 19,
+    "language": "en"
+  },
+  "medium_public": {
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "description": "Rick Astley - Never Gonna Give You Up (3:32)",
+    "duration": 212,
+    "language": "en"
+  },
+  "short_hebrew": {
+    "url": "https://www.youtube.com/watch?v=AZy7on8v25Y",
+    "description": "Short Hebrew video for testing (if available)",
+    "duration": 30,
+    "language": "he"
+  },
+  "invalid_url": {
+    "url": "https://www.youtube.com/watch?v=INVALID12345",
+    "description": "Invalid video ID for error testing",
+    "expected_error": "Video not found"
+  },
+  "deleted_video": {
+    "url": "https://www.youtube.com/watch?v=DELETED00000",
+    "description": "Deleted/unavailable video",
+    "expected_error": "Video unavailable"
+  },
+  "private_video": {
+    "url": "https://www.youtube.com/watch?v=PRIVATE00000",
+    "description": "Private video for access error testing",
+    "expected_error": "Private video"
+  },
+  "age_restricted": {
+    "url": "https://www.youtube.com/watch?v=AGERESTRICT0",
+    "description": "Age-restricted content",
+    "expected_error": "Age restricted"
+  },
+  "copyright_claimed": {
+    "url": "https://www.youtube.com/watch?v=COPYRIGHT000",
+    "description": "Copyright-claimed content",
+    "expected_error": "Copyright"
+  }
+}

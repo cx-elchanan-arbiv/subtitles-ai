@@ -1,0 +1,219 @@
+/* Google Fonts Import for Multi-Language Support */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Font Face Declarations for Better Performance */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/heebo/v21/NGSpv5_NC0k9P_v6ZUCbLRAHxK1EiS2cckOnz02SXQ.woff2') format('woff2');
+  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+
+@font-face {
+  font-family: 'Noto Sans Arabic';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/notosansarabic/v18/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCfyGyvu3CBFQLaig.woff2') format('woff2');
+  unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+
+/* Base Typography Styles */
+html {
+  font-family: var(--font-family, 'Inter'), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Language-specific font optimizations */
+.lang-he {
+  font-family: 'Heebo', system-ui, -apple-system, sans-serif;
+  font-feature-settings: 'kern' 1, 'liga' 1;
+}
+
+.lang-ar {
+  font-family: 'Noto Sans Arabic', system-ui, -apple-system, sans-serif;
+  font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1;
+}
+
+.lang-en, .lang-es {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1;
+}
+
+/* RTL/LTR Direction Support */
+.dir-rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.dir-ltr {
+  direction: ltr;
+  text-align: left;
+}
+
+/* RTL-specific adjustments */
+.dir-rtl .flex {
+  flex-direction: row-reverse;
+}
+
+.dir-rtl .space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.dir-rtl .space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+/* Icon rotation for RTL */
+.dir-rtl .rtl-flip {
+  transform: scaleX(-1);
+}
+
+.dir-rtl .rtl-rotate {
+  transform: rotate(180deg);
+}
+
+/* Form elements RTL support */
+.dir-rtl input[type="text"],
+.dir-rtl input[type="email"],
+.dir-rtl input[type="password"],
+.dir-rtl textarea,
+.dir-rtl select {
+  text-align: right;
+  padding-right: 0.75rem;
+  padding-left: 2.5rem;
+}
+
+.dir-rtl .input-icon {
+  right: auto;
+  left: 0.75rem;
+}
+
+/* Button RTL adjustments */
+.dir-rtl .btn-with-icon {
+  flex-direction: row-reverse;
+}
+
+/* Navigation RTL support */
+.dir-rtl .nav-item {
+  margin-right: 0;
+  margin-left: 1rem;
+}
+
+.dir-rtl .nav-item:first-child {
+  margin-left: 0;
+}
+
+/* Dropdown RTL support */
+.dir-rtl .dropdown-menu {
+  right: 0;
+  left: auto;
+  text-align: right;
+}
+
+/* Modal RTL support */
+.dir-rtl .modal-content {
+  text-align: right;
+}
+
+/* Toast/Notification RTL support */
+.dir-rtl .toast {
+  right: auto;
+  left: 1rem;
+}
+
+/* Progress bar RTL support */
+.dir-rtl .progress-bar {
+  transform-origin: right;
+}
+
+/* Responsive font sizes */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1025px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* High DPI display optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Dark mode font adjustments */
+@media (prefers-color-scheme: dark) {
+  html {
+    font-weight: 400;
+  }
+  
+  .lang-he {
+    font-weight: 400;
+  }
+  
+  .lang-ar {
+    font-weight: 400;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  html {
+    font-family: 'Times New Roman', serif;
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+  
+  .lang-he {
+    font-family: 'David', 'Times New Roman', serif;
+  }
+  
+  .lang-ar {
+    font-family: 'Traditional Arabic', 'Times New Roman', serif;
+  }
+}
+
+
+

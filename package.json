@@ -1,0 +1,37 @@
+{
+  "name": "substranslator-e2e",
+  "version": "1.0.0",
+  "description": "End-to-end tests for SubsTranslator application",
+  "private": true,
+  "scripts": {
+    "test:e2e": "playwright test",
+    "test:e2e:smoke": "playwright test --project=smoke",
+    "test:e2e:e2e": "playwright test --project=e2e",
+    "test:e2e:critical": "playwright test --project=critical",
+    "test:e2e:extended": "playwright test --project=extended",
+    "test:e2e:regression": "playwright test --project=regression",
+    "test:e2e:headed": "playwright test --headed",
+    "test:e2e:debug": "playwright test --debug",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:report": "playwright show-report",
+    "test:e2e:local": "BASE_URL=http://localhost:3000 API_BASE_URL=http://localhost:8081 TEST_TIER=mock playwright test --project=smoke",
+    "test:e2e:staging": "BASE_URL=https://staging.subs.sayai.io API_BASE_URL=https://api-staging.subs.sayai.io TEST_TIER=integration playwright test",
+    "test:e2e:prod:smoke": "BASE_URL=https://subs.sayai.io API_BASE_URL=https://api.subs.sayai.io TEST_TIER=mock playwright test --project=smoke",
+    "test:e2e:prod:e2e": "BASE_URL=https://subs.sayai.io API_BASE_URL=https://api.subs.sayai.io playwright test --project=e2e --headed",
+    "playwright:install": "playwright install --with-deps chromium"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "e2e",
+    "testing",
+    "playwright",
+    "substranslator"
+  ],
+  "author": "SubsTranslator Team",
+  "license": "ISC"
+}

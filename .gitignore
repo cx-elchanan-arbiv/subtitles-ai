@@ -1,0 +1,158 @@
+# SubsTranslator .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+*.pyc
+
+# Virtual environments
+venv/
+env/
+.env
+.env.*
+!.env.example
+.venv
+
+# IDEs
+.vscode/
+.idea/
+.claude/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Application specific
+
+# Backend generated files - created at runtime, should not be in git
+backend/downloads/
+backend/uploads/
+!backend/downloads/.gitkeep
+!backend/uploads/.gitkeep
+
+# Specific file patterns (backup)
+*.mp4
+
+# Statistics files - generated locally
+video_stats.jsonl
+video_stats.csv
+stats_analysis.png
+test_stats.jsonl
+*.mkv
+*.avi
+*.mov
+*.webm
+*.mp3
+*.wav
+*.srt
+*.part
+
+# Whisper models (large files) - downloaded automatically
+backend/whisper_models/
+!backend/whisper_models/.gitkeep
+
+# yt-dlp cache files - created automatically
+backend/yt_dlp_cache/
+!backend/yt_dlp_cache/.gitkeep
+
+# Test assets - large test files
+backend/test_assets/*.mp4
+backend/test_assets/*.avi
+backend/test_assets/*.mov
+
+# Docker volumes and cache
+.docker/
+
+# Frontend
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+*.cache*
+
+# Fast work directory (temporary download workspace)
+backend/fast_work/
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Documentation builds
+docs/_build/
+
+# Backup files
+*.bak
+*.backup
+
+# Sensitive credentials and secrets - NEVER commit these!
+CREDENTIALS_INTERNAL.md
+BACKEND_MISSING_VARS.txt
+VERCEL_ENV_VARS.txt
+*_CREDENTIALS.*
+*_SECRETS.*
+SECRETS_BACKUP.*
+SECRETS_FULL_BACKUP.*
+
+# Deployment-specific env files (may contain production secrets)
+.env.render.*
+.env.runpod
+.env.production
+.env.staging
+
+# Security files
+*.pem
+*.key
+*.crt
+*.cert
+secrets.txt
+api_keys.txt
+
+# Temporary test and fix scripts
+# test_*.py removed - all tests now properly organized in backend/tests/
+!backend/tests/
+!frontend/tests/
+fix_*.py
+
+# E2E Testing
+playwright-report/
+test-results/
+e2e/fixtures/videos/*.mp4
+e2e/fixtures/videos/*.mkv
+e2e/fixtures/videos/*.mov
+e2e/fixtures/videos/*.webm
+!e2e/fixtures/videos/.gitkeep
+node_modules/
+
+# Internal documentation (private dev notes, not for public)
+internal-docs/

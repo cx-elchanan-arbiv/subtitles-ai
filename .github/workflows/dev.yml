@@ -1,0 +1,60 @@
+name: Dev
+
+# הרץ על פושים לענפים אחרים (לא main)
+on:
+  push:
+    branches-ignore: [ main ]
+  workflow_dispatch: # אפשרות להריץ ידנית
+
+jobs:
+  quick-tests:
+    name: Quick Unit Tests Only
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 Checkout Code
+      uses: actions/checkout@v4
+      
+    - name: 🐍 Setup Python 3.12
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+        
+    - name: 📦 Setup Node.js 20
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        cache-dependency-path: ./frontend/package-lock.json
+        
+    - name: 📦 Install Backend Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r backend/requirements.txt
+        pip install -r requirements-test.txt
+        pip install -e backend/
+        
+    - name: 📦 Install Frontend Dependencies
+      working-directory: ./frontend
+      run: npm ci
+      
+    - name: 🧪 Quick Backend Tests
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      run: |
+        echo "🔧 Running Backend Unit Tests..."
+        python -m pytest backend/tests/unit/ -x --tb=short -q -m unit
+        
+    - name: 🧪 Quick Frontend Tests
+      working-directory: ./frontend
+      run: |
+        echo "🎨 Running Frontend Unit Tests..."
+        npm test -- --watchAll=false --silent
+        
+    - name: ✅ Quick Tests Summary
+      run: |
+        echo "### ⚡ Quick Tests Summary" >> $GITHUB_STEP_SUMMARY
+        echo "- ✅ Backend Unit Tests: Passed" >> $GITHUB_STEP_SUMMARY
+        echo "- ✅ Frontend Unit Tests: Passed" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "🚀 **Ready for development!**" >> $GITHUB_STEP_SUMMARY

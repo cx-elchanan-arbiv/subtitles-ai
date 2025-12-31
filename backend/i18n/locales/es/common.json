@@ -1,0 +1,50 @@
+{
+  "status": {
+    "success": "Éxito",
+    "error": "Error",
+    "processing": "Procesando",
+    "completed": "Completado",
+    "failed": "Falló",
+    "pending": "Pendiente"
+  },
+  "messages": {
+    "upload_success": "Archivo subido exitosamente",
+    "processing_started": "El procesamiento del video ha comenzado",
+    "processing_completed": "El procesamiento del video se completó exitosamente",
+    "download_ready": "La descarga está lista",
+    "task_queued": "La tarea ha sido agregada a la cola para procesamiento"
+  },
+  "validation": {
+    "file_required": "Se requiere archivo",
+    "url_required": "Se requiere URL",
+    "invalid_file_type": "Tipo de archivo inválido",
+    "file_too_large": "El archivo es demasiado grande",
+    "invalid_url_format": "Formato de URL inválido"
+  },
+  "languages": {
+    "auto": "Detección Automática",
+    "autoDetect": "Detección Automática",
+    "he": "Hebreo",
+    "en": "Inglés",
+    "es": "Español",
+    "ar": "Árabe",
+    "fr": "Francés",
+    "de": "Alemán",
+    "it": "Italiano",
+    "pt": "Portugués",
+    "ru": "Ruso",
+    "ja": "Japonés",
+    "ko": "Coreano",
+    "zh": "Chino",
+    "tr": "Turco"
+  },
+  "translationServices": {
+    "google": {
+      "description": "Servicio de traducción gratuito de Google"
+    },
+    "openai": {
+      "description": "Traducción avanzada usando GPT-4o",
+      "requiresKey": "Se requiere clave API de OpenAI"
+    }
+  }
+}

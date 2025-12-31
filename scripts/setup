@@ -1,0 +1,165 @@
+#!/bin/bash
+
+# SubsTranslator - First Time Setup
+# This script helps you set up the project for the first time
+
+# Colors
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+RED='\033[0;31m'
+YELLOW='\033[1;33m'
+PURPLE='\033[0;35m'
+CYAN='\033[0;36m'
+NC='\033[0m' # No Color
+
+echo -e "${CYAN}🛠️  SubsTranslator - First Time Setup${NC}"
+echo -e "${CYAN}====================================${NC}"
+echo ""
+
+# Check current directory
+if [ ! -f "docker-compose.yml" ]; then
+    echo -e "${RED}❌ Please run this script from the SubsTranslator root directory${NC}"
+    exit 1
+fi
+
+echo -e "${BLUE}Setting up SubsTranslator for the first time...${NC}"
+echo ""
+
+# Check Python
+echo -e "${YELLOW}🐍 Checking Python...${NC}"
+if command -v python3 >/dev/null 2>&1; then
+    PYTHON_VERSION=$(python3 --version)
+    echo -e "${GREEN}✅ Found: $PYTHON_VERSION${NC}"
+else
+    echo -e "${RED}❌ Python 3 not found. Please install Python 3.8+${NC}"
+    exit 1
+fi
+
+# Check Node.js
+echo -e "${YELLOW}📦 Checking Node.js...${NC}"
+if command -v node >/dev/null 2>&1; then
+    NODE_VERSION=$(node --version)
+    echo -e "${GREEN}✅ Found: Node.js $NODE_VERSION${NC}"
+else
+    echo -e "${RED}❌ Node.js not found. Please install Node.js 16+${NC}"
+    exit 1
+fi
+
+# Check Docker (optional)
+echo -e "${YELLOW}🐳 Checking Docker...${NC}"
+if command -v docker >/dev/null 2>&1; then
+    DOCKER_VERSION=$(docker --version)
+    echo -e "${GREEN}✅ Found: $DOCKER_VERSION${NC}"
+    DOCKER_AVAILABLE=true
+else
+    echo -e "${YELLOW}⚠️  Docker not found. Production mode won't work.${NC}"
+    DOCKER_AVAILABLE=false
+fi
+
+echo ""
+echo -e "${BLUE}🔧 Setting up Python environment...${NC}"
+
+# Create virtual environment
+if [ ! -d ".venv" ]; then
+    echo -e "${YELLOW}Creating Python virtual environment...${NC}"
+    python3 -m venv .venv
+    echo -e "${GREEN}✅ Virtual environment created${NC}"
+else
+    echo -e "${GREEN}✅ Virtual environment already exists${NC}"
+fi
+
+# Activate and install Python dependencies
+echo -e "${YELLOW}Installing Python dependencies...${NC}"
+source .venv/bin/activate
+pip install --upgrade pip
+pip install -r backend/requirements.txt
+echo -e "${GREEN}✅ Python dependencies installed${NC}"
+
+echo ""
+echo -e "${BLUE}🌐 Setting up Frontend...${NC}"
+
+# Install Node.js dependencies
+if [ ! -d "frontend/node_modules" ]; then
+    echo -e "${YELLOW}Installing Node.js dependencies...${NC}"
+    cd frontend
+    npm install
+    cd ..
+    echo -e "${GREEN}✅ Node.js dependencies installed${NC}"
+else
+    echo -e "${GREEN}✅ Node.js dependencies already installed${NC}"
+fi
+
+# Check Redis
+echo ""
+echo -e "${BLUE}📊 Checking Redis...${NC}"
+if command -v redis-cli >/dev/null 2>&1; then
+    if redis-cli ping >/dev/null 2>&1; then
+        echo -e "${GREEN}✅ Redis is running${NC}"
+        REDIS_AVAILABLE=true
+    else
+        echo -e "${YELLOW}⚠️  Redis installed but not running${NC}"
+        if command -v brew >/dev/null 2>&1; then
+            echo -e "${YELLOW}Starting Redis with Homebrew...${NC}"
+            brew services start redis
+            sleep 2
+            if redis-cli ping >/dev/null 2>&1; then
+                echo -e "${GREEN}✅ Redis started successfully${NC}"
+                REDIS_AVAILABLE=true
+            else
+                echo -e "${RED}❌ Failed to start Redis${NC}"
+                REDIS_AVAILABLE=false
+            fi
+        else
+            REDIS_AVAILABLE=false
+        fi
+    fi
+else
+    echo -e "${YELLOW}⚠️  Redis not found. Installing with Homebrew...${NC}"
+    if command -v brew >/dev/null 2>&1; then
+        brew install redis
+        brew services start redis
+        sleep 2
+        if redis-cli ping >/dev/null 2>&1; then
+            echo -e "${GREEN}✅ Redis installed and started${NC}"
+            REDIS_AVAILABLE=true
+        else
+            echo -e "${RED}❌ Failed to install/start Redis${NC}"
+            REDIS_AVAILABLE=false
+        fi
+    else
+        echo -e "${RED}❌ Homebrew not found. Please install Redis manually${NC}"
+        REDIS_AVAILABLE=false
+    fi
+fi
+
+# Create directories
+echo ""
+echo -e "${BLUE}📁 Creating directories...${NC}"
+mkdir -p backend/uploads backend/downloads backend/whisper_models backend/assets
+echo -e "${GREEN}✅ Directories created${NC}"
+
+# Setup summary
+echo ""
+echo -e "${CYAN}🎉 Setup Complete!${NC}"
+echo -e "${CYAN}=================${NC}"
+echo ""
+
+echo -e "${GREEN}✅ Available modes:${NC}"
+if [ "$REDIS_AVAILABLE" = true ]; then
+    echo -e "${GREEN}  • Development (UI Only): ./scripts/start → option 1${NC}"
+    echo -e "${GREEN}  • Development (Full):     ./scripts/start → option 2${NC}"
+else
+    echo -e "${GREEN}  • Development (UI Only): ./scripts/start → option 1${NC}"
+    echo -e "${YELLOW}  • Development (Full):     Redis needed${NC}"
+fi
+
+if [ "$DOCKER_AVAILABLE" = true ]; then
+    echo -e "${GREEN}  • Production (Docker):    ./scripts/start → option 3${NC}"
+else
+    echo -e "${YELLOW}  • Production (Docker):    Docker needed${NC}"
+fi
+
+echo ""
+echo -e "${BLUE}🚀 Ready to start! Run:${NC}"
+echo -e "${YELLOW}  ./scripts/start${NC}"
+echo ""

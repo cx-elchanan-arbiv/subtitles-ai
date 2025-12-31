@@ -1,0 +1,10 @@
+# Test dependencies for SubsTranslator
+# Note: Production dependencies are inherited from backend/requirements.txt
+pytest>=7.0.0
+pytest-mock>=3.10.0
+pytest-timeout>=2.1.0
+pytest-xdist>=3.0.0  # For parallel test execution
+pytest-cov>=4.0.0  # For coverage reports
+playwright>=1.40.0  # Required for E2E tests
+selenium>=4.0.0  # Required for frontend language tests (temporary - should migrate to playwright)
+webdriver-manager>=4.0.0  # Required for selenium tests

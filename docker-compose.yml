@@ -1,0 +1,116 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend.Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - downloads:/app/downloads  # Phase A: Use named volume
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend.Dockerfile
+    ports:
+      - "8081:8081"
+    user: "501:20"
+    env_file:
+      - .env
+    environment:
+      - FLASK_ENV=development
+      - DEBUG=False
+      - LOG_LEVEL=INFO
+      - DEFAULT_WHISPER_MODEL=tiny
+      - FAST_WORK_DIR=/app/fast_work  # Phase A: Fast workspace env var
+      - TRANSLATION_PARALLELISM=1  # P1: Optimal configuration (Test 1 winner)
+      - TRANSLATION_BATCH_SIZE=20  # P1: Segments per translation batch
+      - MAX_CONCURRENT_OPENAI_REQUESTS=1  # P1: Single worker (best performance)
+      - REDIS_HOST=redis
+      - REDIS_URL=redis://redis:6379/0
+      - UPLOAD_FOLDER=/app/uploads
+      - DOWNLOADS_FOLDER=/app/downloads
+      - ASSETS_FOLDER=/app/assets
+      - STATS_FOLDER=/app/storage/stats  # Statistics JSONL storage
+      - WHISPER_MODELS_DIR=/app/storage/whisper_models  # Whisper models cache
+    volumes:
+      - ./backend:/app
+      - ./tests:/app/tests
+      - ./backend/uploads:/app/uploads
+      - downloads:/app/downloads  # Phase A: Use named volume
+      - storage:/app/storage  # Persistent storage (stats + whisper models)
+      # Phase A: tmpfs for fast I/O operations - temporarily using regular volume due to permission issues
+      - ./backend/fast_work:/app/fast_work
+    command: ["gunicorn", "--bind", "0.0.0.0:8081", "--workers", "2", "--worker-class", "gthread", "--threads", "4", "--timeout", "300", "--max-requests", "1000", "--max-requests-jitter", "100", "app:app"]
+    depends_on:
+      - redis
+
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
+
+  worker:
+    build:
+      context: .
+      dockerfile: backend.Dockerfile
+    command: ["celery", "-A", "celery_worker.celery_app", "worker", "-l", "info", "-Q", "processing", "--concurrency=1", "--max-tasks-per-child=1"]
+    user: "501:20"
+    env_file:
+      - .env
+    environment:
+      - FLASK_ENV=development
+      - DEBUG=False
+      - LOG_LEVEL=INFO
+      - DEFAULT_WHISPER_MODEL=tiny
+      - WORKER_CONCURRENCY=1
+      - FAST_WORK_DIR=/app/fast_work  # Phase A: Fast workspace env var
+      - TRANSLATION_PARALLELISM=1  # P1: Optimal configuration (Test 1 winner)
+      - TRANSLATION_BATCH_SIZE=20  # P1: Segments per translation batch
+      - MAX_CONCURRENT_OPENAI_REQUESTS=1  # P1: Single worker (best performance)
+      - REDIS_HOST=redis
+      - REDIS_URL=redis://redis:6379/0
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - UPLOAD_FOLDER=/app/uploads
+      - DOWNLOADS_FOLDER=/app/downloads
+      - ASSETS_FOLDER=/app/assets
+      - STATS_FOLDER=/app/storage/stats  # Statistics JSONL storage
+      - WHISPER_MODELS_DIR=/app/storage/whisper_models  # Whisper models cache
+    volumes:
+      - ./backend:/app
+      - ./tests:/app/tests
+      - ./backend/uploads:/app/uploads
+      - downloads:/app/downloads  # Phase A: Use named volume
+      - storage:/app/storage  # Persistent storage (stats + whisper models)
+      # Phase A: tmpfs for fast I/O operations - temporarily using regular volume due to permission issues
+      - ./backend/fast_work:/app/fast_work
+    depends_on:
+      - redis
+      - backend
+    mem_limit: 8g
+    mem_reservation: 4g
+    oom_kill_disable: false
+
+  beat:
+    build:
+      context: .
+      dockerfile: backend.Dockerfile
+    command: ["celery", "-A", "celery_worker.celery_app", "beat", "-l", "info"]
+    env_file:
+      - .env
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_URL=redis://redis:6379/0
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+    depends_on:
+      - redis
+      - backend
+
+# Phase A: Named volumes for shared storage
+volumes:
+  downloads:
+  storage:  # Persistent storage (stats + whisper models)

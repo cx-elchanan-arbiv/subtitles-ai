@@ -1,0 +1,456 @@
+{
+  "app": {
+    "title": "SubsTranslator",
+    "subtitle": "תרגום כתוביות וידאו מבוסס בינה מלאכותית",
+    "description": "צרו כתוביות ותרגומים מקצועיים עם דיוק מבוסס בינה מלאכותית. העלו, עבדו והורידו תוך דקות."
+  },
+  "navigation": {
+    "signIn": "התחברות",
+    "signOut": "התנתקות",
+    "profile": "פרופיל",
+    "dashboard": "לוח בקרה",
+    "settings": "הגדרות",
+    "help": "עזרה",
+    "about": "אודות"
+  },
+  "hero": {
+    "title": "הפכו את הסרטונים שלכם",
+    "subtitle": "פלטפורמת תרגום כתוביות מתקדמת",
+    "description": "צרו כתוביות ותרגומים מקצועיים עם דיוק מבוסס בינה מלאכותית. העלו, עבדו והורידו תוך דקות.",
+    "getStarted": "התחילו עכשיו",
+    "learnMore": "למדו עוד"
+  },
+  "features": {
+    "fastProcessing": {
+      "title": "מהיר כמו ברק",
+      "description": "עבדו על סרטונים תוך דקות, לא שעות"
+    },
+    "multiLanguage": {
+      "title": "רב-לשוני", 
+      "description": "תמיכה ב-50+ שפות עם תרגום מדויק"
+    },
+    "aiPowered": {
+      "title": "מונע בינה מלאכותית",
+      "description": "בינה מלאכותית מתקדמת לתרגומים מושלמים"
+    },
+    "professionalQuality": {
+      "title": "איכות מקצועית",
+      "description": "תוצאות ברמה מקצועית עם עיצוב מותאם אישית"
+    }
+  },
+  "heroFeatures": {
+    "fastProcessing": {
+      "title": "עיבוד מהיר",
+      "description": "עיבוד מהיר כמו ברק לתוצאות מיידיות"
+    },
+    "multiLanguage": {
+      "title": "רב-לשוני",
+      "description": "תמיכה במספר שפות וזיהוי אוטומטי"
+    },
+    "aiPowered": {
+      "title": "מונע בינה מלאכותית",
+      "description": "טכנולוגיית בינה מלאכותית מתקדמת לתרגומים מדויקים"
+    }
+  },
+  "tabs": {
+    "upload": "העלאת קובץ",
+    "youtube": "וידאו מהרשת",
+    "dashboard": "הסרטונים שלי"
+  },
+  "language": {
+    "source": "שפת מקור",
+    "target": "שפת יעד",
+    "autoDetect": "זיהוי אוטומטי",
+    "selectSource": "בחרו שפת מקור",
+    "selectTarget": "בחרו שפת יעד"
+  },
+  "upload": {
+    "title": "לחצו כדי להעלות קובץ וידאו או אודיו",
+    "dragDrop": "גררו ושחררו קובץ כאן",
+    "supportedFormats": "נתמך ב-MP4, MKV, MOV, WebM, AVI, MP3, WAV ועוד",
+    "browseFiles": "עיונו בקבצים",
+    "maxSize": "גודל מקסימלי: 500MB",
+    "duration": "משך",
+    "fileSize": "גודל קובץ",
+    "resolution": "רזולוציה"
+  },
+  "youtube": {
+    "urlPlaceholder": "קישור וידאו (YouTube, Vimeo, TikTok ועוד)",
+    "urlDescription": "הכניסו קישור לסרטון יוטיוב כדי לחלץ ולתרגם כתוביות",
+    "quickDownload": "הורדה מהירה",
+    "processWithSubtitles": "עיבוד עם כתוביות"
+  },
+  "options": {
+    "autoCreateVideo": "יצירת וידאו עם כתוביות צרובות בתוך הסרטון",
+    "whisperModel": "מודל תמלול",
+    "translationService": "שירות תרגום",
+    "watermark": "סימן מים",
+    "transcriptionOnly": "תמלול וכתוביות בלבד (ללא תרגום)",
+    "transcriptionOnlyHint": "הכתוביות יהיו בשפת המקור של הסרטון"
+  },
+  "models": {
+    "tiny": "Tiny - הכי מהיר (ברירת מחדל)",
+    "base": "Base - איזון טוב",
+    "small": "Small - דיוק טוב יותר",
+    "medium": "Medium - מהיר, דיוק טוב",
+    "large": "Large - הכי מדויק",
+    "hint": "Large: איכות מעולה, זמן ארוך • Medium: איכות טובה, זמן קצר • Tiny: הכי מהיר, פחות מדויק"
+  },
+  "processing": {
+    "title": "מעבדים את הסרטון שלכם",
+    "description": "הבינה המלאכותית עובדת על הסרטון שלכם",
+    "overallProgress": "התקדמות כללית",
+    "showLogs": "הצגו יומן",
+    "hideLogs": "הסתירו יומן",
+    "estimatedTime": "זמן משוער",
+    "currentStep": "שלב נוכחי",
+    "analyzingYoutube": "🎬 מנתח וידאו YouTube",
+    "requestDetails": "פרטי הבקשה",
+    "actionType": "סוג פעולה",
+    "downloadOnly": "הורדה בלבד",
+    "fullProcessing": "עיבוד מלא",
+    "quality": "איכות",
+    "processingFile": "מעבד קובץ וידאו",
+    "preparingFile": "מכין את הקובץ לעיבוד",
+    "processingVideo": "מעבד וידאו מהרשת",
+    "downloadingVideo": "מוריד וידאו מהרשת",
+    "videoInfo": "מידע על הסרטון",
+    "fileInfo": "מידע על הקובץ",
+    "duration": "משך",
+    "views": "צפיות",
+    "creator": "יוצר",
+    "resolution": "רזולוציה",
+    "yourChoices": "הבחירות שלך",
+    "startingProcessing": "מתחיל עיבוד...",
+    "outOf": "מתוך",
+    "stepsCompleted": "שלבים הושלמו"
+  },
+  "steps": {
+    "uploading": "העלאת הסרטון",
+    "downloading": "הורדת הסרטון",
+    "audioProcessing": "עיבוד שמע",
+    "modelLoading": "טעינת מודל AI",
+    "transcription": "תמלול",
+    "translation": "תרגום",
+    "srtCreation": "יצירת קבצי כתוביות",
+    "videoCreation": "יצירת וידאו",
+    "watermarkAddition": "הוספת סימן מים",
+    "finalizing": "סיום עיבוד"
+  },
+  "results": {
+    "title": "הושלם בהצלחה!",
+    "description": "הכתוביות שלכם מוכנות. בדקו והורידו למטה.",
+    "detectedLanguage": "שפה מזוהה",
+    "transcriptionQuality": "איכות תמלול",
+    "videoDuration": "משך",
+    "downloadOriginal": "הורידו כתוביות מקור",
+    "downloadTranslated": "הורידו כתוביות מתורגמות",
+    "downloadVideo": "צפו ביצירה השלמה",
+    "videoReady": "וידאו מוכן להורדה!",
+    "totalTime": "זמן כולל",
+    "processAnother": "עבדו סרטון נוסף",
+    "downloadVideoButton": "הורד וידאו",
+    "summarizeButton": "סכמו את התוכן לפי נושאים",
+    "summarizing": "מסכם...",
+    "summaryReady": "סיכום מוכן!",
+    "viewSummary": "הצג סיכום",
+    "startNewTask": "התחל משימה חדשה",
+    "aiSummaryTitle": "יצירת סיכום בינה מלאכותית",
+    "aiSummaryDescription": "ערכו את ההוראות למטה כדי להתאים אישית את הסיכום, או השתמשו בברירת המחדל:",
+    "customPromptLabel": "הוראות:",
+    "characters": "תווים",
+    "resetPrompt": "אפס",
+    "generateSummary": "צור סיכום",
+    "promptTooLong": "הפרומפט ארוך מדי. נא לקצר ל-1500 תווים או פחות."
+  },
+  "watermark": {
+    "enabled": "הוסיפו סימן מים לוידאו",
+    "logo": "בחרו תמונת לוגו",
+    "uploadText": "לחצו או גררו תמונה לכאן",
+    "uploadHint": "PNG, JPG, GIF עד 5MB",
+    "change": "החליפו תמונה",
+    "remove": "הסירו תמונה",
+    "expand": "הרחיבו הגדרות סימן מים",
+    "collapse": "כווצו הגדרות סימן מים",
+    "size": "גודל הלוגו",
+    "position": "מיקום הלוגו",
+    "opacity": "שקיפות הלוגו",
+    "opacityTransparent": "שקוף",
+    "opacityOpaque": "אטום",
+    "preview": "תצוגה מקדימה",
+    "sizes": {
+      "small": "קטן",
+      "medium": "בינוני",
+      "large": "גדול"
+    },
+    "positions": {
+      "topLeft": "שמאל למעלה",
+      "topRight": "ימין למעלה",
+      "bottomLeft": "שמאל למטה",
+      "bottomRight": "ימין למטה"
+    },
+    "videoPreview": "דוגמא לוידאו"
+  },
+  "auth": {
+    "signInRequired": "נדרש להתחבר",
+    "signInToUse": "אנא התחברו כדי להשתמש בתכונה זו",
+    "signInWithGoogle": "התחברו עם Google",
+    "signInWithApple": "התחברו עם Apple",
+    "user": "משתמש",
+    "welcome": "ברוכים הבאים",
+    "profile": "פרופיל"
+  },
+  "actions": {
+    "process": "עבדו",
+    "upload": "העלו",
+    "download": "הורידו",
+    "retry": "נסו שוב",
+    "cancel": "בטלו",
+    "continue": "המשיכו",
+    "back": "חזרה",
+    "next": "הבא",
+    "previous": "קודם",
+    "save": "שמרו",
+    "edit": "ערכו",
+    "delete": "מחקו",
+    "close": "סגרו",
+    "yes": "כן",
+    "no": "לא"
+  },
+  "startProcessing": "התחל עיבוד",
+  "removeFile": "הסר קובץ",
+  "status": {
+    "loading": "טוען...",
+    "processing": "מעבד...",
+    "completed": "הושלם",
+    "failed": "נכשל",
+    "pending": "ממתין",
+    "ready": "מוכן"
+  },
+  "time": {
+    "seconds": "שניות",
+    "minutes": "דקות",
+    "hours": "שעות",
+    "ago": "לפני",
+    "remaining": "נותר"
+  },
+  "languages": {
+    "auto": "זיהוי אוטומטי",
+    "he": "עברית",
+    "en": "אנגלית",
+    "es": "ספרדית", 
+    "ar": "ערבית",
+    "fr": "צרפתית",
+    "de": "גרמנית",
+    "it": "איטלקית",
+    "pt": "פורטוגזית",
+    "ru": "רוסית",
+    "ja": "יפנית",
+    "ko": "קוריאנית",
+    "zh": "סינית",
+    "tr": "טורקית"
+  },
+  "whisperModels": {
+    "tiny": "מהיר",
+    "base": "סטנדרט",
+    "small": "דיוק טוב יותר",
+    "medium": "מעולה",
+    "large": "פרופסיונלי",
+    "pro": "PRO"
+  },
+  "modelDetails": {
+    "processingTime": "זמן עיבוד:",
+    "accuracy": "דיוק:",
+    "bestFor": "מתאים ל:",
+    "computeType": "סוג חישוב:",
+    "fastProcessingBasicAccuracy": "עיבוד מהיר עם דיוק בסיסי",
+    "goodBalance": "איכות טובה ומהירות מעולה",
+    "perfectBalance": "איכות מעולה ומהירות טובה",
+    "maximumAccuracy": "דיוק מקסימלי - דורש חבילת PRO",
+    "tinyTime": "2-3 דקות",
+    "baseTime": "4-5 דקות",
+    "mediumTime": "8-12 דקות",
+    "largeTime": "20-25 דקות",
+    "tinyBestFor": "טיוטות מהירות",
+    "baseBestFor": "שימוש יומיומי",
+    "mediumBestFor": "תוכן איכותי",
+    "largeBestFor": "מחקר ופרויקטים מקצועיים",
+    "tinyAccuracy": "75-85%",
+    "baseAccuracy": "85-90%",
+    "mediumAccuracy": "90-94%",
+    "largeAccuracy": "95-98%",
+    "computeTypeInt8": "int8"
+  },
+  "processingSteps": {
+    "downloadingVideo": "הורדת וידאו",
+    "audioProcessing": "עיבוד אודיו",
+    "modelLoading": "טעינת מודל AI", 
+    "transcription": "תמלול בינה מלאכותית",
+    "translation": "תרגום הכתוביות",
+    "srtCreation": "יצירת קבצי כתוביות",
+    "videoCreation": "שילוב כתוביות בוידאו",
+    "finalizing": "סיום עיבוד"
+  },
+  "errors": {
+    "processingError": "שגיאה בעיבוד",
+    "downloadFailed": "ההורדה נכשלה. אנא נסו שוב.",
+    "processingFailed": "העיבוד נכשל. אנא נסו שוב.",
+    "errorOccurred": "אירעה שגיאה בעיבוד. אנא נסו שוב.",
+    "youtubeBotDetection": {
+      "title": "הורדת YouTube זמנית לא זמינה",
+      "message": "YouTube חוסם הורדה מהשרת שלנו",
+      "alternativeTitle": "פתרון חלופי:",
+      "step1": "1. הורד את הסרטון למחשב שלך מיוטיוב",
+      "step2": "2. חזור לכאן ולחץ על 'העלאת קובץ'",
+      "step3": "3. העלה את הקובץ - נטפל בשאר!",
+      "switchButton": "מעבר להעלאת קובץ"
+    }
+  },
+  "validation": {
+    "enterVideoUrl": "אנא הכניסו כתובת וידאו",
+    "invalidYouTubeUrl": "קישור YouTube לא תקין. דוגמאות: https://www.youtube.com/watch?v=... | https://youtu.be/...",
+    "invalidUrl": "קישור לא תקין. דוגמאות: https://www.youtube.com/watch?v=... | https://youtu.be/..."
+  },
+  "buttons": {
+    "processing": "מעבד...",
+    "downloadOnly": "הורד בלבד",
+    "processButton": "עבד עם כתוביות", 
+    "retryButton": "נסה שוב"
+  },
+  "tabs": {
+    "uploadTab": "העלאת קובץ",
+    "youtubeTab": "וידאו מהרשת"
+  },
+  "help": {
+    "tips": "טיפים"
+  },
+  "status": {
+    "unavailable": "לא זמין"
+  },
+  "videoInfo": {
+    "title": "מידע על הסרטון",
+    "videoTitle": "כותרת:",
+    "duration": "משך:",
+    "views": "צפיות:",
+    "creator": "יוצר:",
+    "resolution": "רזולוציה:",
+    "fps": "FPS:",
+    "fileSize": "גודל:",
+    "description": "תיאור:",
+    "yourChoices": "הבחירות שלך",
+    "sourceLanguage": "שפת מקור:",
+    "targetLanguage": "שפת יעד:",
+    "transcriptionModel": "מודל תמלול:",
+    "videoCreation": "יצירת וידאו:"
+  },
+  "fileInfo": {
+    "fileSizeLabel": "גודל קובץ:",
+    "downloadHint": "הקובץ יישמר בתיקיית ההורדות שלך",
+    "megabytes": "MB"
+  },
+  "loading": {
+    "dataLoading": "טוען נתונים"
+  },
+  "advanced": {
+    "logoOnly": "לוגו בלבד",
+    "videoCutter": "חיתוך וידאו",
+    "embedSubtitles": "הטמעת כתוביות",
+    "videoMerger": "מיזוג וידאו",
+    "comingSoon": "בקרוב",
+    "logoOnlyDescription": "הוסיפו לוגו/סימן מים לכל וידאו ללא תמלול או תרגום. עיבוד מהיר עם FFmpeg.",
+    "videoCutterDescription": "חיתכו את הוידאו שלכם לקטעי זמן ספציפיים. עיבוד מהיר עם FFmpeg - ללא איבוד איכות!",
+    "embedSubtitlesDescription": "הטמיעו כתוביות קיימות (קובץ SRT) לתוך הוידאו שלכם עם עיצוב מותאם אישית.",
+    "videoMergerDescription": "מיזוג מספר קבצי וידאו לקובץ אחד. תומך ברזולוציות שונות."
+  },
+  "logoOnly": {
+    "uploadVideo": "העלה וידאו",
+    "uploadLogo": "העלה לוגו",
+    "dragVideo": "גרור וידאו או לחץ",
+    "dragLogo": "גרור תמונה או לחץ",
+    "videoFormats": "MP4, MOV, AVI, MKV",
+    "logoFormats": "PNG, JPG (מומלץ PNG עם רקע שקוף)",
+    "change": "שנה",
+    "remove": "הסר",
+    "logoSettings": "הגדרות לוגו",
+    "position": "מיקום",
+    "size": "גודל",
+    "opacity": "שקיפות",
+    "recommendedFormat": "פורמט מומלץ",
+    "transparentPng": "PNG עם רקע שקוף",
+    "addLogoButton": "הוסף לוגו לוידאו",
+    "processing": "מעבד...",
+    "uploadBothFiles": "יש להעלות גם וידאו וגם לוגו",
+    "uploadLogoFile": "יש להעלות תמונת לוגו",
+    "uploadVideoFile": "יש להעלות קובץ וידאו",
+    "successMessage": "הוידאו עם הלוגו הורד בהצלחה!"
+  },
+  "videoCutter": {
+    "uploadVideo": "העלה קובץ וידאו",
+    "cutTimeRange": "טווח זמן לחיתוך",
+    "startTime": "זמן התחלה (שש:דד:שש):",
+    "endTime": "זמן סיום (שש:דד:שש):",
+    "duration": "משך:",
+    "quickPresets": "הגדרות מהירות",
+    "first1min": "דקה ראשונה",
+    "first3min": "3 דקות ראשונות",
+    "first5min": "5 דקות ראשונות",
+    "first10min": "10 דקות ראשונות",
+    "first30min": "30 דקות ראשונות",
+    "first1hour": "שעה ראשונה",
+    "infoTitle": "חיתוך דייקני במיוחד!",
+    "infoFormat": "פורמט: שש:דד:שש (שעות:דקות:שניות) או דד:שש",
+    "infoExample": "דוגמה: 00:01:30 = דקה ו-30 שניות",
+    "infoPrecision": "דיוק: השניות המדויקות שציינת!",
+    "infoSpeed": "מהירות: עיבוד מהיר עם FFmpeg - ללא איבוד איכות!",
+    "infoLimit": "מגבלה: משך מקסימלי: 4 שעות לחיתוך",
+    "cutButton": "חתוך וידאו",
+    "errorNoFile": "יש לבחור קובץ וידאו",
+    "errorEndTime": "זמן הסיום חייב להיות אחרי זמן ההתחלה",
+    "errorMaxDuration": "משך מקסימלי הוא 4 שעות"
+  },
+  "embedSubtitles": {
+    "uploadVideo": "העלה קובץ וידאו",
+    "subtitlesInput": "הזנת כתוביות",
+    "uploadSRT": "העלה קובץ SRT",
+    "pasteText": "הדבק טקסט",
+    "clickUploadSRT": "לחץ להעלאת קובץ SRT",
+    "srtFormat": "תומך בפורמט .srt",
+    "textareaPlaceholder": "הדבק את הכתוביות שלך כאן עם חותמות זמן:\n\nדוגמה לפורמט:\n[00:00 - 00:05] שלום עולם\n[00:05 - 00:10] זהו בדיקה",
+    "logoOptions": "אפשרויות לוגו (אופציונלי)",
+    "addLogo": "הוסף לוגו לוידאו",
+    "position": "מיקום:",
+    "size": "גודל:",
+    "opacity": "שקיפות:",
+    "infoTitle": "מידע הטמעת כתוביות:",
+    "infoSrtFormat": "פורמט SRT: פורמט קובץ SubRip (.srt) סטנדרטי",
+    "infoTextFormat": "פורמט טקסט: [דד:שש - דד:שש] טקסט (מומר אוטומטית ל-SRT)",
+    "infoProcessing": "עיבוד: הכתוביות נשרפות לתוך הוידאו (קבועות)",
+    "infoLogo": "לוגו: אפשרות להוסיף לוגו/סימן מים",
+    "infoSpeed": "מהירות: עיבוד מהיר עם FFmpeg",
+    "embedButton": "הטמע כתוביות",
+    "errorNoVideo": "יש לבחור קובץ וידאו",
+    "errorNoSRT": "יש לבחור קובץ SRT או לעבור להזנת טקסט",
+    "errorNoText": "יש להזין טקסט כתוביות",
+    "errorLogoNotEnabled": "יש להפעיל הגדרות סימן מים תחילה כדי להוסיף לוגו"
+  },
+  "videoMerger": {
+    "video1Title": "וידאו 1 (ראשון ברצף)",
+    "video2Title": "וידאו 2 (שני ברצף)",
+    "uploadFirst": "לחץ להעלאת וידאו ראשון",
+    "uploadSecond": "לחץ להעלאת וידאו שני",
+    "videoFormats": "MP4, AVI, MOV, MKV, וכו'",
+    "swapOrder": "החלף סדר",
+    "infoTitle": "מידע מיזוג וידאו:",
+    "infoOrder": "סדר: הוידאו ימוזג בסדר המוצג (וידאו 1 → וידאו 2)",
+    "infoResolution": "רזולוציה: מטפל אוטומטית ברזולוציות שונות על ידי שינוי גודל",
+    "infoProcessing": "עיבוד: שרשור מהיר באמצעות מסנן concat של FFmpeg",
+    "infoQuality": "איכות: ללא איבוד איכות כשהפורמטים תואמים",
+    "infoFormats": "פורמטים: תומך ב-MP4, AVI, MOV, MKV ועוד",
+    "mergeButton": "מזג וידאו",
+    "errorNoVideo1": "יש לבחור את קובץ הוידאו הראשון",
+    "errorNoVideo2": "יש לבחור את קובץ הוידאו השני"
+  }
+}
+
+
+

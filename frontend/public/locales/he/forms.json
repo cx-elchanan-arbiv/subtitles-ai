@@ -1,0 +1,101 @@
+{
+  "labels": {
+    "email": "כתובת אימייל",
+    "password": "סיסמה",
+    "confirmPassword": "אישור סיסמה",
+    "firstName": "שם פרטי",
+    "lastName": "שם משפחה",
+    "phone": "טלפון",
+    "company": "חברה",
+    "website": "אתר אינטרנט",
+    "message": "הודעה",
+    "subject": "נושא"
+  },
+  "placeholders": {
+    "email": "הכניסו כתובת אימייל",
+    "password": "הכניסו סיסמה",
+    "confirmPassword": "אשרו את הסיסמה",
+    "firstName": "הכניסו שם פרטי",
+    "lastName": "הכניסו שם משפחה",
+    "phone": "הכניסו מספר טלפון",
+    "company": "הכניסו שם החברה",
+    "website": "הכניסו כתובת האתר",
+    "message": "הכניסו הודעה",
+    "subject": "הכניסו נושא",
+    "search": "חפשו...",
+    "youtubeUrl": "הדביקו קישור YouTube כאן..."
+  },
+  "buttons": {
+    "submit": "שלחו",
+    "cancel": "בטלו",
+    "save": "שמרו",
+    "edit": "ערכו",
+    "delete": "מחקו",
+    "upload": "העלו",
+    "download": "הורידו",
+    "process": "עבדו",
+    "retry": "נסו שוב",
+    "reset": "אפסו",
+    "clear": "נקו",
+    "search": "חפשו",
+    "filter": "סננו",
+    "sort": "מיינו",
+    "export": "ייצאו",
+    "import": "ייבאו",
+    "copy": "העתיקו",
+    "paste": "הדביקו"
+  },
+  "validation": {
+    "required": "שדה זה הוא חובה",
+    "email": "כתובת אימייל לא תקינה",
+    "minLength": "מינימום {{count}} תווים",
+    "maxLength": "מקסימום {{count}} תווים",
+    "pattern": "פורמט לא תקין",
+    "url": "כתובת URL לא תקינה",
+    "number": "חייב להיות מספר",
+    "integer": "חייב להיות מספר שלם",
+    "positive": "חייב להיות מספר חיובי",
+    "min": "מינימום {{min}}",
+    "max": "מקסימום {{max}}",
+    "passwordMatch": "הסיסמאות לא תואמות",
+    "fileSize": "הקובץ גדול מדי (מקסימום {{size}})",
+    "fileType": "סוג קובץ לא נתמך"
+  },
+  "messages": {
+    "success": "הפעולה בוצעה בהצלחה",
+    "error": "אירעה שגיאה",
+    "loading": "טוען...",
+    "saving": "שומר...",
+    "uploading": "מעלה...",
+    "processing": "מעבד...",
+    "noResults": "לא נמצאו תוצאות",
+    "noData": "אין נתונים להצגה",
+    "confirmDelete": "האם אתם בטוחים שברצונכם למחוק?",
+    "unsavedChanges": "יש לכם שינויים שלא נשמרו. האם אתם בטוחים שברצונכם לעזוב?",
+    "sessionExpired": "תוקף ההתחברות פג. אנא התחברו מחדש."
+  },
+  "fileUpload": {
+    "dragDrop": "גררו ושחררו קבצים כאן",
+    "clickToUpload": "לחצו כדי להעלות",
+    "supportedFormats": "פורמטים נתמכים: {{formats}}",
+    "maxSize": "גודל מקסימלי: {{size}}",
+    "uploading": "מעלה {{filename}}...",
+    "uploadComplete": "העלאה הושלמה",
+    "uploadFailed": "העלאה נכשלה",
+    "removeFile": "הסירו קובץ",
+    "replaceFile": "החליפו קובץ"
+  },
+  "search": {
+    "placeholder": "חפשו...",
+    "noResults": "לא נמצאו תוצאות עבור \"{{query}}\"",
+    "resultsCount": "{{count}} תוצאות",
+    "resultsCount_one": "תוצאה אחת",
+    "resultsCount_other": "{{count}} תוצאות",
+    "clearSearch": "נקו חיפוש",
+    "searchHistory": "היסטוריית חיפוש",
+    "recentSearches": "חיפושים אחרונים"
+  }
+}
+
+
+

@@ -1,0 +1,25 @@
+TEST 2: P1 Sync + 4 Threads
+===========================
+
+Configuration Changes from Test 1:
+----------------------------------
+✅ TRANSLATION_PARALLELISM=1 → 4
+✅ MAX_CONCURRENT_OPENAI_REQUESTS=1 → 4
+✅ Pipeline Overlap: ENABLED (same)
+✅ Async: DISABLED (same - pure sync)
+
+Expected Improvements:
+---------------------
+- 4 batches processing concurrently
+- Reduced "tail" time after transcription
+- Faster overall processing for long videos
+- 4 different thread IDs in logs
+
+What to Look For:
+----------------
+- inflight=2,3,4 (concurrent batches)
+- Multiple Thread-XXXXX IDs
+- Faster batch throughput
+- Expected: ~600-620s (saving 40-60s from Test 1)
+
+Ready to test!

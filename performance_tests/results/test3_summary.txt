@@ -1,0 +1,36 @@
+TEST 3: Baseline (Sequential - FAILED!)
+========================================
+
+Configuration:
+- Pipeline Overlap: ❌ DISABLED
+- TRANSLATION_PARALLELISM=1
+- Sync (no asyncio)
+
+Results:
+--------
+❌ TEST INVALID! No translation was performed!
+📹 Audio duration: 5150s (85.8 minutes)
+📊 Total processing time: 758.6s (12.6 minutes)
+⏱️ Transcription only: 643.7s
+🎯 Processing speed: 6.78x realtime
+📦 Segments: 979
+
+What Happened:
+--------------
+⚠️ The code change disabled translation completely
+⚠️ Only transcription was performed (no translation step)
+⚠️ This is NOT a valid baseline comparison
+
+The log shows:
+"📝 Using standard transcription (no translation needed)"
+
+This means the if False: change bypassed BOTH:
+1. Pipeline overlap
+2. Translation entirely!
+
+Why This Happened:
+------------------
+The condition `if target_lang and target_lang != "auto"` was changed to `if False`,
+which caused the system to fall through to the "else" clause that skips translation.
+
+Test 3 is INVALID - need to fix and re-run!

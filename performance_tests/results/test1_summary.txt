@@ -1,0 +1,30 @@
+TEST 1: P1 Sync + 1 Thread
+=========================
+
+Configuration:
+- TRANSLATION_PARALLELISM=1
+- MAX_CONCURRENT_OPENAI_REQUESTS=1
+- Pipeline Overlap: ✅ ENABLED
+- Async: ❌ DISABLED (pure sync)
+
+Results:
+--------
+✅ Pipeline overlap complete! Total time: 659.3s
+📹 Audio duration: 5149.7s (85.8 minutes)
+📊 Total processing time: 664.4s (11.07 minutes)
+🎯 Processing speed: 7.75x realtime
+📦 Segments: 955
+🌍 Language: en → he
+
+Batch Performance:
+------------------
+Average batch time: ~6.7s
+Min: 3.17s
+Max: 15.23s
+Number of batches: ~18 batches
+
+Notes:
+------
+- Sequential batch processing (1 worker)
+- Pipeline overlap working perfectly!
+- Very efficient for 85 minute video

@@ -1,0 +1,64 @@
+{
+  "http": {
+    "400": {
+      "title": "Invalid Request",
+      "message": "The request contains invalid data. Please check your input and try again."
+    },
+    "401": {
+      "title": "Authentication Required",
+      "message": "You need to be authenticated to access this resource."
+    },
+    "403": {
+      "title": "Access Denied",
+      "message": "You don't have permission to access this resource."
+    },
+    "404": {
+      "title": "Not Found",
+      "message": "The requested resource was not found."
+    },
+    "422": {
+      "title": "Unprocessable Entity",
+      "message": "The request data is valid but cannot be processed."
+    },
+    "429": {
+      "title": "Too Many Requests",
+      "message": "You have exceeded the rate limit. Please try again later."
+    },
+    "500": {
+      "title": "Internal Server Error",
+      "message": "An internal server error occurred. Please try again later."
+    },
+    "503": {
+      "title": "Service Unavailable",
+      "message": "The service is temporarily unavailable. Please try again later."
+    }
+  },
+  "upload": {
+    "file_too_large": "File size exceeds the maximum limit of {max_size}MB.",
+    "invalid_format": "Unsupported file format. Please use MP4, AVI, MOV, or other supported formats.",
+    "upload_failed": "File upload failed. Please try again.",
+    "no_file": "No file was provided for upload."
+  },
+  "processing": {
+    "task_not_found": "Processing task not found.",
+    "task_failed": "Video processing failed. Please try again.",
+    "invalid_url": "Invalid video URL. Please provide a valid YouTube, Vimeo, or TikTok URL.",
+    "download_failed": "Failed to download video from the provided URL.",
+    "transcription_failed": "Audio transcription failed. The audio quality might be too low.",
+    "translation_failed": "Translation failed. Please try again.",
+    "video_creation_failed": "Video creation with subtitles failed."
+  },
+  "validation": {
+    "required_field": "This field is required.",
+    "invalid_language": "Invalid language code provided.",
+    "invalid_model": "Invalid Whisper model specified.",
+    "invalid_service": "Invalid translation service specified.",
+    "url_required": "No URL provided",
+    "url_invalid_protocol": "URL must start with http:// or https://",
+    "url_invalid_format": "Invalid URL format",
+    "whisper_model_invalid": "Invalid Whisper model. Supported models: {models}"
+  }
+}
+
+
+

@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "react-app",
+    "react-app/jest"
+  ],
+  "rules": {
+    "no-restricted-imports": ["error", {
+      "paths": [
+        {
+          "name": "react-helmet-async",
+          "message": "Use React 19 native metadata tags instead: <title>, <meta>, <link>"
+        },
+        {
+          "name": "react-helmet",
+          "message": "Use React 19 native metadata tags instead: <title>, <meta>, <link>"
+        }
+      ]
+    }]
+  }
+}

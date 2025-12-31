@@ -1,0 +1,131 @@
+worker-1  | 2025-11-05 12:26:22 [info     ] 🔧 Celery worker is ready! Task processing system initialized! 🚀
+worker-1  |  
+worker-1  |  -------------- celery@105246873efd v5.4.0 (opalescent)
+worker-1  | --- ***** ----- 
+worker-1  | -- ******* ---- Linux-6.10.14-linuxkit-aarch64-with-glibc2.41 2025-11-05 12:26:22
+worker-1  | - *** --- * --- 
+worker-1  | - ** ---------- [config]
+worker-1  | - ** ---------- .> app:         tasks:0xffffa45d65a0
+worker-1  | - ** ---------- .> transport:   redis://redis:6379/0
+worker-1  | - ** ---------- .> results:     redis://redis:6379/0
+worker-1  | - *** --- * --- .> concurrency: 1 (prefork)
+worker-1  | -- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+worker-1  | --- ***** ----- 
+worker-1  |  -------------- [queues]
+worker-1  |                 .> processing       exchange=celery(direct) key=task.processing
+worker-1  |                 
+worker-1  | 
+worker-1  | [tasks]
+worker-1  |   . download_and_process_youtube_task
+worker-1  |   . download_youtube_only_task
+worker-1  |   . tasks.cleanup_files_task
+worker-1  |   . tasks.cleanup_old_files_task
+worker-1  |   . tasks.create_video_with_subtitles_from_segments
+worker-1  |   . tasks.download_highest_quality_video_task
+worker-1  |   . tasks.process_video_task
+worker-1  |   . tasks_addition.download_highest_quality_video_task
+worker-1  | 
+worker-1  | [2025-11-05 12:26:22,286: INFO/MainProcess] Connected to redis://redis:6379/0
+worker-1  | [2025-11-05 12:26:22,287: INFO/MainProcess] mingle: searching for neighbors
+worker-1  | [2025-11-05 12:26:23,299: INFO/MainProcess] mingle: all alone
+worker-1  | [2025-11-05 12:26:23,313: INFO/MainProcess] celery@105246873efd ready.
+worker-1  | [2025-11-05 12:26:54,639: INFO/MainProcess] Task download_and_process_youtube_task[59898e0b-7f3e-4a34-976f-b89365197c5d] received
+worker-1  | [2025-11-05 12:26:56,026: WARNING/ForkPoolWorker-1] WARNING: [youtube] 0EQ6J52YGog: android client https formats require a GVS PO Token which was not provided. They will be skipped as they may yield HTTP Error 403. You can manually pass a GVS PO Token for this client with --extractor-args "youtube:po_token=android.gvs+XXX". For more information, refer to  https://github.com/yt-dlp/yt-dlp/wiki/PO-Token-Guide
+worker-1  | [2025-11-05 12:26:56,033: WARNING/ForkPoolWorker-1] WARNING: [youtube] 0EQ6J52YGog: Some web client https formats have been skipped as they are missing a url. YouTube is forcing SABR streaming for this client. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
+worker-1  | [2025-11-05 12:26:56,111: WARNING/ForkPoolWorker-1] 2025-11-05 12:26:56 [info     ] 🎯 Starting optimized download
+worker-1  | [2025-11-05 12:26:56,111: WARNING/ForkPoolWorker-1] 2025-11-05 12:26:56 [debug    ] 📂 Working in fast storage: /app/fast_work
+worker-1  | [2025-11-05 12:26:56,135: WARNING/ForkPoolWorker-1] 2025-11-05 12:26:56 [debug    ] 📡 Extracting info from URL: https://www.youtube.com/watch?v=0EQ6J52YGog
+worker-1  | [2025-11-05 12:26:56,137: WARNING/ForkPoolWorker-1] [youtube] Extracting URL: https://www.youtube.com/watch?v=0EQ6J52YGog
+worker-1  | [2025-11-05 12:26:56,137: WARNING/ForkPoolWorker-1] [youtube] 0EQ6J52YGog: Downloading webpage
+worker-1  | [2025-11-05 12:26:57,033: WARNING/ForkPoolWorker-1] [youtube] 0EQ6J52YGog: Downloading android player API JSON
+worker-1  | [2025-11-05 12:26:57,227: WARNING/ForkPoolWorker-1] WARNING: [youtube] 0EQ6J52YGog: android client https formats require a GVS PO Token which was not provided. They will be skipped as they may yield HTTP Error 403. You can manually pass a GVS PO Token for this client with --extractor-args "youtube:po_token=android.gvs+XXX". For more information, refer to  https://github.com/yt-dlp/yt-dlp/wiki/PO-Token-Guide
+worker-1  | [2025-11-05 12:26:57,241: WARNING/ForkPoolWorker-1] WARNING: [youtube] 0EQ6J52YGog: Some web client https formats have been skipped as they are missing a url. YouTube is forcing SABR streaming for this client. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
+worker-1  | [2025-11-05 12:26:57,282: WARNING/ForkPoolWorker-1] [info] 0EQ6J52YGog: Downloading 1 format(s): 18
+worker-1  | [2025-11-05 12:26:57,285: WARNING/ForkPoolWorker-1] [download] Sleeping 6.00 seconds as required by the site...
+worker-1  | [2025-11-05 12:27:03,377: WARNING/ForkPoolWorker-1] [download] Destination: /app/fast_work/Court rules Trump illegally used emergency powers to impose tariffs.mp4
+worker-1  | [2025-11-05 12:27:03,378: WARNING/ForkPoolWorker-1] 
+[download]   0.0% of    2.21MiB at  398.70KiB/s ETA 00:05
+worker-1  | [2025-11-05 12:27:03,378: INFO/ForkPoolWorker-1] 📥 Download: 0.0% of 2.2MB
+worker-1  | [2025-11-05 12:27:03,381: WARNING/ForkPoolWorker-1] 
+[download]   0.1% of    2.21MiB at  503.74KiB/s ETA 00:04
+worker-1  | [2025-11-05 12:27:03,383: WARNING/ForkPoolWorker-1] 
+[download]   0.3% of    2.21MiB at  898.88KiB/s ETA 00:02
+worker-1  | [2025-11-05 12:27:03,385: WARNING/ForkPoolWorker-1] 
+[download]   0.7% of    2.21MiB at    1.50MiB/s ETA 00:01
+worker-1  | [2025-11-05 12:27:03,386: WARNING/ForkPoolWorker-1] 
+[download]   1.4% of    2.21MiB at    2.82MiB/s ETA 00:00
+worker-1  | [2025-11-05 12:27:03,389: WARNING/ForkPoolWorker-1] 
+[download]   2.8% of    2.21MiB at    4.28MiB/s ETA 00:00
+worker-1  | [2025-11-05 12:27:03,395: WARNING/ForkPoolWorker-1] 
+[download]   5.6% of    2.21MiB at    6.20MiB/s ETA 00:00
+worker-1  | [2025-11-05 12:27:03,415: WARNING/ForkPoolWorker-1] 
+[download]  11.3% of    2.21MiB at    6.14MiB/s ETA 00:00
+worker-1  | [2025-11-05 12:27:03,416: INFO/ForkPoolWorker-1] 📥 Download: 11.3% of 2.2MB at 6.6MB/s ETA 0s
+worker-1  | [2025-11-05 12:27:03,443: WARNING/ForkPoolWorker-1] 
+[download]  22.6% of    2.21MiB at    7.35MiB/s ETA 00:00
+worker-1  | [2025-11-05 12:27:03,443: INFO/ForkPoolWorker-1] 📥 Download: 22.6% of 2.2MB at 7.4MB/s ETA 0s
+worker-1  | [2025-11-05 12:27:03,492: WARNING/ForkPoolWorker-1] 
+[download]  45.2% of    2.21MiB at    8.54MiB/s ETA 00:00
+worker-1  | [2025-11-05 12:27:03,492: INFO/ForkPoolWorker-1] 📥 Download: 45.2% of 2.2MB at 8.2MB/s ETA 0s
+worker-1  | [2025-11-05 12:27:03,639: WARNING/ForkPoolWorker-1] 
+[download]  90.4% of    2.21MiB at    7.58MiB/s ETA 00:00
+worker-1  | [2025-11-05 12:27:03,640: INFO/ForkPoolWorker-1] 📥 Download: 90.4% of 2.2MB at 7.8MB/s ETA 0s
+worker-1  | [2025-11-05 12:27:03,659: WARNING/ForkPoolWorker-1] 
+[download] 100.0% of    2.21MiB at    7.78MiB/s ETA 00:00
+worker-1  | [2025-11-05 12:27:03,661: WARNING/ForkPoolWorker-1] 
+[download] 100% of    2.21MiB in 00:00:00 at 5.91MiB/s   
+worker-1  | [2025-11-05 12:27:03,661: INFO/ForkPoolWorker-1] 📥 Download complete: 2.2MB in 7.6s avg 0.3MB/s
+worker-1  | [2025-11-05 12:27:03,669: WARNING/ForkPoolWorker-1] 2025-11-05 12:27:03 [info     ] 🔧 Renamed file: Court_rules_Trump_illegally_used_emergency_powers_to_impose_tariffs.mp4
+worker-1  | [2025-11-05 12:27:03,673: WARNING/ForkPoolWorker-1] 🐌 Very slow download: 0.3MB/s avg (current: 0.3MB/s, size: 2.2MB)
+worker-1  | [2025-11-05 12:27:03,673: WARNING/ForkPoolWorker-1] 2025-11-05 12:27:03 [info     ] ✅ Phase A download completed: Court_rules_Trump_illegally_used_emergency_powers_to_impose_tariffs.mp4
+worker-1  | [2025-11-05 12:27:03,674: WARNING/ForkPoolWorker-1] 2025-11-05 12:27:03 [info     ] ✅ Downloaded: Court rules Trump illegally used emergency powers to impose tariffs (41, 7,738 views)
+worker-1  | [2025-11-05 12:27:04,692: INFO/ForkPoolWorker-1] Task download_and_process_youtube_task[59898e0b-7f3e-4a34-976f-b89365197c5d] succeeded in 10.051774211999145s: {'task_id': '9fa8b22d-7da8-4671-8473-72df48dba7e3', 'status': 'PROCESSING', 'video_metadata': {'title': 'Court rules Trump illegally used emergency powers to impose tariffs', 'duration': 41, 'duration_string': '41', 'view_count': 7738, 'upload_date': '20250830', 'uploader': 'Associated Press', 'thumbnail': 'https://i.ytimg.com/vi/0EQ6J52YGog/maxresdefault.jpg', 'description': 'The U.S. Court of Appeals for the Federal Circuit ruled Friday that Trump wasn’t legally allowed to declare national emergencies and impose import taxes on almost every country on earth, largely uphol...', 'width': 640, 'height': 360, 'fps': 30, 'filesize': 2317702, 'url': 'https://www.youtube.com/watch?v=0EQ6J52YGog'}, 'user_choices': {'source_lang': 'auto', 'target_lang': 'he', 'auto_create_video': True, 'whisper_model': 'large', 'url': 'https://www.youtube.com/watch?v=0EQ6J52YGog', 'translation_service': 'openai'}}
+worker-1  | [2025-11-05 12:27:04,694: INFO/MainProcess] Task tasks.process_video_task[9fa8b22d-7da8-4671-8473-72df48dba7e3] received
+worker-1  | [2025-11-05 12:27:04,867: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:04 [info     ] Task started                   source_lang=auto target_lang=he task_id=9fa8b22d-7da8-4671-8473-72df48dba7e3 task_name=process_video translation_service=openai video_path=/app/downloads/Court_rules_Trump_illegally_used_emergency_powers_to_impose_tariffs.mp4 whisper_model=large
+worker-1  | [2025-11-05 12:27:05,880: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:05 [info     ] 🚀 Using P1 pipeline overlap (transcribe + translate simultaneously)
+worker-1  | [2025-11-05 12:27:05,880: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:05 [info     ] 🚀 === P1: Pipeline Overlap - Streaming Transcription + Concurrent Translation ===
+worker-1  | [2025-11-05 12:27:05,881: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:05 [info     ] ⚙️ Translation parallelism: 1 workers, batch size: 20 segments
+worker-1  | [2025-11-05 12:27:05,881: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:05 [info     ] 📹 Step 1/3: Extracting audio from video...
+worker-1  | [2025-11-05 12:27:05,948: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:05 [info     ] 🔄 Re-encoding audio: aac @ 44100Hz, 2ch → 16kHz mono
+worker-1  | [2025-11-05 12:27:06,026: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:06 [info     ] 📊 Audio extracted: 41.5s duration
+worker-1  | [2025-11-05 12:27:06,026: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:06 [info     ] 🤖 Step 2/3: Loading Whisper model...
+worker-1  | [2025-11-05 12:27:06,027: INFO/ForkPoolWorker-2] 🚀 === LOADING FASTER-WHISPER MODEL: LARGE ===
+worker-1  | [2025-11-05 12:27:06,027: INFO/ForkPoolWorker-2] 🌐 Loading large model with faster-whisper...
+worker-1  | [2025-11-05 12:27:06,027: INFO/ForkPoolWorker-2] ⚡ This is MUCH faster than regular whisper!
+worker-1  | [2025-11-05 12:27:06,027: INFO/ForkPoolWorker-2] 💾 Using CPU-optimized compute_type: int8
+worker-1  | [2025-11-05 12:27:07,064: INFO/ForkPoolWorker-2] HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-large-v3/revision/main "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:27:09,211: INFO/ForkPoolWorker-2] ✅ Model large loaded with faster-whisper successfully
+worker-1  | [2025-11-05 12:27:09,212: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:09 [info     ] 💾 Transcription settings: model=large, beam_size=2
+worker-1  | [2025-11-05 12:27:09,212: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:09 [info     ] 🔄 Step 3/3: Streaming transcription with 1x concurrent translation...
+worker-1  | [2025-11-05 12:27:09,212: INFO/ForkPoolWorker-2] Using OpenAI for translation.
+worker-1  | [2025-11-05 12:27:09,216: INFO/ForkPoolWorker-2] Processing audio with duration 00:41.494
+worker-1  | [2025-11-05 12:27:12,290: INFO/ForkPoolWorker-2] Detected language 'en' with probability 1.00
+worker-1  | [2025-11-05 12:27:12,291: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:12 [info     ] 🌍 Detected language: en
+worker-1  | [2025-11-05 12:27:24,350: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:24 [info     ] 📤 Submitting final batch #0 to thread pool (inflight=0)
+worker-1  | [2025-11-05 12:27:24,351: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:24 [info     ] 🔄 [Thread-281468790174080] Translating batch #0: 9 segments
+worker-1  | [2025-11-05 12:27:24,351: INFO/ForkPoolWorker-2] 🚀 Starting OpenAI translation: 9 segments → he
+worker-1  | [2025-11-05 12:27:24,351: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:24 [info     ] ✅ Transcription complete: 9 segments, 1 batches
+worker-1  | [2025-11-05 12:27:24,351: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:24 [info     ] ⏳ Waiting for 1 translation batches to complete...
+worker-1  | [2025-11-05 12:27:24,352: INFO/ForkPoolWorker-2] 🔄 Processing batch 1/1: 9 segments (global #1-#9)
+worker-1  | [2025-11-05 12:27:24,353: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:24 [debug    ] ✅ Budget acquired: 923 tokens, TPM: 923/20000, RPM: 1/60
+worker-1  | [2025-11-05 12:27:40,001: INFO/ForkPoolWorker-2] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+worker-1  | [2025-11-05 12:27:40,006: INFO/ForkPoolWorker-2] ✅ Batch 254a944e-0: Perfect ID mapping - 9/9 translations
+worker-1  | [2025-11-05 12:27:40,006: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:40 [info     ] 📊 Phase A+ Batch operation completed batch_id=254a944e-0 duration_s=15.65 est_out_tokens=521 headers={} in_tokens=402 provider=openai rate_limit_headers_present=False retries=0 status=success total_tokens=923 waited_s=0
+worker-1  | [2025-11-05 12:27:40,007: INFO/ForkPoolWorker-2] ✅ Translation completed: 9/9 segments | 0.0s total wait
+worker-1  | [2025-11-05 12:27:40,007: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:40 [info     ] ✅ [Thread-281468790174080] Batch #0 translated successfully
+worker-1  | [2025-11-05 12:27:40,008: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:40 [info     ] ✅ Collected batch #0 results
+worker-1  | [2025-11-05 12:27:40,008: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:40 [info     ] ✅ All translations complete: 9 segments
+worker-1  | [2025-11-05 12:27:40,008: INFO/ForkPoolWorker-2] 🧠 Transcription: 1.3× speed (model: large, segments: 0)
+worker-1  | [2025-11-05 12:27:40,009: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:40 [info     ] 🎉 Pipeline overlap complete! Total time: 30.8s for 41.5s audio
+worker-1  | [2025-11-05 12:27:40,012: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:40 [info     ] ✅ P1 Pipeline complete: 9 segments | 34.1s total | en → he
+worker-1  | [2025-11-05 12:27:40,013: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:40 [info     ] Creating SRT file              language=en output_path=/app/downloads/Court_rules_Trump_illegally_used_emergency_powers_to_impose_tariffs_original.srt segments_count=9 use_translation=False
+worker-1  | [2025-11-05 12:27:40,014: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:40 [info     ] SRT file created successfully  output_path=/app/downloads/Court_rules_Trump_illegally_used_emergency_powers_to_impose_tariffs_original.srt segments_count=9
+worker-1  | [2025-11-05 12:27:40,014: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:40 [info     ] Creating SRT file              language=he output_path=/app/downloads/Court_rules_Trump_illegally_used_emergency_powers_to_impose_tariffs_translated.srt segments_count=9 use_translation=True
+worker-1  | [2025-11-05 12:27:40,016: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:40 [info     ] SRT file created successfully  output_path=/app/downloads/Court_rules_Trump_illegally_used_emergency_powers_to_impose_tariffs_translated.srt segments_count=9
+worker-1  | [2025-11-05 12:27:40,017: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:40 [info     ] Starting video subtitle embedding operation=subtitle_embedding_start srt_path=Court_rules_Trump_illegally_used_emergency_powers_to_impose_tariffs_translated.srt target_language=he video_path=Court_rules_Trump_illegally_used_emergency_powers_to_impose_tariffs.mp4
+worker-1  | [2025-11-05 12:27:40,018: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:40 [info     ] Using enhanced RTL settings    font=Noto Sans Hebrew target_language=he
+worker-1  | [2025-11-05 12:27:40,018: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:40 [debug    ] Running FFmpeg subtitle embedding command=ffmpeg -i /app/downloads/Court_rules_Trump_illegally_used_emergency_powers_to_impose_tariffs.mp4 -vf subtitles='/app/downloads/Court_rules_Trump_illegally_used_emergency_powers_to_impose_tariffs_translated_clean.srt':force_style='FontName=Noto Sans Hebrew,FontSize=18,Bold=1,PrimaryColour=&HFFFFFF,OutlineColour=&H000000,BackColour=&H80000000,Outline=3,Shadow=2,MarginV=40,Alignment=2':charenc=UTF-8... operation=ffmpeg_subtitle_start
+worker-1  | [2025-11-05 12:27:41,173: INFO/ForkPoolWorker-2] 🎬 subtitle_embedding: 37.3× speed
+worker-1  | [2025-11-05 12:27:41,173: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:41 [info     ] Video with subtitles created successfully file_size_mb=2.47 operation=subtitle_embedding_complete output_path=Court_rules_Trump_illegally_used_emergency_powers_to_impose_tariffs_with_subtitles.mp4
+worker-1  | [2025-11-05 12:27:42,188: WARNING/ForkPoolWorker-2] 2025-11-05 12:27:42 [info     ] Task completed                 detected_language=en duration_seconds=37.321 files_created=3 task_id=9fa8b22d-7da8-4671-8473-72df48dba7e3 task_name=process_video
+worker-1  | [2025-11-05 12:27:42,190: INFO/ForkPoolWorker-2] Task tasks.process_video_task[9fa8b22d-7da8-4671-8473-72df48dba7e3] succeeded in 37.32193589199596s: {'status': 'SUCCESS', 'result': {'title': 'Court_rules_Trump_illegally_used_emergency_powers_to_impose_tariffs', 'detected_language': 'en', 'files': {'original_srt': 'Court_rules_Trump_illegally_used_emergency_powers_to_impose_tariffs_original.srt', 'translated_srt': 'Court_rules_Trump_illegally_used_emergency_powers_to_impose_tariffs_translated.srt', 'video_with_subtitles': 'Court_rules_Trump_illegally_used_emergency_powers_to_impose_tariffs_final.mp4'}, 'timing_summary': {'download_video': '7.6', 'transcribe_and_translate': '34.1', 'create_video_with_subtitles': '2.2', 'add_watermark': '0.0 (skipped)'}, 'progress': [{...}, {...}, {...}, {...}, {...}, {...}, {...}], 'video_metadata': {'title': 'Court rules Trump illegally used emergency powers to impose tariffs', 'duration': 41, 'duration_string': '41', 'view_count': 7738, 'upload_date': '20250830', 'uploader': 'Associated Press', 'thumbnail': 'https://i.ytimg.com/vi/0EQ6J52YGog/maxresdefault.jpg', 'description': 'The U.S. Court of Appeals for the Federal...', ...}}}

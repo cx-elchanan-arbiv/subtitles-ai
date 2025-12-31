@@ -1,0 +1,50 @@
+{
+  "status": {
+    "success": "نجح",
+    "error": "خطأ",
+    "processing": "جاري المعالجة",
+    "completed": "مكتمل",
+    "failed": "فشل",
+    "pending": "في الانتظار"
+  },
+  "messages": {
+    "upload_success": "تم رفع الملف بنجاح",
+    "processing_started": "بدأت معالجة الفيديو",
+    "processing_completed": "اكتملت معالجة الفيديو بنجاح",
+    "download_ready": "التحميل جاهز",
+    "task_queued": "تمت إضافة المهمة إلى قائمة الانتظار للمعالجة"
+  },
+  "validation": {
+    "file_required": "الملف مطلوب",
+    "url_required": "الرابط مطلوب",
+    "invalid_file_type": "نوع ملف غير صحيح",
+    "file_too_large": "الملف كبير جداً",
+    "invalid_url_format": "تنسيق الرابط غير صحيح"
+  },
+  "languages": {
+    "auto": "كشف تلقائي",
+    "autoDetect": "كشف تلقائي",
+    "he": "عبرية",
+    "en": "إنجليزية",
+    "es": "إسبانية",
+    "ar": "العربية",
+    "fr": "فرنسية",
+    "de": "ألمانية",
+    "it": "إيطالية",
+    "pt": "برتغالية",
+    "ru": "روسية",
+    "ja": "يابانية",
+    "ko": "كورية",
+    "zh": "صينية",
+    "tr": "تركية"
+  },
+  "translationServices": {
+    "google": {
+      "description": "خدمة ترجمة Google المجانية"
+    },
+    "openai": {
+      "description": "ترجمة متقدمة باستخدام GPT-4o",
+      "requiresKey": "مطلوب مفتاح API لـ OpenAI"
+    }
+  }
+}
