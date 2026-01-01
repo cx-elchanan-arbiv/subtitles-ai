@@ -403,7 +403,10 @@ def download_youtube_only_task(self, url, quality="high", start_time=None, end_t
     import os
     import sys
 
-    sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+    # Add backend root to path (parent of tasks folder) for state_manager import
+    backend_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    if backend_root not in sys.path:
+        sys.path.insert(0, backend_root)
     from services.metadata_service import MetadataExtractionError, metadata_service
     from state_manager import EnterpriseStateManager, StepStatus
 
