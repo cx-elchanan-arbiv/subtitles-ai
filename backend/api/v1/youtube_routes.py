@@ -22,6 +22,18 @@ youtube_bp = Blueprint('youtube', __name__)
 def process_youtube_async():
     """Process a YouTube URL asynchronously."""
     try:
+        # Server-side enforcement: Block YouTube in hosted mode (PRO-only feature)
+        if config.is_youtube_restricted():
+            return (
+                jsonify(
+                    {
+                        "error": t("features.youtube_pro_only") or "YouTube processing is available for PRO users only",
+                        "code": "YOUTUBE_RESTRICTED",
+                    }
+                ),
+                403,
+            )
+
         # Handle both JSON and FormData (for custom logo uploads)
         if request.content_type and "application/json" in request.content_type:
             data = request.get_json()
@@ -134,6 +146,18 @@ def process_youtube_async():
 def download_video_only():
     """Download YouTube video without processing (transcription/translation)."""
     try:
+        # Server-side enforcement: Block YouTube in hosted mode (PRO-only feature)
+        if config.is_youtube_restricted():
+            return (
+                jsonify(
+                    {
+                        "error": t("features.youtube_pro_only") or "YouTube download is available for PRO users only",
+                        "code": "YOUTUBE_RESTRICTED",
+                    }
+                ),
+                403,
+            )
+
         data = request.get_json()
         url = data.get("url")
         if not url:

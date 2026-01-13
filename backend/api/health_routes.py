@@ -105,7 +105,9 @@ def health_check():
 def get_features():
     """Return feature flags for frontend."""
     return jsonify({
-        "youtube_download_enabled": config.ENABLE_YOUTUBE_DOWNLOAD
+        "youtube_download_enabled": config.ENABLE_YOUTUBE_DOWNLOAD,
+        "youtube_restricted": config.is_youtube_restricted(),
+        "hosted_mode": config.HOSTED_MODE
     })
 
 

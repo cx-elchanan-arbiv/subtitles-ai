@@ -260,6 +260,15 @@ class Config:
         return cls.HOSTED_MODE and model in cls.PRO_ONLY_MODELS
 
     @classmethod
+    def is_youtube_restricted(cls) -> bool:
+        """
+        Check if YouTube/Online Video feature is restricted.
+        Returns True if: HOSTED_MODE is True (YouTube is PRO-only in hosted mode)
+        Returns False for self-hosted deployments (YouTube is available)
+        """
+        return cls.HOSTED_MODE
+
+    @classmethod
     def get_supported_language_name(cls, lang_code: str) -> str:
         """Get language display name by code"""
         return cls.SUPPORTED_LANGUAGES.get(lang_code, lang_code)

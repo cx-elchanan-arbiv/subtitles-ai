@@ -61,6 +61,7 @@ function App() {
 
   // Feature flags
   const [youtubeDownloadEnabled, setYoutubeDownloadEnabled] = useState(true); // Default true
+  const [youtubeRestricted, setYoutubeRestricted] = useState(false); // PRO-only in hosted mode
 
   const {
     isProcessing,
@@ -124,18 +125,21 @@ function App() {
         if (data.youtube_download_enabled !== undefined) {
           setYoutubeDownloadEnabled(data.youtube_download_enabled);
         }
+        if (data.youtube_restricted !== undefined) {
+          setYoutubeRestricted(data.youtube_restricted);
+        }
       })
       .catch(() => {
-        // Keep default (true) on error
+        // Keep defaults on error
       });
   }, [language, t]);
 
-  // Separate effect: Handle activeTab when YouTube is disabled
+  // Separate effect: Handle activeTab when YouTube is disabled or restricted
   useEffect(() => {
-    if (!youtubeDownloadEnabled && activeTab === 'youtube') {
+    if ((!youtubeDownloadEnabled || youtubeRestricted) && activeTab === 'youtube') {
       setActiveTab('upload');
     }
-  }, [youtubeDownloadEnabled, activeTab]);
+  }, [youtubeDownloadEnabled, youtubeRestricted, activeTab]);
   
   if (loading) {
     return (
@@ -179,6 +183,7 @@ function App() {
               onTabChange={setActiveTab}
               disabled={isProcessing}
               youtubeEnabled={youtubeDownloadEnabled}
+              youtubeRestricted={youtubeRestricted}
             />
             
             <main className="main-content">
@@ -218,6 +223,7 @@ function App() {
               onTabChange={setActiveTab}
               disabled={isProcessing}
               youtubeEnabled={youtubeDownloadEnabled}
+              youtubeRestricted={youtubeRestricted}
             />
             
             <main className="main-content">
