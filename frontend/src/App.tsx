@@ -37,7 +37,7 @@ function App() {
   const [targetLang, setTargetLang] = useState('he');
   const [languages, setLanguages] = useState<Language>({});
   const [autoCreateVideo, setAutoCreateVideo] = useState(true);
-  const [whisperModel, setWhisperModel] = useState<WhisperModel>('medium');
+  const [whisperModel, setWhisperModel] = useState<WhisperModel>('base');
   const [translationService, setTranslationService] = useState<TranslationService>('openai');
   const [transcriptionOnly, setTranscriptionOnly] = useState(false);
   const [showAuthModal, setShowAuthModal] = useState(false);
@@ -144,7 +144,7 @@ function App() {
   // Switch from Gemini when user goes to upload tab (Gemini only works with YouTube)
   useEffect(() => {
     if (activeTab === 'upload' && whisperModel === 'gemini') {
-      setWhisperModel('medium');
+      setWhisperModel('base');
     }
   }, [activeTab, whisperModel]);
   
