@@ -140,6 +140,13 @@ function App() {
       setActiveTab('upload');
     }
   }, [youtubeDownloadEnabled, youtubeRestricted, activeTab]);
+
+  // Switch from Gemini when user goes to upload tab (Gemini only works with YouTube)
+  useEffect(() => {
+    if (activeTab === 'upload' && whisperModel === 'gemini') {
+      setWhisperModel('medium');
+    }
+  }, [activeTab, whisperModel]);
   
   if (loading) {
     return (
@@ -245,6 +252,7 @@ function App() {
                 transcriptionOnly={transcriptionOnly}
                 onTranscriptionOnlyChange={setTranscriptionOnly}
                 disabled={isProcessing}
+                activeTab={activeTab}
               />
               <WatermarkSettings
                 config={watermarkConfig}

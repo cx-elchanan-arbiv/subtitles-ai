@@ -256,6 +256,7 @@
     "small": "Better Accuracy",
     "medium": "Excellent",
     "large": "Professional",
+    "gemini": "⚡ Experimental",
     "pro": "PRO"
   },
   "modelDetails": {

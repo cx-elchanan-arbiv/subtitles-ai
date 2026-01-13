@@ -32,6 +32,7 @@ interface OptionsProps {
   transcriptionOnly: boolean;
   onTranscriptionOnlyChange: (checked: boolean) => void;
   disabled: boolean;
+  activeTab?: 'upload' | 'youtube';
 }
 
 const Options: React.FC<OptionsProps> = ({
@@ -44,6 +45,7 @@ const Options: React.FC<OptionsProps> = ({
   transcriptionOnly,
   onTranscriptionOnlyChange,
   disabled,
+  activeTab = 'youtube',
 }) => {
   const { t } = useTranslation();
   const { language } = useI18n();
@@ -140,9 +142,18 @@ const Options: React.FC<OptionsProps> = ({
       });
   }, [t, language]);
 
+  // Filter models based on active tab - Gemini only works with YouTube
+  const filteredModels = Object.entries(whisperModels).filter(([key]) => {
+    // Hide Gemini on upload tab since it only works with YouTube URLs
+    if (key === 'gemini' && activeTab === 'upload') {
+      return false;
+    }
+    return true;
+  });
+
   return (
     <div className="options">
-      {whisperModel === 'gemini' && (
+      {whisperModel === 'gemini' && activeTab === 'youtube' && (
         <div className="model-warning" style={{
           padding: '10px',
           marginBottom: '15px',
@@ -183,7 +194,7 @@ const Options: React.FC<OptionsProps> = ({
             }}
             disabled={disabled}
           >
-            {Object.entries(whisperModels).map(([key, model]) => (
+            {filteredModels.map(([key, model]) => (
               <option
                 key={key}
                 value={key}
