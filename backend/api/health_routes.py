@@ -246,13 +246,21 @@ def get_translation_services():
 def get_whisper_models():
     """Get available Whisper models with user-friendly descriptions"""
     from services.whisper_smart import SmartWhisperManager
+    from i18n.translations import t
 
     manager = SmartWhisperManager()
     model_capabilities = manager.get_available_models()
 
+    # Check if we're in hosted mode (restricts some models to PRO)
+    is_hosted = config.HOSTED_MODE
+    pro_only_models = config.PRO_ONLY_MODELS
+
     # Format the model data for frontend consumption
     model_options = {}
     for model_name, capabilities in model_capabilities.items():
+        # Check if this model is restricted in hosted mode
+        is_restricted = is_hosted and model_name in pro_only_models
+
         model_options[model_name] = {
             "name": model_name,
             "display_name": model_name.title(),
@@ -260,6 +268,14 @@ def get_whisper_models():
             "speed": capabilities.get("speed", "unknown"),
             "languages": capabilities.get("languages", "all"),
             "description": f"{capabilities.get('accuracy', 'Unknown')} accuracy, {capabilities.get('speed', 'unknown')} speed",
+            # Restriction info for frontend
+            "restricted": is_restricted,
+            "restrictedReason": (
+                t("whisperModels.proOnlyTooltip") or "Available for PRO users only"
+            ) if is_restricted else None,
+            # Only show "pro" tier when in hosted mode AND model is in pro_only_models
+            # In self-hosted mode, all models are "free" (unlocked)
+            "tier": "pro" if (is_hosted and model_name in pro_only_models) else "free",
         }
 
     return jsonify(
@@ -267,5 +283,6 @@ def get_whisper_models():
             "models": model_options,
             "default": "base",  # Default for production (2GB RAM Worker)
             "recommended": "base",  # Safe choice for most instances
+            "hostedMode": is_hosted,  # Let frontend know if restrictions apply
         }
     )

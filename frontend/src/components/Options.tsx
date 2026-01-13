@@ -16,6 +16,10 @@ interface WhisperModelOption {
   accuracy: string;
   best_for: string;
   compute_type: string;
+  // Restriction info for hosted mode
+  restricted?: boolean;
+  restrictedReason?: string;
+  tier?: 'free' | 'pro';
 }
 
 interface OptionsProps {
@@ -86,7 +90,11 @@ const Options: React.FC<OptionsProps> = ({
             time_estimate: t(`modelDetails.${key}Time`),
             accuracy: t(`modelDetails.${key}Accuracy`),
             best_for: t(`modelDetails.${key}BestFor`),
-            compute_type: t('modelDetails.computeTypeInt8')
+            compute_type: t('modelDetails.computeTypeInt8'),
+            // Preserve restriction info from server
+            restricted: model.restricted || false,
+            restrictedReason: model.restrictedReason || null,
+            tier: model.tier || 'free',
           };
         });
 
@@ -165,15 +173,30 @@ const Options: React.FC<OptionsProps> = ({
         <div className="model-controls">
           <select
             value={whisperModel}
-            onChange={(e) => onWhisperModelChange(e.target.value as WhisperModel)}
+            onChange={(e) => {
+              const selectedModel = whisperModels[e.target.value];
+              // Don't allow selecting restricted models
+              if (selectedModel?.restricted) {
+                return;
+              }
+              onWhisperModelChange(e.target.value as WhisperModel);
+            }}
             disabled={disabled}
           >
             {Object.entries(whisperModels).map(([key, model]) => (
               <option
                 key={key}
                 value={key}
+                disabled={model.restricted}
+                style={{
+                  color: model.restricted ? '#999' : 'inherit',
+                  fontStyle: model.restricted ? 'italic' : 'normal',
+                }}
+                title={model.restricted ? model.restrictedReason : undefined}
               >
-                {model.name}{key === 'large' ? ` [${t('whisperModels.pro')}]` : ''}
+                {model.name}
+                {model.tier === 'pro' ? ` [${t('whisperModels.pro')}]` : ''}
+                {model.restricted ? ` 🔒` : ''}
               </option>
             ))}
             {/* Fallback options if API fails */}
@@ -190,6 +213,20 @@ const Options: React.FC<OptionsProps> = ({
               </>
             )}
           </select>
+          {/* Show tooltip message for restricted models */}
+          {whisperModels[whisperModel]?.restricted && (
+            <div className="model-restriction-notice" style={{
+              fontSize: '0.8em',
+              color: '#d32f2f',
+              marginTop: '4px',
+              padding: '6px 10px',
+              backgroundColor: '#ffebee',
+              borderRadius: '4px',
+              border: '1px solid #ffcdd2'
+            }}>
+              🔒 {whisperModels[whisperModel].restrictedReason}
+            </div>
+          )}
         </div>
         {Object.keys(whisperModels).length === 0 && (
           <div className="model-hint">

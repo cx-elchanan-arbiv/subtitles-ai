@@ -54,6 +54,13 @@ class Config:
     # Whisper Model Configuration
     DEFAULT_WHISPER_MODEL = os.getenv("DEFAULT_WHISPER_MODEL", "base")  # Default for production (2GB RAM Worker)
     AVAILABLE_WHISPER_MODELS: set[str] = {"base", "medium", "large", "gemini"}  # Added gemini as experimental option
+
+    # Hosted Mode Configuration
+    # When True: Restricts resource-intensive models (large) to PRO users only
+    # When False (self-hosted): All models are available
+    HOSTED_MODE = os.getenv("HOSTED_MODE", "False").lower() == "true"
+    # Models that require PRO subscription in hosted mode
+    PRO_ONLY_MODELS: set[str] = {"large"}
     WHISPER_DEVICE = os.getenv("WHISPER_DEVICE", "cpu")
     WHISPER_COMPUTE_TYPE = os.getenv("WHISPER_COMPUTE_TYPE", "float32")
 
@@ -242,6 +249,15 @@ class Config:
     def is_valid_whisper_model(cls, model: str) -> bool:
         """Check if whisper model is valid"""
         return model in cls.AVAILABLE_WHISPER_MODELS
+
+    @classmethod
+    def is_model_restricted(cls, model: str) -> bool:
+        """
+        Check if a whisper model is restricted in hosted mode.
+        Returns True if: HOSTED_MODE is True AND model is in PRO_ONLY_MODELS
+        Returns False for self-hosted deployments (all models allowed)
+        """
+        return cls.HOSTED_MODE and model in cls.PRO_ONLY_MODELS
 
     @classmethod
     def get_supported_language_name(cls, lang_code: str) -> str:

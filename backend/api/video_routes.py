@@ -88,6 +88,19 @@ def upload_file_async():
                 400,
             )
 
+        # Server-side enforcement: Block restricted models in hosted mode
+        if config.is_model_restricted(whisper_model):
+            return (
+                jsonify(
+                    {
+                        "error": t("whisperModels.proOnlyTooltip") or "This model is available for PRO users only",
+                        "code": "MODEL_RESTRICTED",
+                        "restricted_model": whisper_model
+                    }
+                ),
+                403,
+            )
+
         safe_filename = secure_filename(file.filename)
         filename = safe_filename.replace(" ", "_")
         filepath = os.path.join(config.UPLOAD_FOLDER, filename)
@@ -229,6 +242,19 @@ def process_youtube_async():
                     }
                 ),
                 400,
+            )
+
+        # Server-side enforcement: Block restricted models in hosted mode
+        if config.is_model_restricted(whisper_model):
+            return (
+                jsonify(
+                    {
+                        "error": t("whisperModels.proOnlyTooltip") or "This model is available for PRO users only",
+                        "code": "MODEL_RESTRICTED",
+                        "restricted_model": whisper_model
+                    }
+                ),
+                403,
             )
 
         task = download_and_process_youtube_task.apply_async(

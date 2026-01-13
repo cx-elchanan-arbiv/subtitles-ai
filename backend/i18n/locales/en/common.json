@@ -46,6 +46,9 @@
       "description": "Advanced translation using GPT-4o",
       "requiresKey": "OpenAI API key required"
     }
+  },
+  "whisperModels": {
+    "proOnlyTooltip": "Available for PRO users only. Self-hosted users have access to all models!"
   }
 }
 

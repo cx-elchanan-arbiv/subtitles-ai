@@ -46,6 +46,9 @@
       "description": "תרגום מתקדם באמצעות GPT-4o",
       "requiresKey": "דרוש מפתח API של OpenAI"
     }
+  },
+  "whisperModels": {
+    "proOnlyTooltip": "זמין למשתמשי PRO בלבד. להתקנה עצמית - כל המודלים פתוחים!"
   }
 }
 
