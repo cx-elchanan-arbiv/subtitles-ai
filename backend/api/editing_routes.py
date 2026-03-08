@@ -284,6 +284,71 @@ def merge_videos():
         return jsonify({"error": str(e)}), 500
 
 
+@editing_bp.route("/extract-audio", methods=["POST"])
+def extract_audio():
+    """Extract audio from a video file and return it as MP3."""
+    try:
+        if 'video' not in request.files:
+            return jsonify({"error": "No video file provided"}), 400
+
+        video_file = request.files['video']
+        if video_file.filename == '':
+            return jsonify({"error": "No video file selected"}), 400
+
+        audio_format = request.form.get('format', 'mp3')
+        if audio_format not in ('mp3', 'wav'):
+            audio_format = 'mp3'
+
+        logger.info(f"Extracting audio from: {video_file.filename} as {audio_format}")
+
+        # Save uploaded video
+        video_filename = secure_filename(video_file.filename)
+        input_path = os.path.join(config.UPLOAD_FOLDER, f"audio_input_{uuid.uuid4()}_{video_filename}")
+        video_file.save(input_path)
+
+        # Prepare output path
+        base_name = os.path.splitext(video_filename)[0]
+        output_filename = f"{base_name}_audio.{audio_format}"
+        output_path = os.path.join(config.DOWNLOADS_FOLDER, f"audio_{uuid.uuid4()}_{output_filename}")
+
+        # Extract audio with FFmpeg
+        import subprocess
+        if audio_format == 'mp3':
+            cmd = ['ffmpeg', '-i', input_path, '-vn', '-acodec', 'libmp3lame', '-ab', '192k', '-y', output_path]
+            mimetype = 'audio/mpeg'
+        else:
+            cmd = ['ffmpeg', '-i', input_path, '-vn', '-acodec', 'pcm_s16le', '-ar', '44100', '-y', output_path]
+            mimetype = 'audio/wav'
+
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=600)
+
+        if result.returncode != 0:
+            logger.error(f"FFmpeg audio extraction failed: {result.stderr}")
+            if os.path.exists(input_path):
+                os.remove(input_path)
+            return jsonify({"error": "Failed to extract audio from video"}), 500
+
+        # Clean up input file
+        if os.path.exists(input_path):
+            os.remove(input_path)
+
+        logger.info(f"Audio extracted successfully: {output_filename}")
+        return send_file(
+            output_path,
+            as_attachment=True,
+            download_name=output_filename,
+            mimetype=mimetype
+        )
+
+    except Exception as e:
+        logger.error(f"Audio extraction failed: {e}")
+        if 'input_path' in locals() and os.path.exists(input_path):
+            os.remove(input_path)
+        if 'output_path' in locals() and os.path.exists(output_path):
+            os.remove(output_path)
+        return jsonify({"error": str(e)}), 500
+
+
 @editing_bp.route("/add-logo-to-video", methods=["POST"])
 def add_logo_to_video():
     """Add a logo/watermark to a video without transcription or translation."""

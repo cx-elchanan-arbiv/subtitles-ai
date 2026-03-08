@@ -19,6 +19,7 @@ import LogoOnlyForm from './components/LogoOnlyForm';
 import VideoCutterForm from './components/VideoCutterForm';
 import EmbedSubtitlesForm from './components/EmbedSubtitlesForm';
 import VideoMergerForm from './components/VideoMergerForm';
+import AudioExtractorForm from './components/AudioExtractorForm';
 
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
@@ -327,6 +328,13 @@ function App() {
                   >
                     🔗 {t('advanced.videoMerger')}
                   </button>
+                  <button
+                    className={`advanced-feature-btn ${selectedAdvancedFeature === 'audio-extractor' ? 'active' : ''}`}
+                    onClick={() => setSelectedAdvancedFeature(selectedAdvancedFeature === 'audio-extractor' ? null : 'audio-extractor')}
+                    disabled={isProcessing}
+                  >
+                    🎵 {t('advanced.audioExtractor')}
+                  </button>
                 </div>
 
                 {/* Advanced Feature Content */}
@@ -530,11 +538,54 @@ function App() {
                     />
                   </div>
                 )}
+
+                {selectedAdvancedFeature === 'audio-extractor' && (
+                  <div className="advanced-feature-content">
+                    <h3>🎵 {t('advanced.audioExtractor')}</h3>
+                    <p className="feature-description">{t('advanced.audioExtractorDescription')}</p>
+
+                    <AudioExtractorForm
+                      onSubmit={async (file: File, format: string) => {
+                        try {
+                          const formData = new FormData();
+                          formData.append('video', file);
+                          formData.append('format', format);
+
+                          const apiBaseUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:8081';
+                          const response = await fetch(`${apiBaseUrl}/extract-audio`, {
+                            method: 'POST',
+                            body: formData,
+                            credentials: 'include'
+                          });
+
+                          if (!response.ok) {
+                            const errorData = await response.json().catch(() => ({ error: 'Unknown error' }));
+                            throw new Error(errorData.error || `HTTP ${response.status}`);
+                          }
+
+                          // Download the audio file
+                          const blob = await response.blob();
+                          const url = window.URL.createObjectURL(blob);
+                          const a = document.createElement('a');
+                          a.href = url;
+                          a.download = `${file.name.split('.')[0]}_audio.${format}`;
+                          document.body.appendChild(a);
+                          a.click();
+                          document.body.removeChild(a);
+                          window.URL.revokeObjectURL(url);
+                        } catch (error) {
+                          alert('Error extracting audio. Please try again.');
+                        }
+                      }}
+                      isProcessing={isProcessing}
+                    />
+                  </div>
+                )}
               </div>
             </main>
           </>
         )}
-        
+
         <AuthModal 
           isOpen={showAuthModal} 
           onClose={() => setShowAuthModal(false)} 

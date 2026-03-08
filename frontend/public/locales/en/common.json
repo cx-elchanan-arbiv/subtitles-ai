@@ -361,7 +361,20 @@
     "logoOnlyDescription": "Add your logo/watermark to any video without transcription or translation. Fast processing with FFmpeg.",
     "videoCutterDescription": "Cut your video to specific time segments. Fast processing with FFmpeg - no quality loss!",
     "embedSubtitlesDescription": "Embed existing subtitles (SRT file) into your video with custom styling.",
-    "videoMergerDescription": "Merge multiple video files into one. Supports different resolutions."
+    "videoMergerDescription": "Merge multiple video files into one. Supports different resolutions.",
+    "audioExtractor": "Extract Audio",
+    "audioExtractorDescription": "Extract the audio track from any video file. Get an MP3 or WAV file for download."
+  },
+  "audioExtractor": {
+    "uploadVideo": "Upload Video",
+    "outputFormat": "Output Format",
+    "extractButton": "Extract Audio",
+    "errorNoFile": "Please select a video file",
+    "infoTitle": "Information",
+    "infoFormats": "Supports all video formats (MP4, MOV, AVI, MKV...)",
+    "infoMp3": "MP3 - Small file, great for listening and sharing",
+    "infoWav": "WAV - Maximum quality, no compression",
+    "infoSpeed": "Fast processing with FFmpeg"
   },
   "logoOnly": {
     "uploadVideo": "Upload Video",

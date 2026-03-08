@@ -361,7 +361,20 @@
     "logoOnlyDescription": "הוסיפו לוגו/סימן מים לכל וידאו ללא תמלול או תרגום. עיבוד מהיר עם FFmpeg.",
     "videoCutterDescription": "חיתכו את הוידאו שלכם לקטעי זמן ספציפיים. עיבוד מהיר עם FFmpeg - ללא איבוד איכות!",
     "embedSubtitlesDescription": "הטמיעו כתוביות קיימות (קובץ SRT) לתוך הוידאו שלכם עם עיצוב מותאם אישית.",
-    "videoMergerDescription": "מיזוג מספר קבצי וידאו לקובץ אחד. תומך ברזולוציות שונות."
+    "videoMergerDescription": "מיזוג מספר קבצי וידאו לקובץ אחד. תומך ברזולוציות שונות.",
+    "audioExtractor": "חילוץ אודיו",
+    "audioExtractorDescription": "חלצו את פסקול האודיו מכל קובץ וידאו. קבלו קובץ MP3 או WAV להורדה."
+  },
+  "audioExtractor": {
+    "uploadVideo": "העלו וידאו",
+    "outputFormat": "פורמט פלט",
+    "extractButton": "חלץ אודיו",
+    "errorNoFile": "יש לבחור קובץ וידאו",
+    "infoTitle": "מידע",
+    "infoFormats": "תומך בכל פורמטי הוידאו (MP4, MOV, AVI, MKV...)",
+    "infoMp3": "MP3 - קובץ קטן, מתאים להאזנה ושיתוף",
+    "infoWav": "WAV - איכות מקסימלית, ללא דחיסה",
+    "infoSpeed": "עיבוד מהיר עם FFmpeg"
   },
   "logoOnly": {
     "uploadVideo": "העלה וידאו",
