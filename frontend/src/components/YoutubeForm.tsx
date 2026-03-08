@@ -77,7 +77,7 @@ const YoutubeForm: React.FC<YoutubeFormProps> = ({
       if (isKnownDomain) {
         // Additional validation for known domains
         if (domain.includes('youtube.com')) {
-          if (!urlObj.pathname.includes('/watch') && !urlObj.searchParams.has('v')) {
+          if (!urlObj.pathname.includes('/watch') && !urlObj.searchParams.has('v') && !urlObj.pathname.includes('/shorts/')) {
             return t('validation.invalidYouTubeUrl');
           }
         } else if (domain === 'youtu.be') {

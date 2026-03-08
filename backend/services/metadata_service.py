@@ -89,7 +89,7 @@ class VideoMetadataService:
             if domain in self.ALLOWED_DOMAINS:
                 # Additional validation for known domains
                 if "youtube.com" in domain:
-                    if "/watch" not in parsed.path and "v=" not in parsed.query:
+                    if "/watch" not in parsed.path and "v=" not in parsed.query and "/shorts/" not in parsed.path:
                         return False
                 elif "youtu.be" in domain:
                     if len(parsed.path) < 2:  # Must have video ID
