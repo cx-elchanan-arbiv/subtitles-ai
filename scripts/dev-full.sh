@@ -67,6 +67,7 @@ echo -e "${BLUE}📦 Starting Backend Server...${NC}"
     export DEBUG=true
     export REDIS_HOST=localhost
     export REDIS_PORT=6379
+    export REDIS_URL=redis://localhost:6379/0
     python app.py
 ) &
 
@@ -86,6 +87,7 @@ echo -e "${BLUE}⚙️  Starting Celery Worker...${NC}"
     export ASSETS_FOLDER=./assets
     export REDIS_HOST=localhost
     export REDIS_PORT=6379
+    export REDIS_URL=redis://localhost:6379/0
     celery -A celery_worker.celery_app worker -l info -Q processing --concurrency=1
 ) &
 

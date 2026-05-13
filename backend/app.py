@@ -12,9 +12,13 @@ import uuid
 import base64
 import re
 
+from dotenv import load_dotenv
+
+# Load environment variables BEFORE importing config or other modules that read env
+load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
+
 import openai
 from celery.result import AsyncResult
-from dotenv import load_dotenv
 from flask import Flask, jsonify, request, send_file, session
 from flask_cors import CORS
 from flask_limiter import Limiter
@@ -35,9 +39,6 @@ from utils.video_utils import (
     parse_text_to_srt,
     add_watermark_to_video
 )
-
-# Load environment variables from parent directory
-load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
 
 # Set testing environment variables if running in CI
 if os.getenv("CI") == "true" or "pytest" in os.environ.get("_", ""):
