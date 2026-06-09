@@ -115,7 +115,12 @@ const ResultsDisplay: React.FC<ResultsDisplayProps> = ({ result, autoCreateVideo
         <div className="result-metadata">
           {result.detected_language && (
             <span className="result-metadata-item">
-              {t.detectedLanguage} {result.detected_language}
+              {t.detectedLanguage} {(() => {
+                const translated = t(`languages.${result.detected_language}`);
+                return translated && translated !== `languages.${result.detected_language}`
+                  ? translated
+                  : result.detected_language;
+              })()}
             </span>
           )}
           {result.user_choices?.whisper_model && (

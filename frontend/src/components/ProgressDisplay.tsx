@@ -26,6 +26,22 @@ interface EnhancedStep {
   progress: number;
 }
 
+// Maps the English labels emitted by the backend to the camelCase keys
+// used in the frontend locale files under processingSteps.*
+const BACKEND_LABEL_TO_I18N_KEY: Record<string, string> = {
+  'Downloading': 'downloadingVideo',
+  'Downloading Video': 'downloadingVideo',
+  'Audio Processing': 'audioProcessing',
+  'Loading AI Model': 'modelLoading',
+  'AI Transcription': 'transcription',
+  'Translation': 'translation',
+  'SRT Creation': 'srtCreation',
+  'Creating Subtitle Files': 'srtCreation',
+  'Video Creation': 'videoCreation',
+  'Embedding Subtitles': 'videoCreation',
+  'Finalizing Video': 'finalizing',
+};
+
 const ProgressDisplay: React.FC<ProgressDisplayProps> = ({ isProcessing, progress, error, videoMetadata, fileMetadata, userChoices, initialRequest, processingType, onRetry }) => {
   const { t } = useTranslation();
   const [showLogs, setShowLogs] = useState(false);
@@ -149,13 +165,17 @@ const ProgressDisplay: React.FC<ProgressDisplayProps> = ({ isProcessing, progres
     }
 
     // Convert actual steps to enhanced steps
-    return progress.steps.map((step, index) => ({
-      id: index + 1,
-      label: t(`processingSteps.${step.label}`) || step.label,
-      status: step.status === 'waiting' ? 'pending' : step.status,
-      weight: step.weight || 100 / progress.steps.length,
-      progress: step.progress / 100
-    }));
+    return progress.steps.map((step, index) => {
+      const i18nKey = BACKEND_LABEL_TO_I18N_KEY[step.label];
+      const translated = i18nKey ? t(`processingSteps.${i18nKey}`) : null;
+      return {
+        id: index + 1,
+        label: translated && translated !== `processingSteps.${i18nKey}` ? translated : step.label,
+        status: step.status === 'waiting' ? 'pending' : step.status,
+        weight: step.weight || 100 / progress.steps.length,
+        progress: step.progress / 100
+      };
+    });
   };
 
   const enhancedSteps = getEnhancedSteps();
