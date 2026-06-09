@@ -306,13 +306,23 @@
   },
   "processingSteps": {
     "downloadingVideo": "Downloading Video",
-    "audioProcessing": "Audio Processing", 
+    "audioProcessing": "Audio Processing",
     "modelLoading": "Loading AI Model",
     "transcription": "AI Transcription",
     "translation": "Translating Subtitles",
     "srtCreation": "Creating Subtitle Files",
     "videoCreation": "Creating Video with Subtitles",
     "finalizing": "Finalizing"
+  },
+  "timingLabels": {
+    "download_video": "Download Video",
+    "transcribe_and_translate": "Transcribe & Translate",
+    "transcribe_video": "Transcribe Video",
+    "translate": "Translate",
+    "create_video_with_subtitles_and_watermark": "Create Video with Subtitles & Watermark",
+    "create_video_with_subtitles": "Create Video with Subtitles",
+    "add_watermark": "Add Watermark",
+    "embed_subtitles": "Embed Subtitles"
   },
   "errors": {
     "processingError": "Processing Error",

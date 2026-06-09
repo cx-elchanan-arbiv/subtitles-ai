@@ -385,11 +385,17 @@ const ResultsDisplay: React.FC<ResultsDisplayProps> = ({ result, autoCreateVideo
             </span>
           </div>
           <div className="time-breakdown">
-            {Object.entries(result.timing_summary).map(([key, value]) => (
-              <span key={key} className="time-item">
-                {`${t[key as keyof Translation] || key}: ${value}s`}
-              </span>
-            ))}
+            {Object.entries(result.timing_summary).map(([key, value]) => {
+              const translated = t(`timingLabels.${key}`);
+              const label = translated && translated !== `timingLabels.${key}`
+                ? translated
+                : (t[key as keyof Translation] || key);
+              return (
+                <span key={key} className="time-item">
+                  {`${label}: ${value}s`}
+                </span>
+              );
+            })}
           </div>
         </div>
       )}

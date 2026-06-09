@@ -307,12 +307,22 @@
   "processingSteps": {
     "downloadingVideo": "הורדת וידאו",
     "audioProcessing": "עיבוד אודיו",
-    "modelLoading": "טעינת מודל AI", 
+    "modelLoading": "טעינת מודל AI",
     "transcription": "תמלול בינה מלאכותית",
     "translation": "תרגום הכתוביות",
     "srtCreation": "יצירת קבצי כתוביות",
     "videoCreation": "שילוב כתוביות בוידאו",
     "finalizing": "סיום עיבוד"
+  },
+  "timingLabels": {
+    "download_video": "הורדת וידאו",
+    "transcribe_and_translate": "תמלול ותרגום",
+    "transcribe_video": "תמלול הוידאו",
+    "translate": "תרגום",
+    "create_video_with_subtitles_and_watermark": "יצירת וידאו עם כתוביות וסימן מים",
+    "create_video_with_subtitles": "יצירת וידאו עם כתוביות",
+    "add_watermark": "הוספת סימן מים",
+    "embed_subtitles": "שילוב הכתוביות"
   },
   "errors": {
     "processingError": "שגיאה בעיבוד",
