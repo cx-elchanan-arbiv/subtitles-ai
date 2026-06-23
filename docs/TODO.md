@@ -1,5 +1,67 @@
 # SubsTranslator - TODO List 📋
 
+---
+
+## 🔥 משימות דחופות - Open Source Readiness (ינואר 2026)
+
+### ✅ הושלם לאחרונה:
+- [x] פיצול `video_routes.py` ל-6 קבצים קטנים (`api/v1/`)
+- [x] הוספת API versioning (`/api/v1/...`)
+- [x] תיקון באג ב-download-only (`state_manager` import)
+- [x] יצירת טסטים ל-download API (14 טסטים)
+- [x] תיעוד תכנית Swagger (`docs/SWAGGER_IMPLEMENTATION_PLAN.md`)
+
+### 🐛 באגים בקוד לתקן:
+
+#### 1. RTL Ellipsis Bug (עדיפות גבוהה)
+**קובץ:** `backend/utils/rtl_utils.py`
+**בעיה:** ה-ellipsis fix (`...`) לא עובד כי ה-RLE wrap קורה לפני
+**פתרון:** לקרוא ל-`fix_rtl_punctuation` לפני העטיפה ב-RLE
+```python
+# שורות 44-48 - סדר הפעולות שגוי
+text = f"{RLE}{text}{PDF}"  # ← קורה ראשון
+text = fix_rtl_punctuation(text)  # ← regex לא מוצא כי יש RLE בהתחלה
+```
+
+#### 2. Python 3.9 Compatibility (עדיפות גבוהה)
+**קובץ:** `backend/state_manager.py` (שורה 51)
+**בעיה:** סינטקס `dict[str, Any] | None` לא נתמך ב-Python 3.9
+**פתרון:** לשנות ל-`Optional[Dict[str, Any]]`
+
+### 🧪 טסטים לתקן:
+
+#### 3. test_cleanup_task.py (7 טסטים)
+**בעיה:** Patch path שגוי - `tasks.UPLOAD_FOLDER` לא קיים
+**פתרון:** לשנות ל-`tasks.cleanup_tasks.UPLOAD_FOLDER`
+
+#### 4. test_failure_scenarios.py (7 טסטים)
+**בעיות:**
+- `create_srt_file` - חתימה השתנתה (עכשיו method של class)
+- `whisper_smart` - מודול לא קיים
+- OpenAI quota - הטסט מצפה ל-fallback אבל הקוד זורק exception
+
+#### 5. test_api_smoke.py (1 טסט)
+**בעיה:** מצפה ל-CORS `*` אבל מוגדר origins ספציפיים
+**פתרון:** לעדכן את הטסט או להחליט על CORS policy
+
+### 📝 משימות ממתינות:
+
+- [ ] הטמעת Swagger (~4 שעות) - לפי `docs/SWAGGER_IMPLEMENTATION_PLAN.md`
+- [ ] עדכון Frontend להשתמש ב-`/api/v1/` routes
+- [ ] החלטה: האם צריך fallback ב-OpenAI translation או exception?
+- [ ] החלטה: מה גרסת Python המינימלית? (3.9 או 3.10+)
+
+### 📊 סטטוס טסטים נוכחי:
+- ✅ 313 passed
+- ❌ 20 failed
+- ⏭️ 3 skipped
+
+---
+
+*עודכן לאחרונה: 2026-01-11*
+
+---
+
 ## 🎯 Priority 1 - Core Improvements
 
 

@@ -156,3 +156,9 @@ node_modules/
 
 # Internal documentation (private dev notes, not for public)
 internal-docs/
+
+# Playwright MCP console logs (tool output, not project content)
+.playwright-mcp/
+
+# Stray local screenshots
+edit-intro-modal-before.png
