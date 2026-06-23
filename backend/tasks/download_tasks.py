@@ -265,6 +265,8 @@ def download_highest_quality_video_task(self, url):
             "restrict_filenames": True,
             "continue_dl": True,
             "hls_prefer_native": True,
+            # android_vr client so YouTube returns full-res formats (not SABR 360p)
+            "extractor_args": config.YTDLP_EXTRACTOR_ARGS,
             "format_sort": ["res:1080", "fps", "codec:avc1:m4a", "ext:mp4"],
             "compat_opts": ["format-sort-force"],
             "postprocessors": [

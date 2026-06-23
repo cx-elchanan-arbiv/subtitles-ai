@@ -233,6 +233,9 @@ def create_ytdlp_options(phase_logger=None, quality: str = "high") -> Dict[str, 
         # Format selection
         'format': format_map.get(quality, format_map["high"]),
         'merge_output_format': 'mp4',
+
+        # android_vr client so YouTube returns full-res formats (not SABR 360p)
+        'extractor_args': config.YTDLP_EXTRACTOR_ARGS,
         
         # Performance settings
         'socket_timeout': config.YTDLP_SOCKET_TIMEOUT,

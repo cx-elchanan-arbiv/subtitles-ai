@@ -156,6 +156,19 @@ class Config:
     YOUTUBE_RETRIES = int(os.getenv("YOUTUBE_RETRIES", 3))
     YOUTUBE_FRAGMENT_RETRIES = int(os.getenv("YOUTUBE_FRAGMENT_RETRIES", 3))
 
+    # yt-dlp player client(s). YouTube now forces SABR streaming on the default
+    # web/android clients, which strips every adaptive format and leaves only
+    # format 18 (360p) -> downloads come out at low resolution. The android_vr
+    # client still returns the full DASH ladder (1080p/4K) with no PO token,
+    # cookies, or external provider. See https://github.com/yt-dlp/yt-dlp/issues/12482
+    # Override via env e.g. YTDLP_PLAYER_CLIENT="android_vr,web_safari".
+    YTDLP_PLAYER_CLIENT = [
+        c.strip()
+        for c in os.getenv("YTDLP_PLAYER_CLIENT", "android_vr").split(",")
+        if c.strip()
+    ]
+    YTDLP_EXTRACTOR_ARGS = {"youtube": {"player_client": YTDLP_PLAYER_CLIENT}}
+
     # yt-dlp unified options - Phase A optimized settings
     YTDLP_SOCKET_TIMEOUT = int(os.getenv("YTDLP_SOCKET_TIMEOUT", 30))  # Reduced for faster failure
     YTDLP_RETRIES = int(os.getenv("YTDLP_RETRIES", 5))  # Reduced from 10 to 5

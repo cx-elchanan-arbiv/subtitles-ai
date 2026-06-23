@@ -82,8 +82,9 @@ def download_youtube_video(url, quality="medium", progress_callback=None, start_
             # Log cleanup: Reduce yt-dlp verbosity
             "quiet": not config.DEBUG,  # Only show yt-dlp logs in DEBUG mode
             "no_warnings": not config.DEBUG,  # Suppress warnings unless debugging
-            # Fix 403 Forbidden errors
-            "extractor_args": {"youtube": {"player_client": ["android", "web"]}},
+            # Use android_vr client so YouTube returns full-resolution formats
+            # (web/android are SABR-capped to 360p). See config.YTDLP_EXTRACTOR_ARGS
+            "extractor_args": config.YTDLP_EXTRACTOR_ARGS,
             # Phase A: Only faststart, no re-encoding
             "postprocessor_args": {
                 "ffmpeg": ["-movflags", "+faststart"]  # Removed all codec args for remux-only
@@ -294,8 +295,9 @@ def download_youtube_video_with_progress(url, quality="medium", progress_manager
             # Log cleanup: Reduce yt-dlp verbosity
             "quiet": not config.DEBUG,
             "no_warnings": not config.DEBUG,
-            # Fix 403 Forbidden errors
-            "extractor_args": {"youtube": {"player_client": ["android", "web"]}},
+            # Use android_vr client so YouTube returns full-resolution formats
+            # (web/android are SABR-capped to 360p). See config.YTDLP_EXTRACTOR_ARGS
+            "extractor_args": config.YTDLP_EXTRACTOR_ARGS,
             # Phase A: Only faststart, no re-encoding
             "postprocessor_args": {
                 "ffmpeg": ["-movflags", "+faststart"]  # Removed all codec args for remux-only
