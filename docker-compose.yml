@@ -3,6 +3,7 @@ services:
     build:
       context: .
       dockerfile: frontend.Dockerfile
+    restart: unless-stopped
     ports:
       - "80:80"
     volumes:
@@ -14,6 +15,7 @@ services:
     build:
       context: .
       dockerfile: backend.Dockerfile
+    restart: unless-stopped
     ports:
       - "8081:8081"
     user: "501:20"
@@ -49,13 +51,15 @@ services:
 
   redis:
     image: "redis:alpine"
-    ports:
-      - "6379:6379"
+    restart: unless-stopped
+    # ports הוסר — redis מקומי על 6379 מתנגש; הגישה הפנימית redis://redis:6379 עובדת.
+    # לדיבוג מההוסט בלי התנגשות: map "6380:6379" (לא 6379).
 
   worker:
     build:
       context: .
       dockerfile: backend.Dockerfile
+    restart: unless-stopped
     command: ["celery", "-A", "celery_worker.celery_app", "worker", "-l", "info", "-Q", "processing", "--concurrency=1", "--max-tasks-per-child=1"]
     user: "501:20"
     env_file:
@@ -98,6 +102,7 @@ services:
     build:
       context: .
       dockerfile: backend.Dockerfile
+    restart: unless-stopped
     command: ["celery", "-A", "celery_worker.celery_app", "beat", "-l", "info"]
     env_file:
       - .env
