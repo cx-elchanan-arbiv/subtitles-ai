@@ -4,7 +4,7 @@ Tests both legacy /download and new /api/v1/download routes.
 """
 import os
 import sys
-import tempfile
+import uuid
 import pytest
 
 # Set test environment before imports
@@ -20,20 +20,16 @@ if backend_dir not in sys.path:
 
 @pytest.fixture
 def app():
-    """Create Flask test app with temporary folders."""
-    # Create temp directories
-    with tempfile.TemporaryDirectory() as tmp_dir:
-        os.environ['UPLOAD_FOLDER'] = os.path.join(tmp_dir, 'uploads')
-        os.environ['DOWNLOADS_FOLDER'] = os.path.join(tmp_dir, 'downloads')
-        os.environ['ASSETS_FOLDER'] = os.path.join(tmp_dir, 'assets')
+    """Create Flask test app using app's actual configured folders."""
+    from app import app
+    from config import get_config
+    config = get_config()
 
-        os.makedirs(os.environ['UPLOAD_FOLDER'], exist_ok=True)
-        os.makedirs(os.environ['DOWNLOADS_FOLDER'], exist_ok=True)
-        os.makedirs(os.environ['ASSETS_FOLDER'], exist_ok=True)
+    # Ensure the downloads folder exists
+    os.makedirs(config.DOWNLOADS_FOLDER, exist_ok=True)
 
-        from app import app
-        app.config['TESTING'] = True
-        yield app
+    app.config['TESTING'] = True
+    yield app
 
 
 @pytest.fixture
@@ -45,22 +41,39 @@ def client(app):
 @pytest.fixture
 def sample_file(app):
     """Create a sample file in downloads folder for testing."""
-    downloads_folder = os.environ['DOWNLOADS_FOLDER']
-    sample_path = os.path.join(downloads_folder, 'test_file.srt')
+    from config import get_config
+    config = get_config()
+
+    # Use unique filename to avoid conflicts between tests
+    filename = f'test_file_{uuid.uuid4().hex[:8]}.srt'
+    sample_path = os.path.join(config.DOWNLOADS_FOLDER, filename)
     with open(sample_path, 'w', encoding='utf-8') as f:
         f.write("1\n00:00:01,000 --> 00:00:05,000\nTest subtitle\n")
-    return 'test_file.srt'
+
+    yield filename
+
+    # Cleanup after test
+    if os.path.exists(sample_path):
+        os.remove(sample_path)
 
 
 @pytest.fixture
 def sample_video_file(app):
     """Create a sample video file in downloads folder for testing."""
-    downloads_folder = os.environ['DOWNLOADS_FOLDER']
-    sample_path = os.path.join(downloads_folder, 'test_video.mp4')
-    # Create a dummy file (not a real video, just for testing download)
+    from config import get_config
+    config = get_config()
+
+    # Use unique filename to avoid conflicts between tests
+    filename = f'test_video_{uuid.uuid4().hex[:8]}.mp4'
+    sample_path = os.path.join(config.DOWNLOADS_FOLDER, filename)
     with open(sample_path, 'wb') as f:
         f.write(b'fake video content')
-    return 'test_video.mp4'
+
+    yield filename
+
+    # Cleanup after test
+    if os.path.exists(sample_path):
+        os.remove(sample_path)
 
 
 class TestLegacyDownloadEndpoint:
@@ -162,30 +175,42 @@ class TestDownloadEdgeCases:
 
     def test_download_file_with_spaces_in_name(self, app, client):
         """Test downloading a file with spaces in the name."""
-        downloads_folder = os.environ['DOWNLOADS_FOLDER']
-        filename = 'file with spaces.srt'
-        sample_path = os.path.join(downloads_folder, filename)
+        from config import get_config
+        config = get_config()
+
+        filename = f'file with spaces {uuid.uuid4().hex[:8]}.srt'
+        sample_path = os.path.join(config.DOWNLOADS_FOLDER, filename)
         with open(sample_path, 'w', encoding='utf-8') as f:
             f.write("test content")
 
-        # URL-encode the filename
-        response = client.get(f'/download/{filename.replace(" ", "%20")}')
+        try:
+            # URL-encode the filename
+            response = client.get(f'/download/{filename.replace(" ", "%20")}')
 
-        # Should either work or return appropriate error
-        assert response.status_code in (200, 404)
+            # Should either work or return appropriate error
+            assert response.status_code in (200, 404)
+        finally:
+            if os.path.exists(sample_path):
+                os.remove(sample_path)
 
     def test_download_file_with_hebrew_name(self, app, client):
         """Test downloading a file with Hebrew characters."""
-        downloads_folder = os.environ['DOWNLOADS_FOLDER']
-        filename = 'תרגום_עברית.srt'
-        sample_path = os.path.join(downloads_folder, filename)
+        from config import get_config
+        config = get_config()
+
+        filename = f'תרגום_עברית_{uuid.uuid4().hex[:8]}.srt'
+        sample_path = os.path.join(config.DOWNLOADS_FOLDER, filename)
         with open(sample_path, 'w', encoding='utf-8') as f:
             f.write("תוכן בעברית")
 
-        response = client.get(f'/download/{filename}')
+        try:
+            response = client.get(f'/download/{filename}')
 
-        # Should either work or handle gracefully
-        assert response.status_code in (200, 404)
+            # Should either work or handle gracefully
+            assert response.status_code in (200, 404)
+        finally:
+            if os.path.exists(sample_path):
+                os.remove(sample_path)
 
     def test_download_empty_filename(self, client):
         """Test downloading with empty filename."""
