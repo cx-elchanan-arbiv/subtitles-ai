@@ -92,7 +92,7 @@ const Header: React.FC<HeaderProps> = ({ onShowAuthModal, onHomeClick }) => {
 
             {/* Tooltip */}
             <AnimatePresence>
-              {showTooltip && !fixing && !errorMsg && (
+              {showTooltip && !fixing && !statusMsg && (
                 <motion.div
                   initial={{ opacity: 0, y: 4 }}
                   animate={{ opacity: 1, y: 0 }}
