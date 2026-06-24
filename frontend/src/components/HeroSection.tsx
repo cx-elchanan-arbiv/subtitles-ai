@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
   ];
 
   return (
-    <section className="relative pt-24 pb-3 px-4">
+    <section className="relative pt-14 pb-3 px-4">
       <div className="relative max-w-7xl mx-auto text-center">
         <motion.div
           initial={{ y: 20, opacity: 0 }}
