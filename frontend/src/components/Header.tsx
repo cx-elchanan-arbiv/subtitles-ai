@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { LogIn, Wrench } from 'lucide-react';
+import { LogIn, Wrench, AlertCircle } from 'lucide-react';
 import { useTranslation } from '../i18n/TranslationContext';
 import { useAuth } from '../contexts/AuthContext';
 import UserProfile from './UserProfile';
@@ -36,22 +36,23 @@ const Header: React.FC<HeaderProps> = ({ onShowAuthModal, onHomeClick }) => {
   const { user } = useAuth();
   const [fixing, setFixing] = useState(false);
   const [showTooltip, setShowTooltip] = useState(false);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   const handleFixYoutube = async () => {
     setFixing(true);
     setShowTooltip(false);
+    setErrorMsg(null);
     try {
       await openFixYoutubeSkill();
     } catch {
-      alert('לא הצלחתי להתחבר ל-Claude RTL Chat (http://127.0.0.1:7778). ודא שהשרת פועל.');
+      setErrorMsg('Claude RTL Chat לא פועל על פורט 7778');
+      setTimeout(() => setErrorMsg(null), 4000);
     } finally {
       setFixing(false);
     }
   };
 
   return (
-    // pointer-events-none on the container so the page content behind is fully clickable;
-    // pointer-events-auto only on the actual buttons
     <motion.header
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -61,7 +62,7 @@ const Header: React.FC<HeaderProps> = ({ onShowAuthModal, onHomeClick }) => {
       <div className="flex items-start justify-between">
 
         {/* Fix YouTube + Sign In — floating top-left */}
-        <div className="pointer-events-auto flex items-center gap-2">
+        <div className="pointer-events-auto flex items-start gap-2">
 
           {/* Fix YouTube Quality */}
           <div className="relative">
@@ -82,23 +83,47 @@ const Header: React.FC<HeaderProps> = ({ onShowAuthModal, onHomeClick }) => {
               <span>{fixing ? 'פותח...' : 'תקן יוטיוב'}</span>
             </motion.button>
 
+            {/* Tooltip */}
             <AnimatePresence>
-              {showTooltip && !fixing && (
+              {showTooltip && !fixing && !errorMsg && (
                 <motion.div
                   initial={{ opacity: 0, y: 4 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 4 }}
                   transition={{ duration: 0.15 }}
-                  className="absolute top-full mt-2 right-0 z-50 w-64 rounded-xl
+                  className="absolute top-full mt-2 left-0 z-50 w-64 rounded-xl
                              bg-gray-900/95 border border-white/10 shadow-xl p-3 text-right"
                   style={{ backdropFilter: 'blur(12px)' }}
                 >
                   <p className="text-white text-sm font-semibold mb-1">🔧 תקן איכות יוטיוב</p>
                   <p className="text-gray-300 text-xs leading-relaxed">
-                    פותח שיחת Claude חדשה ומריץ אוטומטית את הסקריפט{' '}
-                    <code className="text-yellow-400">/fix-youtube-quality</code> — בודק איזה לקוח יוטיוב עובד ומתקן הורדות שיורדות ב-360p.
+                    פותח שיחת Claude ומריץ{' '}
+                    <code className="text-yellow-400">/fix-youtube-quality</code> — בודק לקוח יוטיוב עובד ומתקן הורדות ב-360p.
                   </p>
-                  <p className="text-gray-500 text-xs mt-1">⚡ דורש Claude RTL Chat פעיל ב-7778</p>
+                  <p className="text-gray-500 text-xs mt-1">⚡ דורש Claude RTL Chat ב-7778</p>
+                </motion.div>
+              )}
+            </AnimatePresence>
+
+            {/* Inline error toast — no alert() */}
+            <AnimatePresence>
+              {errorMsg && (
+                <motion.div
+                  initial={{ opacity: 0, y: 4, scale: 0.95 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: 4, scale: 0.95 }}
+                  transition={{ duration: 0.15 }}
+                  className="absolute top-full mt-2 left-0 z-50 w-72 rounded-xl
+                             bg-red-900/90 border border-red-500/30 shadow-xl p-3 text-right"
+                  style={{ backdropFilter: 'blur(12px)' }}
+                >
+                  <div className="flex items-start gap-2 justify-end">
+                    <div>
+                      <p className="text-red-200 text-sm font-semibold">{errorMsg}</p>
+                      <p className="text-red-400 text-xs mt-0.5">הפעל את Claude RTL Chat ואז נסה שוב</p>
+                    </div>
+                    <AlertCircle className="w-4 h-4 text-red-400 shrink-0 mt-0.5" />
+                  </div>
                 </motion.div>
               )}
             </AnimatePresence>
