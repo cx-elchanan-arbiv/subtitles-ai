@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { LogIn, Wrench, AlertCircle } from 'lucide-react';
+import { LogIn, Wrench, AlertCircle, Info } from 'lucide-react';
 import { useTranslation } from '../i18n/TranslationContext';
 import { useAuth } from '../contexts/AuthContext';
 import UserProfile from './UserProfile';
@@ -36,17 +36,24 @@ const Header: React.FC<HeaderProps> = ({ onShowAuthModal, onHomeClick }) => {
   const { user } = useAuth();
   const [fixing, setFixing] = useState(false);
   const [showTooltip, setShowTooltip] = useState(false);
-  const [errorMsg, setErrorMsg] = useState<string | null>(null);
+  const [statusMsg, setStatusMsg] = useState<{ text: string; type: 'error' | 'info' } | null>(null);
 
   const handleFixYoutube = async () => {
     setFixing(true);
     setShowTooltip(false);
-    setErrorMsg(null);
+    setStatusMsg(null);
     try {
       await openFixYoutubeSkill();
+      // success — window opened, no message needed
     } catch {
-      setErrorMsg('Claude RTL Chat לא פועל על פורט 7778');
-      setTimeout(() => setErrorMsg(null), 4000);
+      // Fetch failed (CORS / server not ready) — open 7778 directly anyway
+      const opened = window.open(CLAUDE_RTL_URL, '_blank');
+      if (opened) {
+        setStatusMsg({ text: 'נפתח — הרץ /fix-youtube-quality', type: 'info' });
+      } else {
+        setStatusMsg({ text: 'Claude RTL Chat לא פועל על פורט 7778', type: 'error' });
+      }
+      setTimeout(() => setStatusMsg(null), 4000);
     } finally {
       setFixing(false);
     }
@@ -105,24 +112,27 @@ const Header: React.FC<HeaderProps> = ({ onShowAuthModal, onHomeClick }) => {
               )}
             </AnimatePresence>
 
-            {/* Inline error toast — no alert() */}
+            {/* Inline status toast */}
             <AnimatePresence>
-              {errorMsg && (
+              {statusMsg && (
                 <motion.div
                   initial={{ opacity: 0, y: 4, scale: 0.95 }}
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: 4, scale: 0.95 }}
                   transition={{ duration: 0.15 }}
-                  className="absolute top-full mt-2 left-0 z-50 w-72 rounded-xl
-                             bg-red-900/90 border border-red-500/30 shadow-xl p-3 text-right"
+                  className={`absolute top-full mt-2 left-0 z-50 w-64 rounded-xl shadow-xl p-3 text-right border
+                    ${statusMsg.type === 'error'
+                      ? 'bg-red-900/90 border-red-500/30'
+                      : 'bg-emerald-900/90 border-emerald-500/30'}`}
                   style={{ backdropFilter: 'blur(12px)' }}
                 >
-                  <div className="flex items-start gap-2 justify-end">
-                    <div>
-                      <p className="text-red-200 text-sm font-semibold">{errorMsg}</p>
-                      <p className="text-red-400 text-xs mt-0.5">הפעל את Claude RTL Chat ואז נסה שוב</p>
-                    </div>
-                    <AlertCircle className="w-4 h-4 text-red-400 shrink-0 mt-0.5" />
+                  <div className="flex items-center gap-2 justify-end">
+                    <p className={`text-sm font-semibold ${statusMsg.type === 'error' ? 'text-red-200' : 'text-emerald-200'}`}>
+                      {statusMsg.text}
+                    </p>
+                    {statusMsg.type === 'error'
+                      ? <AlertCircle className="w-4 h-4 text-red-400 shrink-0" />
+                      : <Info className="w-4 h-4 text-emerald-400 shrink-0" />}
                   </div>
                 </motion.div>
               )}
