@@ -1,3 +1,7 @@
+תקן איכות הורדת יוטיוב.
+
+**ענה למשתמש בעברית** לכל אורך השיחה, גם אם ההוראות והפקודות באנגלית. סכם כל שלב ומסקנה בעברית.
+
 # fix-youtube-quality
 
 Diagnose and fix YouTube download quality regression in SubsTranslator.
