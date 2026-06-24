@@ -20,24 +20,6 @@ const HeroSection: React.FC = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
-          {/* Title + subtitle — compact */}
-          <motion.h1
-            className="text-3xl md:text-4xl font-bold mb-1 bg-gradient-to-r from-white via-gray-100 to-accent bg-clip-text text-transparent"
-            initial={{ scale: 0.95 }}
-            animate={{ scale: 1 }}
-            transition={{ delay: 0.1, duration: 0.4 }}
-          >
-            {t('app.title')}
-          </motion.h1>
-          <motion.p
-            className="text-sm text-gray-400 mb-4 max-w-xl mx-auto"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.4 }}
-          >
-            {t('app.subtitle')}
-          </motion.p>
-
           {/* Feature cards — compact horizontal strip */}
           <motion.div
             className="grid grid-cols-3 gap-3 mb-4"

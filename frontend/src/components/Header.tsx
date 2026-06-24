@@ -72,10 +72,6 @@ const Header: React.FC<HeaderProps> = ({ onShowAuthModal, onHomeClick }) => {
             <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-accent to-blue-500 flex items-center justify-center shadow-lg">
               <span className="text-2xl font-bold text-white">🎬</span>
             </div>
-            <div className="hidden md:block">
-              <h1 className="text-xl font-bold text-white">{t.appTitle}</h1>
-              <p className="text-sm text-gray-300">{t.appSubtitle}</p>
-            </div>
           </motion.button>
 
           {/* Navigation */}
