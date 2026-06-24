@@ -25,6 +25,8 @@ env/
 .vscode/
 .idea/
 .claude/
+# Track shared project skills (commands) but ignore private settings/memory
+!.claude/commands/
 *.swp
 *.swo
 *~
