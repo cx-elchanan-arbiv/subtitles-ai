@@ -60,22 +60,7 @@ const Header: React.FC<HeaderProps> = ({ onShowAuthModal, onHomeClick }) => {
     >
       <div className="flex items-start justify-between">
 
-        {/* Logo — floating top-left */}
-        <motion.button
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ delay: 0.2, type: 'spring', stiffness: 200 }}
-          onClick={onHomeClick}
-          className="pointer-events-auto w-11 h-11 rounded-xl bg-gradient-to-br from-accent to-blue-500
-                     flex items-center justify-center shadow-lg hover:opacity-80 transition-opacity
-                     border-none cursor-pointer"
-          aria-label="חזרה למסך הראשי"
-          style={{ background: undefined }}
-        >
-          <span className="text-xl font-bold text-white">🎬</span>
-        </motion.button>
-
-        {/* Buttons — floating top-right */}
+        {/* Fix YouTube + Sign In — floating top-left */}
         <div className="pointer-events-auto flex items-center gap-2">
 
           {/* Fix YouTube Quality */}
@@ -136,6 +121,20 @@ const Header: React.FC<HeaderProps> = ({ onShowAuthModal, onHomeClick }) => {
             </motion.button>
           )}
         </div>
+
+        {/* Logo — floating top-right */}
+        <motion.button
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ delay: 0.2, type: 'spring', stiffness: 200 }}
+          onClick={onHomeClick}
+          className="pointer-events-auto w-11 h-11 rounded-xl bg-gradient-to-br from-accent to-blue-500
+                     flex items-center justify-center shadow-lg hover:opacity-80 transition-opacity
+                     border-none cursor-pointer"
+          aria-label="חזרה למסך הראשי"
+        >
+          <span className="text-xl font-bold text-white">🎬</span>
+        </motion.button>
 
       </div>
     </motion.header>

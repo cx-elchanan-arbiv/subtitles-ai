@@ -173,8 +173,8 @@ function App() {
         setSelectedFile(null);
       }} />
       
-      {/* Language Selector - Fixed position, left side to avoid header buttons */}
-      <div className="fixed top-3 left-16 z-50">
+      {/* Language Selector - Fixed top-right, next to logo */}
+      <div className="fixed top-3 right-16 z-50">
         <LanguageSelector compact />
       </div>
       
