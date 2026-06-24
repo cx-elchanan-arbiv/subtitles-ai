@@ -1,8 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { LogIn } from 'lucide-react';
+import { LogIn, Wrench } from 'lucide-react';
 import { useTranslation } from '../i18n/TranslationContext';
 import { useAuth } from '../contexts/AuthContext';
+
+const CLAUDE_RTL_URL = 'http://127.0.0.1:7778';
+const PROJECT_CWD = '/Users/elchananarbiv/Projects/SubsTranslator';
+
+async function openFixYoutubeSkill() {
+  // 1. Create a new session in the SubsTranslator project directory
+  const newRes = await fetch(`${CLAUDE_RTL_URL}/new`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ cwd: PROJECT_CWD, perm: 'full' }),
+  });
+  if (!newRes.ok) throw new Error('Failed to create session');
+  const { id } = await newRes.json();
+
+  // 2. Send the skill command
+  await fetch(`${CLAUDE_RTL_URL}/send`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ id, text: '/fix-youtube-quality' }),
+  });
+
+  // 3. Open the conversation in a new tab
+  window.open(`${CLAUDE_RTL_URL}/?id=${id}`, '_blank');
+}
 import UserProfile from './UserProfile';
 
 interface HeaderProps {
@@ -13,6 +37,18 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ onShowAuthModal, onHomeClick }) => {
   const { t } = useTranslation();
   const { user } = useAuth();
+  const [fixing, setFixing] = useState(false);
+
+  const handleFixYoutube = async () => {
+    setFixing(true);
+    try {
+      await openFixYoutubeSkill();
+    } catch (e) {
+      alert('לא הצלחתי להתחבר ל-Claude RTL Chat (http://127.0.0.1:7778). ודא שהשרת פועל.');
+    } finally {
+      setFixing(false);
+    }
+  };
 
   return (
     <motion.header 
@@ -44,6 +80,18 @@ const Header: React.FC<HeaderProps> = ({ onShowAuthModal, onHomeClick }) => {
 
           {/* Navigation */}
           <div className="flex items-center space-x-4">
+            {/* Fix YouTube Quality — dev tool, opens Claude RTL Chat with the skill */}
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={handleFixYoutube}
+              disabled={fixing}
+              title="פתח Claude עם /fix-youtube-quality"
+              className="text-gray-400 hover:text-yellow-400 transition-colors p-2 rounded-lg hover:bg-white/10 disabled:opacity-50"
+            >
+              <Wrench className={`w-5 h-5 ${fixing ? 'animate-spin' : ''}`} />
+            </motion.button>
+
             {/* User Profile or Sign In */}
             {user ? (
               <UserProfile />
