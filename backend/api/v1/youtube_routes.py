@@ -6,6 +6,7 @@ from flask import Blueprint, jsonify, request
 
 from config import get_config
 from tasks import download_and_process_youtube_task, download_youtube_only_task
+from services.url_resolver_service import resolve_video_url
 from logging_config import get_logger
 from i18n.translations import t
 from .helpers import validate_video_url, build_watermark_config_from_data
@@ -139,6 +140,48 @@ def process_youtube_async():
 
     except Exception as e:
         logger.error(f"Error processing YouTube link: {e}")
+        return jsonify({"error": str(e)}), 500
+
+
+@youtube_bp.route("/resolve-url", methods=["POST"])
+def resolve_url():
+    """
+    Probe a URL (direct video link OR a webpage that contains video) without
+    downloading. Returns what was found so the frontend can either proceed
+    (single) or show a picker (multiple), or show a friendly message (none).
+    """
+    try:
+        if config.is_youtube_restricted():
+            return (
+                jsonify(
+                    {
+                        "error": t("features.youtube_pro_only")
+                        or "YouTube processing is available for PRO users only",
+                        "code": "YOUTUBE_RESTRICTED",
+                    }
+                ),
+                403,
+            )
+
+        data = request.get_json()
+        if not data:
+            return jsonify({"error": t("errors:validation.no_data")}), 400
+
+        url = (data.get("url") or "").strip()
+        if not url:
+            return jsonify({"error": t("errors:validation.url_required")}), 400
+        if not url.startswith(("http://", "https://")):
+            return jsonify({"error": t("errors:validation.url_invalid_protocol")}), 400
+
+        validation_error = validate_video_url(url)
+        if validation_error:
+            return validation_error
+
+        result = resolve_video_url(url)
+        return jsonify(result), 200
+
+    except Exception as e:
+        logger.error(f"Error resolving URL: {e}")
         return jsonify({"error": str(e)}), 500
 
 

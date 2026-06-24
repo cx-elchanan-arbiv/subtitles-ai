@@ -177,8 +177,16 @@ class Config:
     # Phase A: Optimized format for remux-only merge (no re-encoding)
     YTDLP_OPTIMIZED_FORMAT = os.getenv(
         "YTDLP_OPTIMIZED_FORMAT",
+        # YouTube-optimized remux path first (avc1+mp4a -> no re-encode)...
         "bestvideo[height<=1080][vcodec^=avc1]+bestaudio[acodec^=mp4a]/"
         "bestvideo[ext=mp4][height<=1080]+bestaudio[ext=m4a]/"
+        # ...then generic adaptive (separate video+audio, e.g. Fox News / TED
+        # HLS with non-mp4a/m4a codecs). These come BEFORE the single-file
+        # fallbacks so we prefer working HLS streams over progressive URLs that
+        # some sites (e.g. TED's h264-1200k) serve but then reject with HTTP 403.
+        "bestvideo[height<=1080]+bestaudio/"
+        "bestvideo+bestaudio/"
+        # ...single muxed file as last resort (sources with no separate streams).
         "best[ext=mp4]/best"
     )
     YTDLP_CACHE_DIR = os.getenv("YTDLP_CACHE_DIR", "/tmp/yt-dlp")

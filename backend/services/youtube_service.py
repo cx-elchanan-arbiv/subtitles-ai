@@ -268,7 +268,7 @@ def download_youtube_video_with_progress(url, quality="medium", progress_manager
                 "url": url,
             }
             if progress_manager:
-                progress_manager.set_step_progress(0, 90, "Preparing metadata...")
+                progress_manager.set_step_progress(0, 95, "Preparing metadata...")
                 progress_manager.log(
                     f"📊 Video info: {metadata['title']} ({metadata['duration_string']})"
                 )
@@ -328,19 +328,57 @@ def download_youtube_video_with_progress(url, quality="medium", progress_manager
                     progress_manager.log(f"⚠️ Invalid time format: {e}. Downloading full video instead.")
                 # Continue without time range if parsing fails
 
-        # Add real progress hooks
+        # Add real progress hooks.
+        # HLS sources (e.g. Fox News, TED) download video and audio as SEPARATE
+        # streams, each reporting 0->100%, and their size estimates fluctuate per
+        # fragment. Mapping raw percent would make the bar jump backwards (audio
+        # restarts at 0; estimates wobble). Keep it monotonic: never show less
+        # than the max already reached during this download step.
+        download_progress = {"max": 15, "streams": []}
+
+        def bump(pct, msg):
+            """Move the download step forward only. Single monotonic gate for
+            BOTH the byte-progress hook and the post-download hardcoded steps,
+            so the bar can never jump backwards across the whole download."""
+            if not progress_manager:
+                return
+            pct = max(int(pct), download_progress["max"])
+            download_progress["max"] = pct
+            progress_manager.set_step_progress(0, pct, msg)
+
+        def _stream_band(d):
+            """Map the current yt-dlp stream to a sub-range of the download step.
+            HLS/merged downloads fetch video then audio as separate streams. We
+            key off stream ORDER (not codec): yt-dlp's vcodec/acodec are often
+            absent for HLS audio in the hook, so the only reliable signal is the
+            order in which distinct format_ids appear. 1st = video bulk (15-80),
+            any later = audio tail (80-92). Every stream is registered so the
+            ordinal stays correct. Returns (low, high)."""
+            info = d.get("info_dict") or {}
+            fid = info.get("format_id") or "single"
+            seen = download_progress["streams"]
+            if fid not in seen:
+                seen.append(fid)
+            return (15, 80) if seen.index(fid) == 0 else (80, 92)
+
         def progress_hook(d):
             if d["status"] == "downloading" and progress_manager:
-                if "total_bytes" in d and d["total_bytes"]:
-                    percent = (d["downloaded_bytes"] / d["total_bytes"]) * 100
-                elif "total_bytes_estimate" in d and d["total_bytes_estimate"]:
-                    percent = (d["downloaded_bytes"] / d["total_bytes_estimate"]) * 100
+                lo, hi = _stream_band(d)
+                # Prefer HLS fragment count: it's the only stable signal for HLS
+                # (byte totals are absent for audio and wobble for video). Fall
+                # back to bytes for progressive downloads.
+                frag_n = d.get("fragment_count")
+                total = d.get("total_bytes") or d.get("total_bytes_estimate")
+                if frag_n:
+                    raw = (d.get("fragment_index") or 0) / frag_n
+                elif total:
+                    raw = (d.get("downloaded_bytes") or 0) / total
                 else:
-                    percent = progress_manager.steps[0][
-                        "progress"
-                    ]  # Keep current if no total
-
-                percent = min(95, max(15, percent))  # Cap between 15% and 95%
+                    raw = None
+                if raw is not None:
+                    percent = lo + max(0.0, min(1.0, raw)) * (hi - lo)  # 0..1 within stream
+                else:
+                    percent = download_progress["max"]  # keep current if unknown
 
                 progress_msg = d.get("_percent_str", f"{percent:.1f}%")
                 speed = d.get("_speed_str", "")
@@ -352,30 +390,33 @@ def download_youtube_video_with_progress(url, quality="medium", progress_manager
                 if eta:
                     status_msg += f" | Time remaining: {eta}"
 
-                progress_manager.set_step_progress(0, int(percent), status_msg)
+                bump(percent, status_msg)  # monotonic clamp inside bump
 
             elif d["status"] == "finished" and progress_manager:
-                progress_manager.set_step_progress(0, 95, "Finishing download...")
+                # One stream finished — advance to ITS band end, not 95 (an audio
+                # stream may still follow). The post-download code takes it to 95.
+                _lo, hi = _stream_band(d)
+                bump(hi, "Finishing stream...")
 
         ydl_opts["progress_hooks"] = [progress_hook]
 
         if progress_manager:
             progress_manager.log("🎯 Starting download with yt-dlp...")
-            progress_manager.set_step_progress(0, 15, "Configuring download...")
+            bump(15, "Configuring download...")
 
         logger.info(f"🎯 Starting download with options: {ydl_opts}")
 
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             if progress_manager:
-                progress_manager.set_step_progress(0, 20, "Extracting video info...")
+                bump(20, "Extracting video info...")
                 progress_manager.log("📡 Extracting info from URL...")
 
             logger.info(f"📡 Extracting info from URL: {url}")
             info = ydl.extract_info(url, download=True)
 
             if progress_manager:
-                progress_manager.set_step_progress(0, 30, "Downloading video data...")
-                progress_manager.log("📥 Downloading video data...")
+                bump(92, "Download complete, processing...")
+                progress_manager.log("📥 Download complete, processing...")
 
             original_filename = ydl.prepare_filename(info)
 
@@ -399,7 +440,7 @@ def download_youtube_video_with_progress(url, quality="medium", progress_manager
                 final_filename = work_filename.replace(work_dir, final_dir)
 
                 if progress_manager:
-                    progress_manager.set_step_progress(0, 80, "Moving to final directory...")
+                    bump(93, "Moving to final directory...")
 
                 try:
                     # Ensure directory exists with proper permissions
@@ -421,7 +462,7 @@ def download_youtube_video_with_progress(url, quality="medium", progress_manager
                 filename = original_filename
 
             if progress_manager:
-                progress_manager.set_step_progress(0, 90, "Preparing metadata...")
+                bump(95, "Preparing metadata...")
                 progress_manager.log(f"📊 Video info: {info.get('title', 'Unknown')} ({info.get('duration_string', '00:00')})")
 
             logger.info(f"✅ Phase A download completed: {os.path.basename(filename)}")
@@ -447,7 +488,7 @@ def download_youtube_video_with_progress(url, quality="medium", progress_manager
         }
 
         if progress_manager:
-            progress_manager.set_step_progress(0, 90, "Preparing metadata...")
+            bump(95, "Preparing metadata...")
             progress_manager.log(
                 f"📊 Video info: {metadata['title']} ({metadata['duration_string']})"
             )

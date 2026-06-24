@@ -75,10 +75,21 @@
     "resolution": "Resolution"
   },
   "youtube": {
-    "urlPlaceholder": "Video URL (YouTube, Vimeo, TikTok & more)",
-    "urlDescription": "Enter a YouTube video URL to extract and translate subtitles",
+    "urlPlaceholder": "Video link or a webpage that contains video",
+    "urlDescription": "Enter a video link or a webpage that has video — we'll find it automatically",
     "quickDownload": "Quick Download",
     "processWithSubtitles": "Process with Subtitles"
+  },
+  "videoPicker": {
+    "resolving": "Looking for video on the page…",
+    "title": "Several videos found on the page",
+    "subtitle": "Choose which video to process:",
+    "useThis": "Select",
+    "cancel": "Cancel",
+    "untitled": "Untitled",
+    "noVideo": "No video found on this page. Try pasting a direct video link.",
+    "needsLogin": "This video requires logging in to the site, so it can't be extracted automatically.",
+    "unavailable": "Could not access video from this link."
   },
   "options": {
     "autoCreateVideo": "Create video with burned-in subtitles",

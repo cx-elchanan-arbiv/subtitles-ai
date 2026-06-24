@@ -525,9 +525,13 @@ const ProgressDisplay: React.FC<ProgressDisplayProps> = ({ isProcessing, progres
                  completedCount === enhancedSteps.length ? `${t('status.completed')}! ✅` : t('processing.startingProcessing')}
               </span>
             </div>
-            <span className="text-gray-500">
-              {completedCount} {t('processing.outOf')} {enhancedSteps.length} {t('processing.stepsCompleted')}
-            </span>
+            {/* Only show an "X of Y steps" counter when there is more than one
+                step — "0 of 1" is meaningless for single-step flows (e.g. download-only). */}
+            {enhancedSteps.length > 1 && (
+              <span className="text-gray-500">
+                {completedCount} {t('processing.outOf')} {enhancedSteps.length} {t('processing.stepsCompleted')}
+              </span>
+            )}
           </div>
 
           {/* Steps List */}
