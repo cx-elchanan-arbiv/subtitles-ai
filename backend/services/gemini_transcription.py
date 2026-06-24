@@ -136,6 +136,7 @@ def get_youtube_duration(youtube_url: str) -> float:
         'no_warnings': True,
         'extract_flat': False,
         'skip_download': True,
+        'extractor_args': config.YTDLP_EXTRACTOR_ARGS,
     }
 
     try:

@@ -2,9 +2,11 @@ import os
 import traceback
 import yt_dlp
 from celery_worker import celery_app
+from config import get_config
 from logging_config import get_logger
 
 logger = get_logger(__name__)
+config = get_config()
 
 # Constants
 DOWNLOADS_FOLDER = os.path.join(os.path.dirname(__file__), "downloads")
@@ -28,7 +30,7 @@ def download_highest_quality_video_task(self, url):
             "socket_timeout": 60,  # 60 seconds timeout for socket operations
             "fragment_retries": 3,  # Retry failed fragments
             "retries": 3,  # Retry overall download
-            "extractor_args": {"youtube": {"player_client": ["android", "web"]}},
+            "extractor_args": config.YTDLP_EXTRACTOR_ARGS,
         }
 
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:

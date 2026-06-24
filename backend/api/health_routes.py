@@ -166,6 +166,7 @@ def health_deps():
                 "no_warnings": True,
                 "socket_timeout": 10,
                 "extract_flat": False,
+                "extractor_args": config.YTDLP_EXTRACTOR_ARGS,
             }
             with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                 info = ydl.extract_info(test_url, download=False)

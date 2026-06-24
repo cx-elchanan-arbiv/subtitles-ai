@@ -4,9 +4,11 @@ import os
 import yt_dlp
 
 from celery_worker import celery_app
+from config import get_config
 
 # Configuration
 DOWNLOADS_FOLDER = "/app/downloads"
+config = get_config()
 
 # Configure logging
 logging.basicConfig(
@@ -35,6 +37,7 @@ def download_highest_quality_video_task(self, url):
             "retries": 10,  # Retry overall download
             "fragment_retries": 10,  # Retry failed fragments
             "continue_dl": True,
+            "extractor_args": config.YTDLP_EXTRACTOR_ARGS,
             "postprocessor_args": {
                 "ffmpeg": [
                     "-c:v",

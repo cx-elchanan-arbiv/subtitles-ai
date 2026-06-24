@@ -158,7 +158,7 @@ class VideoMetadataService:
                 "fragment_retries": 10,
                 "extract_flat": False,
                 "restrict_filenames": True,
-                "extractor_args": {"youtube": {"player_client": ["android", "web"]}},
+                "extractor_args": self.config.YTDLP_EXTRACTOR_ARGS,
             }
 
             with yt_dlp.YoutubeDL(ydl_opts) as ydl:

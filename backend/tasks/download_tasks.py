@@ -71,7 +71,7 @@ def download_and_process_youtube_task(
             temp_ydl_opts = {
                 "noplaylist": True,
                 "quiet": True,
-                "extractor_args": {"youtube": {"player_client": ["android", "web"]}}
+                "extractor_args": config.YTDLP_EXTRACTOR_ARGS,
             }
             with yt_dlp.YoutubeDL(temp_ydl_opts) as temp_ydl:
                 info_dict = temp_ydl.extract_info(url, download=False)
@@ -231,7 +231,7 @@ def download_highest_quality_video_task(self, url):
             temp_ydl_opts = {
                 "noplaylist": True,
                 "quiet": True,
-                "extractor_args": {"youtube": {"player_client": ["android", "web"]}}
+                "extractor_args": config.YTDLP_EXTRACTOR_ARGS,
             }
             with yt_dlp.YoutubeDL(temp_ydl_opts) as temp_ydl:
                 info_dict = temp_ydl.extract_info(url, download=False)
