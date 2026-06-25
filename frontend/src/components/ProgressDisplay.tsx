@@ -457,6 +457,7 @@ const ProgressDisplay: React.FC<ProgressDisplayProps> = ({ isProcessing, progres
                   <div>⏱️ {t('processing.duration')}: {fileMetadata.duration_string}</div>
                   <div>📊 {t('fileInfo.fileSizeLabel') || 'גודל'}: {fileMetadata.file_size_mb} MB</div>
                   <div>🎬 {t('processing.resolution')}: {fileMetadata.width}×{fileMetadata.height}</div>
+                  {/* eslint-disable-next-line i18next/no-literal-string */}
                   <div>🎞️ FPS: {fileMetadata.fps}</div>
                 </div>
               </div>
